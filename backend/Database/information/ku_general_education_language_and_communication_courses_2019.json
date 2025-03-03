@@ -1,0 +1,1130 @@
+[
+    {
+        "course_code": "01361101",
+        "course_name": "การใช้ภาษาไทยเบื้องต้น (Introductory Thai Usage)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การฟัง การอ่านอย่างมีประสิทธิภาพ การพูดแนะนำตัว การพูดเสนอผลงาน การเขียนสรุปสาระสำคัญ และการเขียนรายงานวิชาการ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01361102",
+        "course_name": "การเขียนภาษาไทยเชิงปฏิบัติ (Thai Practical Writing)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การเขียนย่อหน้า ตอบคำถาม เรียงความ หนังสือราชการ จดหมายธุรกิจ และรายงานการประชุม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01361103",
+        "course_name": "การอ่านภาษาไทยเชิงวิจารณ์ (Thai Critical Reading)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักการอ่านเก็บใจความสำคัญ หลักการวิจารณ์ การอ่านเก็บใจความสำคัญ และการอ่านเพื่อการวิจารณ์",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999021",
+        "course_name": "ภาษาไทยเพื่อการสื่อสาร (Thai Language for Communication)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "ภาษาไทยในการสื่อสาร ความคิดกับการใช้ภาษา ภาษากับสังคม และการพัฒนาทักษะการใช้ภาษาไทยเพื่อการสื่อสาร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999022",
+        "course_name": "ภาษาไทยในบริบทวัฒนธรรม (Thai Language in Cultural Context)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "ความสัมพันธ์ระหว่างภาษา ความคิด สังคมและวัฒนธรรม ลักษณะของภาษาไทยตามการจัดประเภท ความหมายทางวัฒนธรรมที่แฝงอยู่ในคำและวลีภาษาไทย คำไทยที่ไม่สามารถแปลข้ามวัฒนธรรม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02701011",
+        "course_name": "การใช้ภาษาไทยเพื่อธุรกิจ วิทยาศาสตร์และเทคโนโลยี (Thai Usage for Business, Science and Technology)",
+        "department": "คณะศิลปศาสตร์และวิทยาศาสตร์ วิทยาเขตกำแพงแสน",
+        "description": "การใช้ภาษาไทยเพื่อการสื่อสาร กระบวนการคิดแบบวิทยาศาสตร์กับการใช้ภาษาไทย การฝึกการอ่านและการฟังโดยเน้นการเก็บใจความสำคัญ ฝึกอ่านเชิงวิเคราะห์งานเขียนทางธุรกิจวิทยาศาสตร์และเทคโนโลยี รูปแบบและวิธีการเขียนรายงานทางวิชาการและรายงานทางธุรกิจ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01354311",
+        "course_name": "ภาษาเขมร I (Khmer I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ระบบเสียงภาษาเขมร เปรียบเทียบระบบเสียงภาษาเขมรกับภาษาไทย การอ่านและการเขียนตัวอักษรเขมร ไวยากรณ์ภาษาเขมร ทักษะการฟัง พูด อ่าน เขียนชั้นพื้นฐาน คำศัพท์ที่ใช้ในชีวิตประจำวัน 400 คำ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01354312",
+        "course_name": "ภาษาเขมร II (Khmer II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ระดับภาษา ทักษะการฟัง พูด อ่าน และเขียนคำศัพท์ภาษาเขมรใหม่ 600 คำ บทสนทนาในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01354311",
+                "pre_course_name": "ภาษาเขมร I (Khmer I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01354411",
+        "course_name": "ภาษาเขมร III (Khmer III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ทักษะการฟัง พูด อ่าน เขียน คำศัพท์และสำนวนภาษาเขมร 1,200 คำ การเล่าเรื่อง การแสดงทรรศนะ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01354312",
+                "pre_course_name": "ภาษาเขมร II (Khmer II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355111",
+        "course_name": "ภาษาอังกฤษพื้นฐาน I (Foundation English I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างที่สำคัญของภาษา ฝึกฟัง พูด อ่าน เขียน โดยให้ประสานสัมพันธ์กันทั้ง 4 ทักษะ เน้นความสามารถในการใช้ภาษาเพื่อการติดต่อสื่อความหมายได้โดยถูกต้อง",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355112",
+        "course_name": "ภาษาอังกฤษพื้นฐาน II (Foundation English II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างที่สำคัญของภาษา ฝึกฟัง พูด อ่าน เขียน โดยให้ประสานสัมพันธ์กันทั้ง 4 ทักษะ เน้นความสามารถในการใช้ภาษาเพื่อการติดต่อสื่อความหมายได้โดยถูกต้องในระดับที่มีความยากขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355111",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน I (Foundation English I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355113",
+        "course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การฝึกทักษะการสื่อสาร ด้านการอ่าน เขียน ฟัง และพูด ในบริบททางวิชาการ การอภิปราย และการนำเสนอประเด็นจากบทคัดสรร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355112",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน II (Foundation English II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355114",
+        "course_name": "ภาษาอังกฤษสำหรับนิสิตเตรียมแพทย์ I (English for Pre-Medical Students I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ฝึกอ่านบทความด้านวิทยาศาสตร์การแพทย์จากตำรา เอกสารทางวิชาการ วารสารตลอดจนสิ่งตีพิมพ์อื่นๆ ที่เกี่ยวข้อง ด้วยเทคนิคการอ่านที่สอดคล้องกับลักษณะของบทความนั้นๆ ฝึกเขียนตลอดจนสรุปสาระสำคัญของบทความ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355115",
+        "course_name": "ภาษาอังกฤษสำหรับนิสิตเตรียมแพทย์ II (English for Pre-Medical Students II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ฝึกอ่านจับใจความสำคัญ จดบันทึกย่อ ศึกษาโครงสร้างทางภาษา ฝึกเขียนสรุปและความเรียงสั้นๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355114",
+                "pre_course_name": "ภาษาอังกฤษสำหรับนิสิตเตรียมแพทย์ I (English for Pre-Medical Students I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355201",
+        "course_name": "การอ่านภาษาอังกฤษเบื้องต้น (Fundamental English Reading)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การอ่านในใจให้สามารถเข้าใจโดยตรงจากภาษาอังกฤษ โดยไม่ต้องอาศัยการคิดหรือพูดแปลเป็นภาษาไทย ศิลปะการอ่านออกเสียง และเทคนิคการขยายวงศัพท์ให้กว้างขวางขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355202",
+        "course_name": "การเขียนภาษาอังกฤษเบื้องต้น (Fundamental English Writing)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การเขียนจากตัวอย่างที่ดี โดยใช้โครงสร้างประโยคและคำศัพท์ที่เหมาะสม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355203",
+        "course_name": "โครงสร้างภาษาอังกฤษเบื้องต้น (Fundamental English Structure)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "วิเคราะห์โครงสร้างของภาษาเขียนจากบทความหรือเรื่องที่ตัดตอนมาซึ่งมีความยากง่ายของภาษาอยู่ในระดับปานกลางให้เห็นและเข้าใจความสัมพันธ์ขององค์ประกอบภายในประโยคและระหว่างประโยคเพื่อเป็นฐานในการอ่าน การเขียน และการแปล",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355204",
+        "course_name": "การฟัง-การพูดภาษาอังกฤษเบื้องต้น (Fundamental English Listening-Speaking)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การฝึกทักษะฟัง-พูด โดยใช้กิจกรรมหลากหลายรูปแบบในหัวข้อต่างๆ โดยมุ่งเน้นให้ผู้เรียนฝึกทักษะภาษาอังกฤษ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355205",
+        "course_name": "การอ่านภาษาอังกฤษด้านสื่อสารมวลชน (Reading for Mass Communication in English)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การอ่านสิ่งตีพิมพ์ภาษาอังกฤษด้านสื่อสารมวลชน ข่าว โฆษณา บทความ หนังสือพิมพ์และนิตยสาร ข่าวจากโทรพิมพ์ และการพิสูจน์อักษร โดยเน้นวิธีอ่านเพื่อจับใจความสำคัญ สำนวนและสื่อการเสนอข่าวและบทความ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355206",
+        "course_name": "อังกฤษวิชาการ (Technical English)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ฝึกฝนทักษะการอ่านเพื่อให้นิสิตได้คุ้นเคยกับศัพท์ในตำราเรียน วารสาร และสิ่งตีพิมพ์อื่นๆ เกี่ยวกับวิชาการต่างๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355207",
+        "course_name": "การเขียนโต้ตอบภาษาอังกฤษ (English Correspondence)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การเขียนจดหมายประเภทต่างๆ เน้นในเรื่องแบบฟอร์ม คำศัพท์ สำนวน ศิลปะการเขียนจดหมายสมัครงานและวิธีการทำประวัติส่วนตัว",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355208",
+        "course_name": "ภาษาอังกฤษจากเพลง (English through Songs)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ฝึกทักษะการฟังและการพูด โดยใช้เพลงภาษาอังกฤษเป็นสื่อช่วยในการถ่ายทอดความหมาย การนำศัพท์และสำนวนจากบทเพลงไปใช้ในชีวิตประจำวัน การออกเสียงได้อย่างถูกต้องและชัดเจน การเน้นจังหวะให้เหมาะสมกับทำนองและท่วงทำนองในการพูด เพื่อให้สามารถสื่อความคิดและความหมายได้ถูกต้อง",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355209",
+        "course_name": "ภาษาอังกฤษเพื่อการสื่อสารในงานอาชีพ (Communicative English for Careers)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ศัพท์ สำนวนที่ใช้ในงานอาชีพโดยทั่วไป บันทึกข้อความ โฆษณา โทรเลข ตารางเวลา แบบฟอร์มเอกสารต่างๆ ที่เกี่ยวข้อง",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355302",
+        "course_name": "การเขียนรายงานภาษาอังกฤษ (Report Writing in English)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "การเขียนรายงานที่เป็นทางการ การหาและการรวบรวมข้อมูลจากแหล่งต่างๆ การเรียบเรียงข้อมูล และการเขียนรายงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01355303",
+        "course_name": "ภาษาอังกฤษเพื่อการสมัครงาน (English for Employment)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ฝึกฟัง พูดและเขียนภาษาที่ใช้ในการสมัครงานอาชีพต่างๆ เทคนิคการพูดโต้ตอบในการสอบสัมภาษณ์และการเขียนใบสมัครงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01355113",
+                "pre_course_name": "ภาษาอังกฤษพื้นฐาน III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01356101",
+        "course_name": "ภาษาฝรั่งเศสเบื้องต้น I (Elementary French I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์เบื้องต้น ฟัง พูด อ่าน และเขียนประโยคพื้นฐาน ศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01356102",
+        "course_name": "ภาษาฝรั่งเศสเบื้องต้น II (Elementary French II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์เบื้องต้น ฟัง พูด อ่าน และเขียนประโยคพื้นฐานในระดับที่สูงขึ้น ศัพท์และสำนวนในชีวิตประจำวันเพื่อการสื่อสาร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01356101",
+                "pre_course_name": "ภาษาฝรั่งเศสเบื้องต้น I (Elementary French I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01356103",
+        "course_name": "ภาษาฝรั่งเศสเบื้องต้น III (Elementary French III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์ระดับกลาง ฟัง พูด อ่าน และเขียนในระดับที่สูงขึ้น สนทนาโต้ตอบในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01356102",
+                "pre_course_name": "ภาษาฝรั่งเศสเบื้องต้น II (Elementary French II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01356104",
+        "course_name": "ภาษาฝรั่งเศสเบื้องต้น IV (Elementary French IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์ระดับกลางที่สูงขึ้น สนทนาโต้ตอบเรื่องทั่วไป อ่านเรื่องสั้นๆ เพื่อเข้าใจเนื้อหาและโครงสร้างของประโยค",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01356103",
+                "pre_course_name": "ภาษาฝรั่งเศสเบื้องต้น III (Elementary French III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01357111",
+        "course_name": "ภาษาเยอรมันเบื้องต้น I (Elementary German I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างที่สำคัญของภาษาเยอรมัน ฝึกการฟัง การพูด การอ่าน และการเขียน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01357112",
+        "course_name": "ภาษาเยอรมันเบื้องต้น II (Elementary German II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างที่สำคัญของภาษาเยอรมัน ฝึกการฟัง การพูด การอ่าน และการเขียนในระดับที่สูงขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01357111",
+                "pre_course_name": "ภาษาเยอรมันเบื้องต้น I (Elementary German I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01357113",
+        "course_name": "ภาษาเยอรมันเบื้องต้น III (Elementary German III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างของภาษาเยอรมัน หลักไวยากรณ์ คำศัพท์ สำนวน การฟัง การพูด การอ่าน และการเขียนในระดับที่สูงขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01357112",
+                "pre_course_name": "ภาษาเยอรมันเบื้องต้น II (Elementary German II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01357114",
+        "course_name": "ภาษาเยอรมันเบื้องต้น IV (Elementary German IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างของภาษาเยอรมัน หลักไวยากรณ์ นั่นการอ่าน การเขียน การสรุปใจความสำคัญจากสิ่งที่อ่าน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01357113",
+                "pre_course_name": "ภาษาเยอรมันเบื้องต้น III (Elementary German III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01358101",
+        "course_name": "ภาษาญี่ปุ่นเบื้องต้น I (Elementary Japanese I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "อักษรฮิระงะนะ คะตะคะนะ และคันจิ หลักไวยากรณ์เบื้องต้น ฟัง พูด อ่านและเขียนประโยคพื้นฐาน ศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01358102",
+        "course_name": "ภาษาญี่ปุ่นเบื้องต้น II (Elementary Japanese II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคขั้นพื้นฐานในระดับที่สูงขึ้น ฟัง พูด อ่านและเขียน ศัพท์และสำนวนในชีวิตประจำวัน ศึกษาอักษรคันจิเพิ่มขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01358101",
+                "pre_course_name": "ภาษาญี่ปุ่นเบื้องต้น I (Elementary Japanese I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01358103",
+        "course_name": "ภาษาญี่ปุ่นเบื้องต้น III (Elementary Japanese III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคขั้นพื้นฐานในระดับที่สูงขึ้น สนทนาโต้ตอบในชีวิตประจำวัน เขียนข้อความสั้นๆ ศึกษาอักษรคันจิเพิ่มขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01358102",
+                "pre_course_name": "ภาษาญี่ปุ่นเบื้องต้น II (Elementary Japanese II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01358104",
+        "course_name": "ภาษาญี่ปุ่นเบื้องต้น IV (Elementary Japanese IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคขั้นพื้นฐานในระดับที่สูงขึ้น อ่านเรื่องสั้นๆ เพื่อให้เข้าใจเนื้อหาและโครงสร้างของประโยค สนทนาโต้ตอบเรื่องทั่วไป ศึกษาอักษรคันจิเพิ่มขึ้น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01358103",
+                "pre_course_name": "ภาษาญี่ปุ่นเบื้องต้น III (Elementary Japanese III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01362101",
+        "course_name": "ภาษาจีน I (Chinese I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ระบบพินอิน หลักการเขียนตัวอักษรจีน โครงสร้างและหลักไวยากรณ์เบื้องต้น การฟัง การพูด การอ่านและการเขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01362102",
+        "course_name": "ภาษาจีน II (Chinese II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคขั้นพื้นฐานในระดับที่สูงขึ้น การฟัง การพูด การอ่านและการเขียน ศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01362101",
+                "pre_course_name": "ภาษาจีน I (Chinese I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01362103",
+        "course_name": "ภาษาจีน III (Chinese III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคขั้นพื้นฐานที่ซับซ้อน การสนทนาโต้ตอบในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01362102",
+                "pre_course_name": "ภาษาจีน II (Chinese II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01362104",
+        "course_name": "ภาษาจีน IV (Chinese IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคซับซ้อน การสนทนาโต้ตอบเรื่องทั่วไป",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01362103",
+                "pre_course_name": "ภาษาจีน III (Chinese III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01362105",
+        "course_name": "ภาษาจีน V (Chinese V)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักไวยากรณ์และรูปประโยคซับซ้อนในระดับที่สูงขึ้น การอ่านงานเขียนขนาดสั้นเพื่อทำความเข้าใจเนื้อหาและโครงสร้างของประโยค การสนทนาโต้ตอบเรื่องทั่วไป",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01362104",
+                "pre_course_name": "ภาษาจีน IV (Chinese IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01367311",
+        "course_name": "ภาษาพม่า I (Myanmar Language I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ระบบเสียงภาษาพม่า เปรียบเทียบระบบเสียงภาษาพม่ากับภาษาไทย การอ่านและการเขียนตัวอักษรพม่า ไวยากรณ์พม่า ทักษะการฟัง พูด อ่าน เขียนชั้นพื้นฐาน คำศัพท์ที่ใช้ในชีวิตประจำวัน 400 คำ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01367312",
+        "course_name": "ภาษาพม่า II (Myanmar Language II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ระดับภาษา ทักษะการฟัง พูด อ่าน และเขียนคำศัพท์ภาษาพม่าใหม่ 600 คำ บทสนทนาในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01367311",
+                "pre_course_name": "ภาษาพม่า I (Myanmar Language I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01367411",
+        "course_name": "ภาษาพม่า III (Myanmar Language III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ทักษะการฟัง พูด อ่าน เขียน คำศัพท์และสำนวนภาษาพม่า 1,200 คำ การเล่าเรื่อง การแสดงทรรศนะ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01367312",
+                "pre_course_name": "ภาษาพม่า II (Myanmar Language II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01395101",
+        "course_name": "ภาษาเกาหลีเพื่อการสื่อสาร I (Communicative Korean I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "อักษรเกาหลี ระบบเสียงภาษาเกาหลี โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน เขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนที่ใช้ในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01395102",
+        "course_name": "ภาษาเกาหลีเพื่อการสื่อสาร II (Communicative Korean II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน และเขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01395101",
+                "pre_course_name": "ภาษาเกาหลีเพื่อการสื่อสาร I (Communicative Korean I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01395103",
+        "course_name": "ภาษาเกาหลีเพื่อการสื่อสาร III (Communicative Korean III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์พื้นฐาน คำศัพท์และสำนวนในสถานการณ์เพื่อการติดต่อสื่อสาร สนทนาโต้ตอบในชีวิตประจำวัน เขียนข้อความสั้นๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01395102",
+                "pre_course_name": "ภาษาเกาหลีเพื่อการสื่อสาร II (Communicative Korean II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01395104",
+        "course_name": "ภาษาเกาหลีเพื่อการสื่อสาร IV (Communicative Korean IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์ในระดับที่สูงขึ้น อ่านเรื่องสั้นๆ เพื่อให้เข้าใจเนื้อหา สำนวนและโครงสร้างของประโยค สนทนาโต้ตอบเรื่องทั่วๆ ไป",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01395103",
+                "pre_course_name": "ภาษาเกาหลีเพื่อการสื่อสาร III (Communicative Korean III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01395105",
+        "course_name": "การอ่านและรายงานภาษาเกาหลี (Korean Reading and Oral Report)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักการอ่าน การอ่านบทคัดสรรภาษาเกาหลีที่เกี่ยวกับชีวิตประจำวัน เพื่อจับใจความสำคัญ และพูดรายงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01395104",
+                "pre_course_name": "ภาษาเกาหลีเพื่อการสื่อสาร IV (Communicative Korean IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398101",
+        "course_name": "ภาษามลายูเพื่อการสื่อสาร I (Communicative Malayu I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "อักษรมลายู ระบบเสียงภาษามลายู โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน เขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนที่ใช้ในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398102",
+        "course_name": "ภาษามลายูเพื่อการสื่อสาร II (Communicative Malayu II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน และเขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01398101",
+                "pre_course_name": "ภาษามลายูเพื่อการสื่อสาร I (Communicative Malayu I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398103",
+        "course_name": "ภาษามลายูเพื่อการสื่อสาร III (Communicative Malayu III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์ คำศัพท์และสำนวนในสถานการณ์เพื่อการติดต่อสื่อสาร สนทนาโต้ตอบในชีวิตประจำวัน เขียนข้อความสั้นๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01398102",
+                "pre_course_name": "ภาษามลายูเพื่อการสื่อสาร II (Communicative Malayu II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398104",
+        "course_name": "ภาษามลายูเพื่อการสื่อสาร IV (Communicative Malayu IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์ในระดับที่สูงขึ้น อ่านเรื่องสั้นๆ เพื่อให้เข้าใจเนื้อหา สำนวนและโครงสร้างของประโยค สนทนาโต้ตอบเรื่องทั่วๆ ไป",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01398103",
+                "pre_course_name": "ภาษามลายูเพื่อการสื่อสาร III (Communicative Malayu III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398105",
+        "course_name": "การอ่านภาษามลายู (Malayu Reading)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักการอ่าน การอ่านบทคัดสรรภาษามลายูที่เกี่ยวกับชีวิตประจำวันเพื่อจับใจความสำคัญและพูดรายงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01398104",
+                "pre_course_name": "ภาษามลายูเพื่อการสื่อสาร IV (Communicative Malayu IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01398106",
+        "course_name": "การฟัง-พูดภาษามลายู (Malayu Listening and Speaking)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ทักษะการฟังและพูดภาษามลายู เน้นการใช้ศัพท์ สำนวนและประโยคในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01398104",
+                "pre_course_name": "ภาษามลายูเพื่อการสื่อสาร IV (Communicative Malayu IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399101",
+        "course_name": "ภาษาเวียดนามเพื่อการสื่อสาร I (Communicative Vietnamese I)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "อักษรเวียดนาม ระบบเสียงภาษาเวียดนาม โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน เขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนที่ใช้ในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399102",
+        "course_name": "ภาษาเวียดนามเพื่อการสื่อสาร II (Communicative Vietnamese II)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์เบื้องต้น ทักษะการฟัง พูด อ่าน และเขียนประโยคขั้นพื้นฐาน คำศัพท์และสำนวนในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01399101",
+                "pre_course_name": "ภาษาเวียดนามเพื่อการสื่อสาร I (Communicative Vietnamese I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399103",
+        "course_name": "ภาษาเวียดนามเพื่อการสื่อสาร III (Communicative Vietnamese III)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์ คำศัพท์และสำนวนในสถานการณ์เพื่อการติดต่อสื่อสาร สนทนาโต้ตอบในชีวิตประจำวัน เขียนข้อความสั้นๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01399102",
+                "pre_course_name": "ภาษาเวียดนามเพื่อการสื่อสาร II (Communicative Vietnamese II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399104",
+        "course_name": "ภาษาเวียดนามเพื่อการสื่อสาร IV (Communicative Vietnamese IV)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "โครงสร้างและหลักไวยากรณ์ในระดับที่สูงขึ้น อ่านเรื่องสั้นๆ เพื่อให้เข้าใจเนื้อหา สำนวนและโครงสร้างของประโยค สนทนาโต้ตอบเรื่องทั่วๆ ไป",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01399103",
+                "pre_course_name": "ภาษาเวียดนามเพื่อการสื่อสาร III (Communicative Vietnamese III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399105",
+        "course_name": "การอ่านภาษาเวียดนาม (Vietnamese Reading)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "หลักการอ่าน การอ่านบทคัดสรรภาษาเวียดนามที่เกี่ยวกับชีวิตประจำวันเพื่อจับใจความสำคัญและพูดรายงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01399104",
+                "pre_course_name": "ภาษาเวียดนามเพื่อการสื่อสาร IV (Communicative Vietnamese IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01399106",
+        "course_name": "การฟัง-พูดภาษาเวียดนาม (Vietnamese Listening and Speaking)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ทักษะการฟังและพูดภาษาเวียดนาม เน้นการใช้ศัพท์ สำนวนและประโยคในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "01399104",
+                "pre_course_name": "ภาษาเวียดนามเพื่อการสื่อสาร IV (Communicative Vietnamese IV)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03754111",
+        "course_name": "ภาษาอังกฤษ I (Foundation English I)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "โครงสร้างและการฝึกทักษะการฟัง พูด อ่านและเขียนภาษาอังกฤษเบื้องต้น เพื่อใช้ในการติดต่อสื่อความหมายได้อย่างมีประสิทธิผลและเหมาะสม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03754112",
+        "course_name": "ภาษาอังกฤษ II (Foundation English II)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "โครงสร้างและพัฒนาทักษะการฟัง พูด อ่าน และเขียนภาษาอังกฤษในระดับที่มีความยากและซับซ้อนปานกลางเพื่อใช้ในการติดต่อสื่อความหมายได้อย่างมีประสิทธิผลและเหมาะสม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "03754111",
+                "pre_course_name": "ภาษาอังกฤษ I (Foundation English I)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03754113",
+        "course_name": "ภาษาอังกฤษ III (Foundation English III)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "โครงสร้างและพัฒนาทักษะการฟัง พูด อ่าน และเขียนภาษาอังกฤษในระดับที่มีความยากและซับซ้อนมากยิ่งขึ้นเพื่อใช้ในการติดต่อสื่อความหมายได้อย่างมีประสิทธิผลและเหมาะสม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "03754112",
+                "pre_course_name": "ภาษาอังกฤษ II (Foundation English II)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03754271",
+        "course_name": "ภาษาอังกฤษในงานอาชีพ (English for Careers)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ศัพท์และสำนวนภาษาอังกฤษที่ใช้ในงานอาชีพ บันทึกข้อความ ประกาศ ตารางเวลา โทรสารและเอกสารต่างๆ ที่เกี่ยวข้อง รวมถึงการฟังและพูดบทสนทนาพื้นฐานที่เกี่ยวข้องกับการทำงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "03754113",
+                "pre_course_name": "ภาษาอังกฤษ III (Foundation English III)"
+            }
+        ],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01371111",
+        "course_name": "สื่อสารสนเทศเพื่อการเรียนรู้ (Information Media for Learning)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "แนวคิดการเรียนรู้ ความสำคัญของสื่อสารสนเทศต่อการเรียนรู้ แหล่งสื่อสารสนเทศ การสืบค้นและการเข้าถึงสื่อสารสนเทศ การวิเคราะห์ สังเคราะห์ และการประมวลสารสนเทศเพื่อนำไปใช้ การใช้อย่างมีจริยธรรม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01418104",
+        "course_name": "รู้ทันไอที (IT Updates)",
+        "department": "คณะวิทยาศาสตร์",
+        "description": "ลักษณะของสารสนเทศ โปรแกรมประยุกต์แบบคลาวด์ การประยุกต์ใช้โซเชียลเน็ตเวิร์ก เทคนิคการค้นคืนสารสนเทศสำหรับเสิร์ชเอ็นจิน ภาวะส่วนตัว ลิขสิทธิ์ซอฟต์แวร์และดิจิทัลคอนเทนต์ สัญญาอนุญาตให้ใช้ซอฟต์แวร์ อาชญากรรมคอมพิวเตอร์ แนวโน้มของเทคโนโลยีสารสนเทศและการสื่อสาร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01418111",
+        "course_name": "การใช้งานคอมพิวเตอร์ (Computer Applications)",
+        "department": "คณะวิทยาศาสตร์",
+        "description": "องค์ประกอบของระบบคอมพิวเตอร์ ฮาร์ดแวร์ ซอฟต์แวร์ ระบบปฏิบัติการ การใช้โปรแกรมประมวลคำ ฐานข้อมูลและโปรแกรมประยุกต์อื่น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999013",
+        "course_name": "การจัดการสารสนเทศยุคใหม่ในชีวิตประจำวัน (New Age Information Management in Everyday Life)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "แนวคิดและแนวโน้มเกี่ยวกับข้อมูลและสารสนเทศยุคใหม่ กระบวนการจัดการสารสนเทศ การประยุกต์สารสนเทศที่มีประโยชน์กับชีวิตและสังคม ความปลอดภัย การใช้สารสนเทศตามกฎหมายและจริยธรรม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999023",
+        "course_name": "ทักษะจำเป็นทางคอมพิวเตอร์ (Essential Computer Skills)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "จริยธรรมในการใช้คอมพิวเตอร์ การค้นคืนสารสนเทศ การสร้างเอกสาร การสร้างสื่อเพื่อการนำเสนอข้อมูล การสร้างตารางคำนวณ การสร้างสรรค์และตัดแปลงภาพ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02729102",
+        "course_name": "การประยุกต์คอมพิวเตอร์ในชีวิตประจำวัน (Computer Application in Everyday Life)",
+        "department": "คณะศิลปศาสตร์และวิทยาศาสตร์ วิทยาเขตกำแพงแสน",
+        "description": "หลักมูลทางคอมพิวเตอร์ องค์ประกอบของระบบคอมพิวเตอร์ ข้อมูลและระบบสารสนเทศ ระบบสารสนเทศในสำนักงาน การสื่อสารข้อมูล อินเทอร์เน็ต การประยุกต์คอมพิวเตอร์ในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03600013",
+        "course_name": "เครื่องมือและทักษะทางคอมพิวเตอร์ที่จำเป็น (Essential Computer Tools and Skills)",
+        "department": "คณะวิศวกรรมศาสตร์ ศรีราชา วิทยาเขตศรีราชา",
+        "description": "เครื่องมือผลิตภาพและการประยุกต์ การใช้อินเทอร์เน็ตเพื่อการสืบค้น รวบรวมและวิเคราะห์ข้อมูล เครื่องมือสื่อสาร ความปลอดภัยทางคอมพิวเตอร์ การแก้ปัญหาคอมพิวเตอร์ เทคโนโลยีบนกลุ่มเมฆ แบบฟอร์มและเอกสารออนไลน์ เครื่องมือสื่อประสม และการสร้างเนื้อหา",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03752111",
+        "course_name": "ทรัพยากรสารสนเทศเพื่อการค้นคว้า (Information Resources for Research)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ความสำคัญ สารสนเทศและแหล่งสารสนเทศ การใช้เทคโนโลยีสารสนเทศในห้องสมุด การเลือก และการเขียนรายงาน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระภาษากับการสื่อสาร (Language and Communication)",
+        "prerequisite_courses": [],
+        "required": true,
+        "credit": 1,
+        "semester_suggested": null
+    }
+]

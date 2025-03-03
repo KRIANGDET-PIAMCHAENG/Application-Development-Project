@@ -1,0 +1,1254 @@
+[
+  {
+    "course_code": "03603111",
+    "course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)",
+    "description": "การจัดระบบพื้นฐานของคอมพิวเตอร์ การแทนข้อมูลและชุดคำสั่งในคอมพิวเตอร์ ภาษาระดับสูงและการแปล วากยสัมพันธ์และอรรถศาสตร์ของภาษาระดับสูง การนำเข้าและส่งออก ฟังก์ชัน เจื่อนไข การเรียกซ้ำ ชนิดข้อมูลลำดับ สตริง การทำซ้ำ ชนิดข้อมูลผสม การวิเคราะห์และแก้ปัญหาด้วยโปรแกรม การทดสอบและแก้ไขข้อผิดพลาด การพัฒนาโปรแกรมเพื่อสืบค้นและวิเคราะห์ข้อมูล",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "03603112",
+    "course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)",
+    "description": "คลาสและออบเจกต์ การโปรแกรมเชิงวัตถุ การทดสอบและแก้ไขข้อผิดพลาด การโปรแกรมแบบขับเคลื่อนด้วยเหตุการณ์และส่วนติดต่อผู้ใช้แบบกราฟิกส์ การจัดการสิ่งผิดปกติ ชนิดและเมท็อดแบบทั่วไป การทำงานพร้อมกัน",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603171",
+    "course_name": "วิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์เบื้องต้น (Introduction to Computer Engineering and Informatics)",
+    "description": "วงจรตรรกะ สถาปัตยกรรมคอมพิวเตอร์ ภาษาโปรแกรมและการแปล ระบบปฏิบัติการและโปรแกรมระบบ ระบบฐานข้อมูล เครือข่ายคอมพิวเตอร์ เทคโนโลยีโปรแกรมประยุกต์ สื่อประสม เรขภาพคอมพิวเตอร์ วิทยาศาสตร์ข้อมูล สารสนเทศศาสตร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเตรียมความพร้อม (Preparatory)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "03603211",
+    "course_name": "วิยุตคณิต (Discrete Mathematics)",
+    "description": "เซต ลำดับ ความสัมพันธ์และฟังก์ชัน ตรรกศาสตร์ วิธีพิสูจน์และอุปนัยทางคณิตศาสตร์ นิยามและขั้นตอนวิธีแบบเรียกซ้ำ วิธีการนับและความสัมพันธ์แบบปรากฏซ้ำ ทฤษฎีกราฟเบื้องต้น ทฤษฎีจำนวน ทฤษฎีการคำนวณ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603212",
+    "course_name": "แบบชนิดข้อมูลนามธรรมและการแก้ปัญหา (Abstract Data Types and Problem Solving)",
+    "description": "แบบชนิดข้อมูลนามธรรม กองซ้อน แถวคอย รายการ ต้นไม้ และกราฟ การเรียง แฮชชิง ยิปทวิภาค การจับคู่สายอักขระและรูปแบบ การสร้างนามธรรมข้อมูล ขั้นตอนวิธีพื้นฐานสำหรับแก้ปัญหา การวิเคราะห์ความซับซ้อนของขั้นตอนวิธี",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603213",
+    "course_name": "การออกแบบและวิเคราะห์ขั้นตอนวิธี (Algorithm Design and Analysis)",
+    "description": "การออกแบบและวิเคราะห์ของขั้นตอนวิธี ความถูกต้องของขั้นตอนวิธี การวิเคราะห์ความซับซ้อน ขั้นตอนวิธีเชิงละโมบ เทคนิคการแบ่งแยกและเอาชนะ การโปรแกรมแบบพลวัต ปัญหาเชิงการจัด ปัญหากราฟ ปัญหาเอ็นพีสมบูรณ์ วิธีศึกษาสำนัก ขั้นตอนวิธีแบบกระจาย",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603211",
+        "pre_course_name": "วิยุตคณิต (Discrete Mathematics)"
+      },
+      {
+        "pre_course_code": "03603212",
+        "pre_course_name": "แบบชนิดข้อมูลนามธรรมและการแก้ปัญหา (Abstract Data Types and Problem Solving)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603214",
+    "course_name": "ปฏิบัติการพัฒนาทักษะการโปรแกรม (Programming Skills Development Laboratory)",
+    "description": "การพัฒนาทักษะ การออกแบบโครงสร้างข้อมูลและขั้นตอนวิธี การแก้ปัญหาด้วยการโปรแกรมคอมพิวเตอร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603221",
+    "course_name": "การออกแบบระบบดิจิทัล (Digital Systems Design)",
+    "description": "ระบบดิจิทัลพื้นฐาน พีชคณิตแบบบูลีน เทคนิคการออกแบบทางดิจิทัล ลอจิกเกต การลดขนาดตรรกะให้เล็กที่สุด วงจรเชิงประสมมาตรฐาน วงจรเชิงลำดับ ฟลิป-ฟล็อป วงจรเชิงลำดับแบบประสานเวลาและแบบไม่ประสานเวลา พีแอลเอ รอม และแรม วงจรคำนวณ การใช้คอมพิวเตอร์ช่วยออกแบบทางตรรกะ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603222",
+    "course_name": "ปฏิบัติการวงจรตรรก (Logic Circuit Laboratory)",
+    "description": "ปฏิบัติการเกี่ยวกับเรื่องที่เรียนในวิชา 03603221",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603221",
+        "pre_course_name": "การออกแบบระบบดิจิทัล (Digital Systems Design)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603223",
+    "course_name": "สถาปัตยกรรมและการจัดระบบคอมพิวเตอร์ (Computer Architecture and Organization)",
+    "description": "พื้นฐานสถาปัตยกรรมคอมพิวเตอร์ คณิตศาสตร์ของคอมพิวเตอร์ การจัดระบบและสถาปัตยกรรมระบบหน่วยความจำ ส่วนต่อประสานและการสื่อสาร ภาษาแอสเซมบลี ระบบย่อยอุปกรณ์ การออกแบบตัวประมวลผลและการจัดระบบซีพียู ประสิทธิภาพและการเพิ่มสมรรถนะ แบบจำลองระบบแบบกระจาย",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603221",
+        "pre_course_name": "การออกแบบระบบดิจิทัล (Digital Systems Design)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603241",
+    "course_name": "การพัฒนาโปรแกรมประยุกต์ (Application Development)",
+    "description": "ความต้องการของผู้ใช้ การออกแบบโปรแกรมประยุกต์ การพัฒนาโปรแกรมประยุกต์โดยการใช้ภาพเป็นตัวประสานกับผู้ใช้ การเชื่อมโยงกับระบบฐานข้อมูล การพัฒนาโปรแกรมประยุกต์บนเครื่องเดสก์ทอป การพัฒนาโปรแกรมประยุกต์บนอุปกรณ์เคลื่อนที่ การพัฒนาโปรแกรมประยุกต์บนเว็บ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเทคโนโลยีและวิธีการทางซอฟต์แวร์ (Software Technology and Methods)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603251",
+    "course_name": "ระบบฐานข้อมูล (Database Systems)",
+    "description": "ลักษณะทั่วไปของระบบสารสนเทศ เทคนิคการเก็บข้อมูล การบริการจัดการและค้นหาข้อมูล การจัดการแฟ้มข้อมูล หลักการของระบบฐานข้อมูลและการจัดการฐานข้อมูล เอนทิติและความสัมพันธ์ การปรับบรรทัดฐานของข้อมูล ภาษานิยามข้อมูล การประยุกต์ใช้งานระบบฐานข้อมูล",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเทคโนโลยีเพื่อการประยุกต์ (Applied Technology)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603252",
+    "course_name": "ปฏิบัติการระบบฐานข้อมูล (Database Systems Laboratory)",
+    "description": "ปฏิบัติการเกี่ยวกับเรื่องที่เรียนในวิชา 03603251",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเทคโนโลยีเพื่อการประยุกต์ (Applied Technology)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603251",
+        "pre_course_name": "ระบบฐานข้อมูล (Database Systems)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603312",
+    "course_name": "ความน่าจะเป็นและสถิติสำหรับสารสนเทศศาสตร์ (Probability and Statistics for Informatics)",
+    "description": "ความน่าจะเป็น คณิตศาสตร์เชิงการจัด ความน่าจะเป็นแบบมีเงื่อนไขและความเป็นอิสระของเหตุการณ์ ตัวแปรสุ่ม ฟังก์ชันการแจกแจงและความหนาแน่น การดำเนินการกับตัวแปรสุ่มตัวเดียวและหลายตัว กระบวนการสุ่ม สถิติ การอนุมานเชิงสถิติ การทดสอบสมมติฐาน การถดถอย การประยุกต์กับปัญหาทางสารสนเทศศาสตร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาโครงสร้างพื้นฐานของระบบ (System Infrastructure)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01417168",
+        "pre_course_name": "คณิตศาสตร์วิศวกรรม II (Engineering Mathematics II)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03603323",
+    "course_name": "ระบบฝังตัวเบื้องต้น (Introduction to Embedded Systems)",
+    "description": "เทคโนโลยี สถาปัตยกรรม และการออกแบบระบบฝังตัว อุปกรณ์รอบข้างระบบฝังตัว อินพุต/เอาต์พุตแบบดิจิทัลและแอนะล็อก การขัดจังหวะ ตัวตั้งเวลา และสุนัขยาม การจัดเก็บข้อมูล ตัวตรวจจับและตัวแปรสัญญาณ การสื่อสารแบบมีสาย เครื่องจักรสถานะ เครือข่ายตัวตรวจจับไร้สายและระบบชาญฉลาด การโปรแกรมอิงแบบจำลอง",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603223",
+        "pre_course_name": "สถาปัตยกรรมและการจัดระบบคอมพิวเตอร์ (Computer Architecture and Organization)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 4
+  },
+  {
+    "course_code": "03603324",
+    "course_name": "ปฏิบัติการระบบฝังตัว (Embedded Systems Laboratory)",
+    "description": "ปฏิบัติการเกี่ยวกับเรื่องที่เรียนในวิชา 03603323",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603323",
+        "pre_course_name": "ระบบฝังตัวเบื้องต้น (Introduction to Embedded Systems)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 4
+  },
+  {
+    "course_code": "03603325",
+    "course_name": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communications and Computer Networks)",
+    "description": "เครือข่ายการสื่อสารข้อมูลและมาตรฐานระบบเปิด สถาปัตยกรรมการสื่อสารและโพรโทคอล แบบจำลองโอเอสไอ ชั้นกายภาพชั้นเชื่อมโยงข้อมูล เทคโนโลยีอินเทอร์เน็ต โพรโทคอลชั้นเครือข่าย การเลือกและการสลับเส้นทางเบื้องต้น โพรโทคอลชั้นขนส่ง โพรโทคอลชั้นเซสชัน ชั้นนำเสนอ และชั้นโปรแกรมประยุกต์เบื้องต้น",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาโครงสร้างพื้นฐานของระบบ (System Infrastructure)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 4
+  },
+  {
+    "course_code": "03603332",
+    "course_name": "ระบบปฏิบัติการ (Operating Systems)",
+    "description": "แนวคิดของระบบปฏิบัติการ กระบวนการและภาวะพร้อมกัน การจัดการและการกำหนดลำดับกระบวนการ การจัดการรับเข้า/ส่งออก การจัดการหน่วยความจำ ระบบแฟ้ม ความมั่นคงของระบบคอมพิวเตอร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาโครงสร้างพื้นฐานของระบบ (System Infrastructure)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603223",
+        "pre_course_name": "สถาปัตยกรรมและการจัดระบบคอมพิวเตอร์ (Computer Architecture and Organization)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 4
+  },
+  {
+    "course_code": "03603341",
+    "course_name": "วิศวกรรมซอฟต์แวร์ (Software Engineering)",
+    "description": "แนวคิดด้านกระบวนการซอฟต์แวร์ ตัวแบบของกระบวนการซอฟต์แวร์ การจัดการโครงการซอฟต์แวร์ เครื่องมือและสิ่งแวดล้อม การจัดการและการดึงข้อมูลความต้องการ การออกแบบซอฟต์แวร์ สถาปัตยกรรมซอฟต์แวร์ การสร้างซอฟต์แวร์ การทดสอบซอฟต์แวร์ การบำรุงรักษาซอฟต์แวร์ ความเชื่อถือได้ของซอฟต์แวร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเทคโนโลยีและวิธีการทางซอฟต์แวร์ (Software Technology and Methods)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": true,
+    "credit": 4,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603342",
+    "course_name": "ปฏิบัติการผสานเทคโนโลยีสารสนเทศเพื่อการพัฒนาซอฟต์แวร์ (Combined Information Technology for Software Development Laboratory)",
+    "description": "ปฏิบัติการโครงสร้างพื้นฐานระบบปฏิบัติการลินุกซ์ คำสั่งควบคุมและการเขียนชุดคำสั่งควบคุมของระบบปฏิบัติการลินุกซ์ การควบคุมเวอร์ชันของซอฟต์แวร์ การสร้างสภาวะแวดล้อมในการพัฒนาซอฟต์แวร์ ชุดซอฟต์แวร์ในการสร้าง ทดสอบและติดตั้งซอฟต์แวร์แบบอัตโนมัติ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาเทคโนโลยีและวิธีการทางซอฟต์แวร์ (Software Technology and Methods)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603341",
+        "pre_course_name": "วิศวกรรมซอฟต์แวร์ (Software Engineering)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603351",
+    "course_name": "วิทยาศาสตร์ข้อมูลเบื้องต้น (Introduction to Data Science)",
+    "description": "การค้นคืน การประมวลผล และการจัดเก็บข้อมูล การอนุมานเชิงสถิติ การถดถอย การแบ่งประเภท การแบ่งกลุ่ม การแสดงข้อมูลด้วยภาพ อนุกรมเวลา เครื่องแนะนำ การวิเคราะห์เครือข่ายสังคม ข้อมูลขนาดใหญ่",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603241",
+        "pre_course_name": "การพัฒนาโปรแกรมประยุกต์ (Application Development)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603352",
+    "course_name": "กฎหมายและจริยธรรมทางเทคโนโลยีสารสนเทศ (Laws and Ethics in Information Technology)",
+    "description": "กฎหมายและจริยธรรมที่เกี่ยวข้องกับคอมพิวเตอร์และเทคโนโลยีสารสนเทศ ประเด็นเกี่ยวกับการพาณิชย์และธุรกรรมอิเล็กทรอนิกส์ การใช้งานคอมพิวเตอร์ผิดวัตถุประสงค์ ประเด็นเกี่ยวกับความเท่าเทียมกันทางสังคมในด้านสารสนเทศ เสรีภาพในการพูด ภาวะส่วนตัว ความเสี่ยงในระบบคอมพิวเตอร์ ทรัพย์สินทางปัญญา",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาประเด็นด้านองค์การและระบบสารสนเทศ (Organization and Information Systems)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603371",
+    "course_name": "การพัฒนาโปรแกรมประยุกต์บนอุปกรณ์ฝังตัว (Application Development for Embedded Devices)",
+    "description": "ระบบปฏิบัติการลินุกซ์และลินุกซ์คอร์เนล แพลตฟอร์มสายสัญญาณ, แพลตฟอร์มอุปกรณ์ ลินุกซ์จีพีไอโอ แนวคิดการพัฒนาโปรแกรมประยุกต์บนระบบปฏิบัติการลินุกซ์แบบฝังตัว ระบบปฏิบัติการแอนดรอยด์ แนวคิดการพัฒนาโปรแกรมประยุกต์บนระบบปฏิบัติการแอนดรอยด์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603323",
+        "pre_course_name": "ระบบฝังตัวเบื้องต้น (Introduction to Embedded Systems)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603381",
+    "course_name": "การประมวลผลสัญญาณดิจิทัลสำหรับวิศวกรคอมพิวเตอร์ (Digital Signal Processing for Computer Engineers)",
+    "description": "สัญญาณเวลาไม่ต่อเนื่องและระบบ ระบบไม่เปลี่ยนแปลงตามเวลาเชิงเส้น การสุ่มตัวอย่างสัญญาณและการสร้างกลับ การแปลงฟูเรียร์ไม่ต่อเนื่อง การแปลงฟูเรียร์แบบเร็ว ตัวกรองดิจิทัล การแปลงซี การประยุกต์ทางด้านการประมวลผลเสียงและภาพ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603382",
+    "course_name": "การประมวลผลภาพดิจิทัล (Digital Image Processing)",
+    "description": "หลักมูลภาพดิจิทัล การแปลงค่าความเข้มแสงและการกรองเชิงพื้นที่ การปรับปรุงคุณภาพภาพ การบูรณะและการสร้างใหม่ การประมวลผลภาพสี เวฟเล็ตและการประมวลผลแบบหลายความละเอียด การบีบอัดภาพ การประมวลผลภาพเชิงสัณฐานวิทยา การแบ่งส่วนภาพ การแทนความหมายและการบอกลักษณะ การจำแนกวัตถุ การใช้งานไลบราจีคอมพิวเตอร์วิทัศน์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603383",
+    "course_name": "การระบุตัวตนดิจิทัล (Digital Identification)",
+    "description": "โครงสร้างของการระบุตัวตนดิจิทัล เอกลักษณ์ดิจิทัล ระบบการระบุโดยใช้อุปกรณ์พื้นฐาน ระบบการระบุโดยใช้ความรู้พื้นฐาน การระบุตัวตนทางชีวภาพ ลักษณะเฉพาะทางกายภาพ ลักษณะเฉพาะทางพฤติกรรม และระบบการระบุตัวตนทางชีวภาพหลายรูปแบบ การประยุกต์ใช้งานการระบุตัวตนดิจิทัล",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603411",
+    "course_name": "การโปรแกรมเชิงฟังก์ชัน (Functional Programming)",
+    "description": "ฟังก์ชันชั้นหนึ่งและฟังก์ชันอันดับสูงกว่า แลมบดา โครงสร้างข้อมูลเชิงฟังก์ชัน การไม่เปลี่ยนค่าและการคงอยู่ สถานะและเอกลักษณ์ การออกแบบโปรแกรมเชิงฟังก์ชัน การโปรแกรมแบบทำงานพร้อมกัน การโปรแกรมเชิงฟังก์ชันในงานจริง",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603421",
+    "course_name": "การเชื่อมต่อเครือข่ายด้วยทีซีพี/ไอพี (Internetworking with TCP/IP)",
+    "description": "ภาพรวมของเครือข่ายอินเทอร์เน็ต เทคโนโลยีสำหรับการเข้าถึงเครือข่าย โพรโทคอลไอพีรุ่น 4 โพรโทคอลไอพีรุ่น 6 การเลือกและการสลับเส้นทาง โพรโทคอลทีซีพีและยูดีพี โพรโทคอลชั้นโปรแกรมประยุกต์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603325",
+        "pre_course_name": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communications and Computer Networks)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603422",
+    "course_name": "เครือข่ายไร้สายและเคลื่อนที่ (Wireless and Mobile Networks)",
+    "description": "ภาพรวมเครือข่ายไร้สายและเคลื่อนที่ แถบไร้สายไออีอีอี 802.11 เครือข่ายโทรศัพท์เคลื่อนที่รุ่นที่สอง รุ่นที่สาม และรุ่นที่สี่ ไอพีเคลื่อนที่รุ่น 4 ไอพีเคลื่อนที่รุ่น 6 โปรแกรมประยุกต์สำหรับเครือข่ายไร้สายและเคลื่อนที่",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603325",
+        "pre_course_name": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communications and Computer Networks)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603423",
+    "course_name": "การโปรแกรมเครือข่าย (Network Programming)",
+    "description": "ทีซีพี/ไอพี แบบจำลองไคลเอนต์-เซิร์ฟเวอร์ การสื่อสารระหว่างกระบวนการ ส่วนต่อประสานซ็อกเก็ตทีซีพีและยูดีพี กระบวนการเดมอน รอซ็อกเก็ต ขั้นตอนวิธีสำหรับไคลเอนต์และเซิร์ฟเวอร์ โปรแกรมขับอุปกรณ์เครือข่าย",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603325",
+        "pre_course_name": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communications and Computer Networks)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603426",
+    "course_name": "ความมั่นคงปลอดภัยไซเบอร์ (Cyber Security)",
+    "description": "การสร้างความตระหนักรู้ด้านความมั่นคงปลอดภัยไซเบอร์ การเข้าใจช่องโหว่และการโจมตีรูปแบบต่าง ๆ บนไซเบอร์รวมทั้งการป้องกันและมาตรการตอบโต้ การทดสอบการเจาะระบบพื้นฐาน วิทยาการเข้ารหัสลับและการเข้ารหัสทางเดียวแฮชเบื้องต้น",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603427",
+    "course_name": "การคำนวณสำหรับอุปกรณ์เคลื่อนที่ (Mobile Computing)",
+    "description": "อุปกรณ์เคลื่อนที่ โครงแบบสำหรับการพัฒนาบนระบบเคลื่อนที่ คุณสมบัติของฮาร์ดแวร์เคลื่อนที่ การเชื่อมต่อแบบไร้สาย ข้อมูลบนระบบเคลื่อนที่และการทำให้ข้อมูลสอดคล้องกัน การรับรู้ตำแหน่งที่อยู่ ปัญหาด้านความปลอดภัย",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603428",
+    "course_name": "อินเทอร์เน็ตของสรรพสิ่ง (Internet of Things)",
+    "description": "วิสัยทัศน์ด้านอินเทอร์เน็ตของสรรพสิ่ง ภาพรวมเครือข่ายทีซีพี/ไอพี ตัววัดประสิทธิภาพของเครือข่าย โพรโทคอลเครือข่ายไร้สาย เครือข่ายตัวตรวจจับไร้สาย การจัดเส้นทาง เครือข่ายซิกซ์โลว์แพน โพรโทคอลชั้นโปรแกรมประยุกต์ โครงงานไอโอทีโดยใช้เรสต์และโซป",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603325",
+        "pre_course_name": "การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communications and Computer Networks)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603429",
+    "course_name": "วิทยาการเข้ารหัสลับและเทคโนโลยีบล็อกเชน (Cryptography and Blockchain Technology)",
+    "description": "พื้นฐานวิทยาการเข้ารหัสลับ วิทยาการเข้ารหัสลับแบบสมมาตรและอสมมาตร ฟังก์ชันแฮช ลายเซ็นดิจิทัล การทำงานของบล็อกเชน แอพพลิเคชั่นบนบล็อกเชน สมาร์ทคอนแทรค",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายเครือข่ายคอมพิวเตอร์ (Computer Networks)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603432",
+    "course_name": "มโนทัศน์ภาษาโปรแกรม (Programming Language Concepts)",
+    "description": "โครงสร้างของภาษาโปรแกรม ตัวประมวลผลภาษาวากยสัมพันธ์ ชนิดข้อมูล การควบคุมลำดับการทำงาน การควบคุมโปรแกรมย่อย การจัดการหน่วยเก็บ เทคนิคการสัมฤทธิ์การแต่ละส่วนของภาษา การศึกษาและเปรียบเทียบกรอบแนวคิดหลักของการโปรแกรม",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03603435",
+    "course_name": "การคำนวณแบบกลุ่มเมฆ (Cloud Computing)",
+    "description": "กระบวนทัศน์การคำนวณ หลักมูลการคำนวณแบบกลุ่มเมฆ สถาปัตยกรรมและการจัดการการคำนวณแบบกลุ่มเมฆ แบบการใช้งานและการให้บริการของการคำนวณแบบกลุ่มเมฆ เทคโนโลยีที่ใช้ในการขับเคลื่อนการคำนวณแบบกลุ่มเมฆ ระบบเสมือน แบบการเขียนโปรแกรมสำหรับการคำนวณแบบกลุ่มเมฆ การพัฒนาซอฟต์แวร์ในระบบกลุ่มเมฆ ผู้ให้บริการกลุ่มเมฆ ความปลอดภัยในการคำนวณแบบกลุ่มเมฆ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603436",
+    "course_name": "การพัฒนาโปรแกรมประยุกต์บนเว็บ (Web Application Development)",
+    "description": "เทคโนโลยีเว็บ เอชทีเอ็มแอลและซีเอสเอส โปรแกรมประยุกต์ฝั่งเซิร์ฟเวอร์ สถาปัตยกรรมเอ็มวีซี เว็บเฟรมเวิร์คและการควบคุมรุ่น การวางผังเว็บ การพัฒนาเว็บแบบขับเคลื่อนด้วยการทดสอบ การเชื่อมต่อกับฐานข้อมูล เซสชันและการพิสูจน์ตัวจริง จากสคริปต์และเอแจ็กซ์ เว็บเซอร์วิสและเซิร์ฟเวอร์บนกลุ่มเมฆ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603437",
+    "course_name": "การพัฒนาโปรแกรมประยุกต์เคลื่อนที่ (Mobile Application Development)",
+    "description": "อุปกรณ์และแพลตฟอร์มเคลื่อนที่ สถาปัตยกรรมเอ็มวีซี ท่าทางการสัมผัส วงจรชีวิตตัวควบคุมและการจัดการหน่วยความจำ การวางผัง การออกแบบส่วนต่อประสานกับผู้ใช้ การพัฒนาโปรแกรมประยุกต์สำหรับหลายอุปกรณ์ การโปรแกรมหลายเทรด ส่วนต่อประสานโปรแกรมประยุกต์ การแจ้งเตือน วงจรชีวิตโปรแกรมประยุกต์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603441",
+    "course_name": "การทดสอบซอฟต์แวร์ (Software Testing)",
+    "description": "หลักการปฏิบัติสำหรับการทดสอบซอฟต์แวร์ การทดสอบระดับย่อย การทดสอบรอยต่อ การทดสอบระบบโดยรวม การทดสอบเพื่อการยอมรับ วิธีการสร้างกรณีทดสอบตามข้อกำหนดความต้องการเชิงหน้าที่ วิธีการสร้างกรณีทดสอบตามข้อกำหนดความต้องการที่ไม่ใช่เชิงหน้าที่ การทดสอบเชิงโครงสร้างซอฟต์แวร์ เครื่องมือทดสอบแบบอัตโนมัติ เทคนิคการทบทวน การบริหารการทดสอบซอฟต์แวร์ การทำเอกสารเพื่อการทดสอบ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายการพัฒนาซอฟต์แวร์ (Software Development)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603451",
+    "course_name": "การจัดการเทคโนโลยีสารสนเทศ (Information Technology Management)",
+    "description": "การจัดวางหน่วยงานเทคโนโลยีสารสนเทศ การวางแผนระบบสารสนเทศ การจัดการทรัพยากรทางเทคโนโลยีสารสนเทศ การจัดการโครงการ สำหรับการออกแบบ การพัฒนา การสร้าง การติดตั้ง การประเมินผลระบบสารสนเทศ การวิเคราะห์ค่าใช้จ่าย/ผลประโยชน์สำหรับระบบสารสนเทศ ผลกระทบของเทคโนโลยีสารสนเทศต่อองค์กร ต่อบุคคล และต่อสังคม จริยธรรม กฎหมายและนโยบายระดับประเทศเกี่ยวกับเทคโนโลยีสารสนเทศ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603452",
+    "course_name": "การทำเหมืองข้อมูลบิ๊กดาต้า (Mining Big Data)",
+    "description": "เทคนิคการทำเหมืองข้อมูลบิ๊กดาต้า การทำเหมืองรูปแบบที่เกิดบ่อย กฎความสัมพันธ์ การจำแนกข้อมูลและการจัดกลุ่มข้อมูล การทำเหมืองกระแสของข้อมูล การทำเหมืองข้อมูลสังคม เครื่องมือทำเหมืองข้อมูล",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603351",
+        "pre_course_name": "วิทยาศาสตร์ข้อมูลเบื้องต้น (Introduction to Data Science)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603461",
+    "course_name": "ปัญญาประดิษฐ์ (Artificial Intelligence)",
+    "description": "ปัญญาประดิษฐ์เบื้องต้น ตัวกระทำ กลยุทธ์การค้นหา การค้นหาขั้นสูง วิทยาการศึกษาสำนึก เกม การวางแผน การแทนความรู้และการหาเหตุผล การหาเหตุผลภายใต้ความไม่แน่นอน การเรียนรู้ของเครื่องขั้นพื้นฐาน",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603213",
+        "pre_course_name": "การออกแบบและวิเคราะห์ขั้นตอนวิธี (Algorithm Design and Analysis)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603462",
+    "course_name": "การเรียนรู้ของเครื่อง (Machine Learning)",
+    "description": "การเรียนรู้แบบไม่มีผู้สอน การเรียนรู้แบบมีผู้สอน การวิเคราะห์ส่วนประกอบหลัก การจัดกลุ่มแบบเค-มีนส์ การจัดกลุ่มแบบลำดับชั้น วิธีพื้นฐานจากต้นไม้ ซัพพอร์ตเวกเตอร์แมชชีน ทฤษฎีการเรียนรู้ การเรียนรู้เชิงลึก แอพพลิเคชันของการเรียนรู้ของเครื่อง",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603213",
+        "pre_course_name": "การออกแบบและวิเคราะห์ขั้นตอนวิธี (Algorithm Design and Analysis)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603463",
+    "course_name": "ปัญญาเชิงคำนวณโดยเลียนแบบวิธีการทางชีวภาพ (Biologically-Inspired Computational Intelligence)",
+    "description": "การคำนวณเชิงวิวัฒนาการ โครงข่ายประสาทเทียม ระบบตรรกศาสตร์คลุมเครือ ระบบภูมิคุ้มกันเทียม ปัญญารวมกลุ่ม",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603213",
+        "pre_course_name": "การออกแบบและวิเคราะห์ขั้นตอนวิธี (Algorithm Design and Analysis)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603464",
+    "course_name": "คอมพิวเตอร์วิทัศน์ (Computer Vision)",
+    "description": "การเกิดภาพและแบบจำลองกล้อง หลักมูลการประมวลผลภาพดิจิทัล การตรวจหาลักษณะเฉพาะ การเลือกแบบรูปการประมวลผลเชิงกลุ่ม การรู้จำและการติดตามวัตถุ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603111",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น I (Programming Fundamentals I)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603465",
+    "course_name": "การประมวลผลภาษาธรรมชาติ (Natural Language Processing)",
+    "description": "หลักการพื้นฐานของการประมวลผลภาษาธรรมชาติ เทคนิคเชิงปริมาณ แบบจำลองทางภาษา การแปลงรูปของคำ การลดความคลุมเครือและการตีความ การกำกับตามลำดับ การวิเคราะห์เชิงไวยกรณ์ การวิเคราะห์ความหมายของคำ การแทนคำด้วยเวกเตอร์ ปัญหาและแอพพลิเคชันของการประมวลผลภาษาธรรมชาติ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603471",
+    "course_name": "การเชื่อมต่อกับระบบฝังตัว (Embedded Systems Interfacing)",
+    "description": "การนำเข้าและส่งออก อุปกรณ์จับสัญญาณและมอเตอร์ การแปลงสัญญาณ เครือข่าย ระบบควบคุมอัตโนมัติ เทคนิคการเชื่อมต่อกับระบบฝังตัว วิทยาการหุ่นยนต์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603323",
+        "pre_course_name": "ระบบฝังตัวเบื้องต้น (Introduction to Embedded Systems)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603472",
+    "course_name": "ระบบอัตโนมัติและการควบคุมทางอุตสาหกรรม (Industrial Automation and Controls)",
+    "description": "เครื่องจักรอัตโนมัติเบื้องต้น ตัวควบคุมตรรกะโปรแกรมได้ โปรแกรมเมเบิลลอจิกคอนโทรลเลอร์ (พีแอลซี) ชุดคำสั่งพีแอลซี การออกแบบควบคุมในกระบวนการ อุปกรณ์รับรู้และอุปกรณ์กระตุ้น การควบคุมเซอร์โวมอเตอร์ เครือข่ายพีแอลซีด้วยการเชื่อมต่อการควบคุมและการสื่อสาร ส่วนต่อประสานระหว่างมนุษย์กับเครื่องจักร ระบบการมองเห็น ระบบการควบคุมกำกับดูแลและเก็บข้อมูล",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603473",
+    "course_name": "การออกแบบวงจรดิจิทัลด้วยวีเอชดีแอล (Digital Circuit Design with VHDL)",
+    "description": "วีเอชดีแอลเบื้องต้น การออกแบบเชิงโครงสร้างและการออกแบบเชิงพฤติกรรม แนวคิดการจำลองภาษาวีเอชดีแอล ทบทวนการออกแบบวงจรเชิงตรรกะดิจิทัลพื้นฐาน ตรรกะเชิงผสมแบบสองชั้น ตรรกะเชิงผสมแบบหลายชั้น อุปกรณ์ตรรกะแบบทำโปรแกรมได้ วงจรคำนวณ การออกแบบตรรกะเชิงลำดับ การออกแบบเครื่องสถานะจำกัด การทำเครื่องสถานะจำกัดให้เหมาะสมที่สุด",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603474",
+    "course_name": "ระบบปฏิบัติการเวลาจริง (Real-Time Operating System)",
+    "description": "ระบบปฏิบัติการเวลาจริง ส่วนประกอบของฮาร์ดแวร์ หน่วยประมวลผล ระบบบัสและระบบเชื่อมต่ออุปกรณ์ภายนอก หน่วยความจำ หน่วยเก็บบันทึกข้อมูลระบบปฏิบัติการเวลาจริง ฝึกปฏิบัติในหลักการบริหารระบบปฏิบัติการเวลาจริง การจัดการเวลา บริการการกระตุ้นตัวขัดจังหวะ การจัดสรรพื้นที่เก็บบันทึกข้อมูลและหน่วยความจำ",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603475",
+    "course_name": "อุปกรณ์รับรู้และตัวแปรสัญญาณ (Sensors and Transducer)",
+    "description": "การรับรู้และการแปรสัญญาณเบื้องต้น คุณสมบัติของอุปกรณ์รับรู้และตัวแปรสัญญาณ อุปกรณ์รับรู้ทางแสง อุปกรณ์รับรู้อุณหภูมิ อุปกรณ์รับรู้แม่เหล็กและแม่เหล็กไฟฟ้า อุปกรณ์รับรู้เชิงกล อุปกรณ์รับรู้และตัวแปรสัญญาณเสียง อุปกรณ์รับรู้เคมี อุปกรณ์รับรู้รังสี ไมโครเทคโนโลยีและอุปกรณ์รับรู้อัจฉริยะ วิธีการเชื่อมต่อและวงจร การเชื่อมต่อกับไมโครโปรเซสเซอร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603476",
+    "course_name": "การออกแบบวงจรระบบสมองกลฝังตัว (Embedded System Circuit Design)",
+    "description": "ศึกษาเทคโนโลยีที่เกี่ยวกับการออกแบบวงจรระบบสมองกลฝังตัว การจัดการโครงสร้างทางด้านฮาร์ดแวร์และซอฟต์แวร์ การเชื่อมต่อและอาณัติสัญญาณ ออกแบบวงจรพิมพ์ การออกแบบวงจรอิเล็กทรอนิกส์สำหรับระบบสมองกลฝังตัว",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603481",
+    "course_name": "เรขภาพคอมพิวเตอร์ (Computer Graphics)",
+    "description": "อุปกรณ์เรขภาพคอมพิวเตอร์ การเกิดภาพและการมองเห็นของมนุษย์ ภาพสองมิติและสามมิติ เวกเตอร์ เมทริกซ์ และตัวดำเนินการทางคณิตศาสตร์ การแปลงสองมิติและสามมิติ มุมมองสามมิติ การสร้างแบบจำลองสามมิติ สีและพื้นผิว รูปร่างประสม กระดูกและการเคลื่อนไหวของแบบจำลอง การระบายน้ำหนัก มุมมองกล้อง การส่องสว่าง การสะท้อน เงา และจุดกำเนิดแสง ภาพเคลื่อนไหวและการจัดแสดง",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603112",
+        "pre_course_name": "หลักการโปรแกรมเบื้องต้น II (Programming Fundamentals II)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603482",
+    "course_name": "การออกแบบประสบการณ์ของผู้ใช้ (User Experience Design)",
+    "description": "คุณค่าทางธุรกิจและสังคมของการออกแบบประสบการณ์ของผู้ใช้ (ยูเอ็กซ์) พื้นฐานของยูเอ็กซ์ ความหมายและความสัมพันธ์ของแนวคิดหลัก ปัจจัยด้านมนุษย์ กระบวนการออกแบบแบบมีมนุษย์เป็นศูนย์กลาง การสร้างแบบจำลองอย่างรวดเร็วและการทดสอบผู้ใช้ วิธีและกลยุทธ์การประเมินผล การตีความข้อมูลจากผลการทดสอบผู้ใช้ การบูรณาการกับวงจรชีวิตของผลิตภัณฑ์ หลักปฏิบัติที่ดีในการออกแบบยูเอ็กซ์ การออกแบบยูเอ็กซ์สำหรับเว็บ อุปกรณ์เคลื่อนที่ การค้าอิเล็กทรอนิกส์ และสื่อสังคม ประวัติศาสตร์ แนวโน้ม และความท้าทาย บทบาทของนักออกแบบยูเอ็กซ์ในองค์กร",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603484",
+    "course_name": "การพัฒนาเกมคอมพิวเตอร์ (Computer Game Development)",
+    "description": "องค์ประกอบของเกมคอมพิวเตอร์ การออกแบบและพัฒนาเกมคอมพิวเตอร์ กราฟิกและเสียงในเกมคอมพิวเตอร์ กราฟิกสามมิติ พิสิกส์ของเกม เครื่องยนต์เกม ปัญญาประดิษฐ์สำหรับเกม ระบบเกมออนไลน์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603485",
+    "course_name": "เสียงดิจิทัลและดนตรีคอมพิวเตอร์ (Digital Audio and Computer Music)",
+    "description": "ทฤษฎีดนตรี การเชื่อมต่อเครื่องดนตรีกับคอมพิวเตอร์ การประพันธ์ด้วยขั้นตอนวิธี การบันทึกและแทนสัญญาณเสียงในคอมพิวเตอร์ การวิเคราะห์เสียงในโดเมนเวลาและความถี่ ตัวกรองดิจิทัล การสังเคราะห์เสียง การสกัดลักษณะเด่นของข้อมูลเสียง จิตสวนศาสตร์ การเข้ารหัสและการบีบอัดข้อมูลเสียง",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "สายสื่อประสม (Multimedia)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603381",
+        "pre_course_name": "การประมวลผลสัญญาณดิจิทัลสำหรับวิศวกรคอมพิวเตอร์ (Digital Signal Processing for Computer Engineers)"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03603495",
+    "course_name": "การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ (Computer Engineering and Informatics Project Preparation)",
+    "description": "การออกแบบและการจัดการโครงงานวิศวกรรม การเขียนรายงานวิชาการ การตรวจและอ้างอิงเอกสารวิชาการ การนำเสนอรายงานวิชาการ การเตรียมข้อเสนอโครงงานวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ การนำเสนอหัวข้อโครงงานวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ การพัฒนาขั้นต้น",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาสัมมนา ปัญหาพิเศษ และโครงงาน (Seminar, Special Problems, and Projects)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 7
+  },
+  {
+    "course_code": "03603496",
+    "course_name": "เรื่องเฉพาะทางวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ (Selected Topics in Computer Engineering and Informatics)",
+    "description": "เรื่องเฉพาะทางวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ในระดับปริญญาตรี หัวข้อเรื่องเปลี่ยนไปในแต่ละภาคการศึกษา",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาสัมมนา ปัญหาพิเศษ และโครงงาน (Seminar, Special Problems, and Projects)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 1,
+    "semester_suggested": 7
+  },
+  {
+    "course_code": "03603497",
+    "course_name": "สัมมนา (Seminar)",
+    "description": "การนำเสนอและอภิปรายหัวข้อที่น่าสนใจทางวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ในระดับปริญญาตรี",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาสัมมนา ปัญหาพิเศษ และโครงงาน (Seminar, Special Problems, and Projects)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 7
+  },
+  {
+    "course_code": "03603498",
+    "course_name": "ปัญหาพิเศษ (Special Problems)",
+    "description": "การศึกษาค้นคว้าทางวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ในระดับปริญญาตรี และเรียบเรียงเขียนเป็นรายงาน",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาสัมมนา ปัญหาพิเศษ และโครงงาน (Seminar, Special Problems, and Projects)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 1,
+    "semester_suggested": 7
+  },
+  {
+    "course_code": "03603499",
+    "course_name": "โครงงานวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ (Computer Engineering and Informatics Project)",
+    "description": "โครงงานที่น่าสนใจในแขนงต่าง ๆ ทางด้านวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์",
+    "category": "หมวดวิชาเฉพาะ",
+    "group": "กลุ่มวิชาสัมมนา ปัญหาพิเศษ และโครงงาน (Seminar, Special Problems, and Projects)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03603495",
+        "pre_course_name": "การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์และสารสนเทศศาสตร์ (Computer Engineering and Informatics Project Preparation)"
+      }
+    ],
+    "required": true,
+    "credit": 2,
+    "semester_suggested": 8
+  },
+  {
+    "course_code": "03603101",
+    "course_name": "การโปรแกรมคอมพิวเตอร์เบื้องต้น (Introduction to Computer Programming)",
+    "description": "แนวคิดทางคอมพิวเตอร์ ส่วนประกอบคอมพิวเตอร์ การปฏิสัมพันธ์ทางฮาร์ดแวร์และซอฟต์แวร์ แนวคิดทางอีดีพี การออกแบบโปรแกรมและระเบียบวิธีการพัฒนา การโปรแกรมภาษาระดับสูง",
+    "category": "หมวดวิชาบริการสำหรับนิสิตนอกสาขา",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "03603102",
+    "course_name": "สถาปัตยกรรมคอมพิวเตอร์และระบบฝังตัวเบื้องต้น (Basic Computer Architecture and Embedded System)",
+    "description": "สถาปัตยกรรมคอมพิวเตอร์พื้นฐาน คณิตศาสตร์ของคอมพิวเตอร์ การจัดระบบและสถาปัตยกรรมระบบหน่วยความจำ ส่วนต่อประสานและการสื่อสาร ภาษาแอสเซมบลี ระบบย่อยอุปกรณ์ การออกแบบตัวประมวลผลและการจัดระบบซีพียู ประสิทธิภาพและการเพิ่มสมรรถนะ แบบจำลองระบบแบบกระจาย เทคโนโลยี สถาปัตยกรรม และการออกแบบระบบฝังตัว อุปกรณ์รอบข้างระบบฝังตัว อินพุต/เอาต์พุตแบบดิจิทัลและแอนะล็อก การขัดจังหวะ ตัวตั้งเวลา และสุนัขยาม การจัดเก็บข้อมูล ตัวตรวจจับและตัวแปรสัญญาณ การสื่อสารแบบมีสาย เครื่องจักรสถานะ เครือข่ายตัวตรวจจับไร้สายและระบบชาญฉลาด การโปรแกรมอิงแบบจำลอง",
+    "category": "หมวดวิชาบริการสำหรับนิสิตนอกสาขา",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03603103",
+    "course_name": "การออกแบบวงจรดิจิทัลเบื้องต้น (Basic Digital Circuit Design)",
+    "description": "พื้นฐานการออกแบบระบบดิจิทัล พีชคณิตแบบบูลีน เทคนิคการออกแบบทางดิจิทัล ลอจิกเกต การลดขนาดตรรกะให้เล็กที่สุด วงจรเชิงประสมมาตรฐาน วงจรเชิงลำดับ ฟลิป-ฟล็อป วงจรเชิงลำดับแบบประสานเวลาและแบบไม่ประสานเวลา พีแอลเอ รอม และแรม วงจรคำนวณ การออกแบบทางตรรกะใช้คอมพิวเตอร์ช่วย",
+    "category": "หมวดวิชาบริการสำหรับนิสิตนอกสาขา",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": false,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "01417167",
+    "course_name": "คณิตศาสตร์วิศวกรรม I (Engineering Mathematics I)",
+    "description": "ลิมิตและความต่อเนื่องของฟังก์ชัน อนุพันธ์และการประยุกต์ ค่าเชิงอนุพันธ์ บริพันธ์และการประยุกต์ ระบบพิกัดเชิงขั้ว บริพันธ์ไม่ตรงแบบ ลำดับและอนุกรม การอุปนัยเชิงคณิตศาสตร์",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "01417168",
+    "course_name": "คณิตศาสตร์วิศวกรรม II (Engineering Mathematics II)",
+    "description": "เวกเตอร์และเรขาคณิตวิเคราะห์ทรงต้น แคลคูลัสของฟังก์ชันหลายตัวแปร แคลคูลัสของฟังก์ชันค่าเวกเตอร์",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01417167",
+        "pre_course_name": "คณิตศาสตร์วิศวกรรม I (Engineering Mathematics I)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "01417267",
+    "course_name": "คณิตศาสตร์วิศวกรรม III (Engineering Mathematics III)",
+    "description": "สมการเชิงอนุพันธ์เชิงเส้นอันดับหนึ่ง สมการเชิงอนุพันธ์เชิงเส้นที่มีสัมประสิทธิ์เป็นค่าคงตัว ผลการแปลงลาปลาชและผลการแปลงผกผัน ผลเฉลยที่เป็นอนุกรมกำลัง ระบบสมการเชิงอนุพันธ์เชิงเส้น",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01417168",
+        "pre_course_name": "คณิตศาสตร์วิศวกรรม II (Engineering Mathematics II)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "01420111",
+    "course_name": "พิสิกส์ทั่วไป I (General Physics I)",
+    "description": "กลศาสตร์ การเคลื่อนที่แบบฮาร์มอนิก คลื่น กลศาสตร์ของไหล อุณหพลศาสตร์",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "01420112",
+    "course_name": "พิสิกส์ทั่วไป II (General Physics II)",
+    "description": "ไฟฟ้าแม่เหล็ก คลื่นแม่เหล็กไฟฟ้า ทัศนศาสตร์ พิสิกส์ยุคใหม่เบื้องต้นและนิวเคลียร์พิสิกส์",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01420111",
+        "pre_course_name": "พิสิกส์ทั่วไป I (General Physics I)"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "01420113",
+    "course_name": "ปฏิบัติการฟิสิกส์ I (Laboratory in Physics I)",
+    "description": "ปฏิบัติการสำหรับวิชาฟิสิกส์ทั่วไป I หรือฟิสิกส์พื้นฐาน I",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01420111",
+        "pre_course_name": "พิสิกส์ทั่วไป I (General Physics I)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 1
+  },
+  {
+    "course_code": "01420114",
+    "course_name": "ปฏิบัติการฟิสิกส์ II (Laboratory in Physics II)",
+    "description": "ปฏิบัติการสำหรับวิชาฟิสิกส์ทั่วไป II หรือฟิสิกส์พื้นฐาน II",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "01420112",
+        "pre_course_name": "พิสิกส์ทั่วไป II (General Physics II)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03600390",
+    "course_name": "การเตรียมความพร้อมสหกิจศึกษา (Co-operative Education Preparation)",
+    "description": "หลักการ แนวคิด และกระบวนการของสหกิจศึกษา ระเบียบข้อบังคับที่เกี่ยวข้อง ความรู้พื้นฐานและเทคนิคในการสมัครงานอาชีพ ความรู้พื้นฐานในการปฏิบัติงาน การสื่อสารและมนุษยสัมพันธ์ การพัฒนาบุคลิกภาพ ระบบการบริหารคุณภาพในสถานประกอบการ เทคนิคการนำเสนอ การเขียนรายงาน",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "สหกิจศึกษา (Co-operative Education)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 5
+  },
+  {
+    "course_code": "03600490",
+    "course_name": "สหกิจศึกษา (Co-operative Education)",
+    "description": "การปฏิบัติงานในลักษณะพนักงานชั่วคราวตามโครงงานที่ได้รับมอบหมายตลอดจนการจัดทำรายงานและการนำเสนอ",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "สหกิจศึกษา (Co-operative Education)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03600390",
+        "pre_course_name": "การเตรียมความพร้อมสหกิจศึกษา (Co-operative Education Preparation)"
+      }
+    ],
+    "required": true,
+    "credit": 6,
+    "semester_suggested": 6
+  },
+  {
+    "course_code": "03601203",
+    "course_name": "อิเล็กทรอนิกส์สำหรับวิศวกรคอมพิวเตอร์ (Electronics for Computer Engineers)",
+    "description": "สารกึ่งตัวนำและอุปกรณ์อิเล็กทรอนิกส์ วงจรเรียงกระแส การแปลงกระแสไฟฟ้าสลับและการแปลงไฟฟ้ากระแสตรง ทราบซิสเตอร์แบบมอส ทราบซิสเตอร์แบบสองขั้ว วงจรรวมแบบทีทีแอล วงจรขยาย วงจรขยายกำลัง วงจรพัลส์ แลตช์ ฟลิปฟล็อป ตัวขยายดำเนินการ อุปกรณ์และวงจรอิเล็กทรอนิกส์กำลัง การออกแบบพีซีบีด้วยโปรแกรมคอมพิวเตอร์",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03601204",
+    "course_name": "การวิเคราะห์วงจรไฟฟ้าสำหรับวิศวกรคอมพิวเตอร์ (Electric Circuit Analysis for Computer Engineers)",
+    "description": "หน่วยของปริมาณพื้นฐานทางไฟฟ้า กฎของโอห์ม กฎของเคอร์ชอฟ การวิเคราะห์โนดและเมช ทฤษฎีบทวงจรไฟฟ้าของเทวินีนและนอร์ตัน อุปกรณ์สะสมพลังงาน พื้นฐานการวิเคราะห์วงจรกระแสตรงและกระแสสลับ แรงดัน กระแส และกำลังไฟฟ้า หม้อแปลงไฟฟ้า พื้นฐานเครื่องมือวัดทางไฟฟ้า การประยุกต์ในวงจรไฟฟ้า",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03601205",
+    "course_name": "ปฏิบัติการวงจรไฟฟ้าสำหรับวิศวกรคอมพิวเตอร์ (Electric Circuit Laboratory for Computer Engineers)",
+    "description": "ปฏิบัติการเกี่ยวกับเรื่องที่เรียนในวิชาการวิเคราะห์วงจรไฟฟ้าสำหรับวิศวกรคอมพิวเตอร์ (03601204)",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03601204",
+        "pre_course_name": "การวิเคราะห์วงจรไฟฟ้าสำหรับวิศวกรคอมพิวเตอร์ (Electric Circuit Analysis for Computer Engineers)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 2
+  },
+  {
+    "course_code": "03601303",
+    "course_name": "ปฏิบัติการอิเล็กทรอนิกส์สำหรับวิศวกรคอมพิวเตอร์ (Electronics Laboratory for Computer Engineers)",
+    "description": "ปฏิบัติการเกี่ยวกับเรื่องที่เรียนในวิชาอิเล็กทรอนิกส์สำหรับวิศวกรคอมพิวเตอร์ (03601203)",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "03601203",
+        "pre_course_name": "อิเล็กทรอนิกส์สำหรับวิศวกรคอมพิวเตอร์ (Electronics for Computer Engineers)"
+      }
+    ],
+    "required": true,
+    "credit": 1,
+    "semester_suggested": 3
+  },
+  {
+    "course_code": "03604111",
+    "course_name": "การเขียนแบบทางวิศวกรรม (Engineering Drawing)",
+    "description": "การเขียนตัวอักษรและตัวเลข ภาพฉายออร์โธกราฟิก การเขียนภาพออร์โธกราฟิกและการเขียนภาพสามมิติ การให้ขนาดและความคลาดเคลื่อน ภาพตัด มุมมองช่วยและแผ่นคลี่ การเขียนภาพร่าง การเขียนแบบรายละเอียดและการประกอบ การเขียนแบบโดยใช้คอมพิวเตอร์ช่วยขั้นต้น",
+    "category": "หมวดวิชานอกหลักสูตร",
+    "group": "วิชาแกน (Fundamental Courses)",
+    "prerequisite_courses": [
+      {
+        "pre_course_code": "00000000",
+        "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน"
+      }
+    ],
+    "required": true,
+    "credit": 3,
+    "semester_suggested": 1
+  }
+]
