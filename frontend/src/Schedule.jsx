@@ -1,7 +1,6 @@
-import React from "react";
 import './style/Schedule.css';
 
-const Schedule = () => {
+export default function Schedule() {
   return (
     <div className="schedule-container">
       <aside className="sidebar">
@@ -41,6 +40,4 @@ const Schedule = () => {
       </main>
     </div>
   );
-};
-
-export default Schedule;
+}
