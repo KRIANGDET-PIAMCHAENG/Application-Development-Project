@@ -1,0 +1,1226 @@
+[
+    {
+        "course_code": "01175111",
+        "course_name": "กรีฑาลู่-ลาน เพื่อสุขภาพ (Track and Field for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกรีฑาลู่-ลาน ทักษะและความรู้พื้นฐานการวิ่ง การทุ่ม การพุ่ง และการขว้าง การประยุกต์กิจกรรมกรีฑาลู่-ลานไปสู่การเคลื่อนไหวในชีวิตประจำวันเพื่อส่งเสริมสุขภาพ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175112",
+        "course_name": "แบตมินตันเพื่อสุขภาพ (Badminton for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาแบตมินตัน ทักษะและความรู้พื้นฐานการเล่นแบตมินตัน การประยุกต์กีฬาแบตมินตันไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175113",
+        "course_name": "เทนนิสเพื่อสุขภาพ (Tennis for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาเทนนิส ทักษะและความรู้พื้นฐานการเล่นเทนนิส การประยุกต์กีฬาเทนนิสไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175114",
+        "course_name": "เทเบิลเทนนิสเพื่อสุขภาพ (Table Tennis for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาเทเบิลเทนนิส ทักษะและความรู้พื้นฐานการเล่นเทเบิลเทนนิส การประยุกต์กีฬาเทเบิลเทนนิสไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175115",
+        "course_name": "ฝึกสมาธิด้วยกิจกรรมยิงปืน (Meditation with Shooting Activity)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การพัฒนาสมาธิด้วยกิจกรรมยิงปืน ทักษะและความรู้พื้นฐานการยิงปืน การประยุกต์กิจกรรมยิงปืนเพื่อพัฒนาสมาธิไปสู่วิถีชีวิตการออกกำลังกายและการส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175117",
+        "course_name": "ฝึกสมาธิด้วยกิจกรรมยิงธนู (Meditation with Archery Activity)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การพัฒนาสมาธิด้วยกิจกรรมยิงธนู ทักษะและความรู้พื้นฐานการยิงธนู การประยุกต์กิจกรรมยิงธนูเพื่อพัฒนาสมาธิไปสู่วิถีชีวิตการออกกำลังกายและการส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175118",
+        "course_name": "แชร์บอลเพื่อสุขภาพ (Chair Ball for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ทักษะและความรู้พื้นฐานของกีฬาแชร์บอล การออกกำลังกายด้วยกีฬาแชร์บอล การประยุกต์ใช้กีฬาแชร์บอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175119",
+        "course_name": "เปตองเพื่อสุขภาพ (Pétanque for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ทักษะและความรู้พื้นฐานของกีฬาเปตอง การออกกำลังกายด้วยกีฬาเปตอง การประยุกต์ใช้กีฬาเปตองไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175121",
+        "course_name": "บาสเกตบอลเพื่อสุขภาพ (Basketball for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาบาสเกตบอล ทักษะและความรู้พื้นฐานกีฬาบาสเกตบอล การประยุกต์ใช้กีฬาบาสเกตบอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175122",
+        "course_name": "ฟุตบอลเพื่อสุขภาพ (Soccer for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาฟุตบอล ทักษะและความรู้พื้นฐานการเล่นฟุตบอล การประยุกต์กีฬาฟุตบอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175123",
+        "course_name": "วอลเลย์บอลเพื่อสุขภาพ (Volleyball for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาวอลเลย์บอล ทักษะและความรู้พื้นฐานการเล่นกีฬาวอลเลย์บอล การประยุกต์กีฬาวอลเลย์บอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175124",
+        "course_name": "แฮนด์บอลเพื่อสุขภาพ (Handball for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาแฮนด์บอล ทักษะและความรู้พื้นฐานกีฬาแฮนด์บอล การประยุกต์กีฬาแฮนด์บอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175125",
+        "course_name": "ซอฟท์บอลเพื่อสุขภาพ (Softball for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาซอฟท์บอล ทักษะและความรู้พื้นฐานการเล่นกีฬาซอฟท์บอล การประยุกต์กีฬาซอฟท์บอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175126",
+        "course_name": "ตะกร้อเพื่อสุขภาพ (Takraw for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมตะกร้อ ทักษะและความรู้พื้นฐานการเล่นตะกร้อ การประยุกต์กิจกรรมตะกร้อไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175127",
+        "course_name": "ฮอกกี้เพื่อสุขภาพ (Hockey for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาฮอกกี้ ทักษะและความรู้พื้นฐานการเล่นกีฬาฮอกกี้ การประยุกต์กีฬาฮอกกี้ไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175128",
+        "course_name": "รักบี้ฟุตบอลเพื่อสุขภาพ (Rugby Football for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬารักบี้ฟุตบอล ทักษะและความรู้พื้นฐานการเล่นกีฬารักบี้ฟุตบอล การประยุกต์กีฬารักบี้ฟุตบอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175129",
+        "course_name": "ฟุตซอลเพื่อสุขภาพ (Futsal for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาฟุตซอล ทักษะและความรู้พื้นฐานการเล่นกีฬาฟุตซอล การประยุกต์กีฬาฟุตซอลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175131",
+        "course_name": "ว่ายน้ำเพื่อสุขภาพ (Swimming for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยการว่ายน้ำ ทักษะและความรู้พื้นฐานการว่ายน้ำ การประยุกต์กิจกรรมการว่ายน้ำไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175133",
+        "course_name": "กระโดดน้ำ (Diving)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ประวัติความเป็นมา เทคนิคและทักษะเบื้องต้นของการกระโดดน้ำกระดานน้ำแข็ง และกระโดดน้ำกระดานสปริง วิธีการและขั้นตอนของการกระโดดในระดับความสูงต่างๆ กัน การกระโดดน้ำในท่าต่างๆ การรักษาความปลอดภัยและกติกาการแข่งขัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175134",
+        "course_name": "โปโลน้ำ (Water Polo)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ประวัติความเป็นมา เทคนิคและทักษะเบื้องต้นของโปโลน้ำ การส่ง การรับและการเลี้ยงลูกโปโล การยิงประตู การเป็นผู้รักษาประตู กลวิธีการเล่นเป็นทีม การรักษาอุปกรณ์ ความปลอดภัยในการเล่น กติกาการแข่งขัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175141",
+        "course_name": "การเต้นแอโรบิกเพื่อสุขภาพ (Aerobic Dance for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการเต้นแอโรบิก ทักษะและความรู้พื้นฐานการเต้นแอโรบิก การประยุกต์การเต้นแอโรบิกไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175142",
+        "course_name": "การเต้นรำพื้นเมืองตามวัฒนธรรมท้องถิ่นเพื่อสุขภาพ (Folk Dance by Local Culture for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการเต้นรำพื้นเมืองตามวัฒนธรรมท้องถิ่น ทักษะและความรู้พื้นฐานการเต้นรำพื้นเมืองตามวัฒนธรรมท้องถิ่น การประยุกต์กิจกรรมการเต้นรำพื้นเมืองตามวัฒนธรรมท้องถิ่นไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175143",
+        "course_name": "การเต้นลีลาศเพื่อสุขภาพ (Social Dance for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการเต้นลีลาศ ทักษะและความรู้พื้นฐานการเต้นลีลาศ การประยุกต์การเต้นลีลาศไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175144",
+        "course_name": "รำไทยเพื่อสุขภาพ (Thai Classical Dance for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมรำไทย ทักษะและความรู้พื้นฐานการรำไทย การประยุกต์กิจกรรมการรำไทยไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175151",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบไทย (Martial Art with Thai Sword)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบไทย ทักษะและความรู้พื้นฐานการเล่นดาบไทย การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบไทยไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175152",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบสากล (Martial Art with Fencing)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบสากล ทักษะและความรู้พื้นฐานการเล่นดาบสากล การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยดาบสากลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175153",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยไทย (Martial Art with Thai Boxing)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยไทย ทักษะและความรู้พื้นฐานมวยไทย การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยไทยไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175154",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยสากล (Martial Art with Boxing)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยสากล ทักษะและความรู้พื้นฐานการชกมวยสากล การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยมวยสากลไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175155",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยยูโด (Martial Art with Judo)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยยูโด ทักษะและความรู้พื้นฐานการเล่นยูโด การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยยูโดไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175156",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยไอกิโด (Martial Art with Aikido)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยไอกิโด ทักษะและความรู้พื้นฐานการเล่นไอกิโด การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยไอกิโดไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175157",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยกระบี่กระบอง (Martial Art with Krabi-Krabong)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยกระบี่กระบอง ทักษะและความรู้พื้นฐานการเล่นกระบี่กระบอง การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยกระบี่กระบองไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175159",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยคาราเต้ (Martial Art with Karate)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยคาราเต้ ทักษะและความรู้พื้นฐานการเล่นคาราเต้ การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยคาราเต้ไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175161",
+        "course_name": "ฝึกสมองด้วยการเล่นบริดจ์ (Brain Training with Playing Bridge)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การพัฒนาสมองด้วยกิจกรรมการเล่นบริดจ์ ความรู้พื้นฐานการเล่นบริดจ์ การประยุกต์กิจกรรมบริดจ์ไปสู่การออกกำลังกายเพื่อพัฒนาสมองและส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175162",
+        "course_name": "โบว์ลิ่งเพื่อสุขภาพ (Bowling for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกีฬาโบว์ลิ่ง ทักษะและความรู้พื้นฐานการเล่นกีฬาโบว์ลิ่ง การประยุกต์กีฬาโบว์ลิ่งไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175163",
+        "course_name": "กอล์ฟเพื่อสุขภาพ (Golf for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมกอล์ฟ ทักษะและความรู้พื้นฐานการเล่นกอล์ฟ การประยุกต์กิจกรรมกอล์ฟไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175164",
+        "course_name": "จักรยานเพื่อสุขภาพ (Cycling for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการขี่จักรยาน ทักษะและความรู้พื้นฐานการขี่จักรยาน การประยุกต์กิจกรรมการขี่จักรยานไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175165",
+        "course_name": "การฝึกด้วยน้ำหนักเพื่อสุขภาพ (Weight Training for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการฝึกด้วยน้ำหนัก ทักษะและความรู้พื้นฐานการฝึกด้วยน้ำหนัก การประยุกต์ใช้กิจกรรมการฝึกด้วยน้ำหนักไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175166",
+        "course_name": "ศิลปะการป้องกันตัวและการต่อสู้ด้วยเทควันโด (Martial Art with Taekwondo)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "คุณค่าและประโยชน์ของศิลปะการป้องกันตัวและการต่อสู้ด้วยเทควันโด ทักษะและความรู้พื้นฐานการเล่นเทควันโด การประยุกต์ศิลปะการป้องกันตัวและการต่อสู้ด้วยเทควันโดไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175167",
+        "course_name": "โยคะเพื่อสุขภาพ (Yoga for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ทักษะและความรู้พื้นฐานของกิจกรรมโยคะ การออกกำลังกายด้วยกิจกรรมโยคะ การประยุกต์ใช้กิจกรรมโยคะไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175168",
+        "course_name": "การวิ่งเหยาะเพื่อสุขภาพ (Jogging for Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "การออกกำลังกายด้วยกิจกรรมการวิ่งเหยาะ ทักษะและความรู้พื้นฐานการวิ่งเหยาะ การประยุกต์กิจกรรมการวิ่งเหยาะไปสู่การออกกำลังกายเพื่อส่งเสริมสุขภาพแต่ละบุคคลในชีวิตประจำวันและสุขภาพสังคม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01175169",
+        "course_name": "การออกกำลังกายเพื่อพัฒนาสุขภาพแบบองค์รวม (Exercise for developing Holistic Health)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "หลักการและวิธีการออกกำลังกาย การบูรณาการออกกำลังกายและสร้างโปรแกรมการออกกำลังกายแบบองค์รวมเพื่อพัฒนาสุขภาพ รวมทั้งการประเมินสมรรถภาพทางกายด้วยตนเอง เพื่อคงไว้ซึ่งการมีสมรรถภาพทางกายและสุขภาพที่ดี",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03768111",
+        "course_name": "เปตอง (Pétanque)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ประวัติ คุณค่า กลไกการเคลื่อนไหวในการโยนลูกบูล วิธีการเล่น เทคนิค กติกาและการแข่งขัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03768112",
+        "course_name": "การฝึกโดยการใช้น้ำหนัก (Weight Training)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ศัพท์ทางเทคนิค การออกกำลังกายโดยไม่ใช้เครื่องมือช่วย การออกกำลังกายแบบใช้เครื่องมือ การแข่งขันและการวางแผนโครงการออกกำลังกายระยะยาว",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03768121",
+        "course_name": "บาสเกตบอล (Basketball)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ประวัติ ทักษะ เทคนิคทั้งส่วนบุคคลและทีม กติกาและความปลอดภัยในการเล่น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03768141",
+        "course_name": "นาฏศิลป์และลีลาศ (Thai Classical and Social Dances)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ประวัติความเป็นมา คุณค่า ประโยชน์และทักษะเบื้องต้นของท่ารำ รำแม่บทและรำวงมาตรฐาน มารยาททางสังคม รวมถึงการเต้นรำในจังหวะต่างๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "03768151",
+        "course_name": "กระบี่กระบอง (Sword and Pole Fighting)",
+        "department": "คณะวิทยาการจัดการ วิทยาเขตศรีราชา",
+        "description": "ประวัติ เทคนิคและทักษะเบื้องต้นของกระบี่กระบอง การดูแลรักษาอุปกรณ์และความปลอดภัยในการเล่น",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "04837111",
+        "course_name": "วิทยาศาสตร์การกีฬาเพื่อสุขภาพ (Sports Science for Health)",
+        "department": "คณะศิลปศาสตร์และวิทยาการจัดการ วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร",
+        "description": "การประยุกต์ทฤษฎีและหลักการทางวิทยาศาสตร์การกีฬาเพื่อพัฒนาสุขภาพ ปัจจัยและผลที่เกิดขึ้นจากการออกกำลังกาย หลักและวิธีการออกกำลังกายเพื่อสุขภาพ การปฏิบัติตนเพื่อดำรงไว้ซึ่งสุขภาพ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01101102",
+        "course_name": "เศรษฐศาสตร์แนวพุทธเพื่อความเป็นอยู่ที่ดี (Buddhist Economics for Well Being)",
+        "department": "คณะเศรษฐศาสตร์",
+        "description": "เศรษฐศาสตร์กระแสหลัก จุดอ่อนและปัญหาของเศรษฐกิจกระแสหลัก วิถีแห่งเศรษฐศาสตร์ตะวันตกที่เน้นอัตรา การทำความเข้าใจมนุษย์แบบพุทธ การประยุกต์หลักทั่วไปในพุทธธรรมเพื่อการดำเนินกิจกรรมทางเศรษฐกิจและการบริโภคเศรษฐศาสตร์แนวพุทธและปรัชญาเศรษฐกิจพอเพียง มีกิจกรรมเสริมการเรียนการสอน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01173151",
+        "course_name": "เอดส์ศึกษา (AIDS Education)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ศึกษาเกี่ยวกับโรคเอดส์ ในประเด็นของสาเหตุ การติดต่อและการแพร่ระบาดของโรคภาวะเสี่ยงและปัจจัยส่งเสริมการติดเชื้อโรค ลักษณะอาการและอาการแสดงของโรค การตรวจหาโรค แนวทางป้องกันและควบคุมการแพร่ระบาดของโรค การประชาสัมพันธ์และเผยแพร่ความรู้โรคเอดส์สู่นิสิตนักศึกษาและประชาชนทั่วไป มีการศึกษาและดูงานนอกสถานที่",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01174231",
+        "course_name": "นันทนาการเบื้องต้น (Introduction to Recreation)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ประวัติ ความมุ่งหมาย ความสำคัญและประโยชน์ของนันทนาการในสังคม ประเภทของนันทนาการ สิ่งอำนวยความสะดวกทางนันทนาการ ความสัมพันธ์ระหว่างนันทนาการศึกษาทั่วไปและวิชาชีพอื่นๆ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01176141",
+        "course_name": "การวางแผนเพื่ออาชีพสำหรับคนรุ่นใหม่ (Career Planning for the New Generation)",
+        "department": "คณะศึกษาศาสตร์",
+        "description": "ปัจจัยที่มีผลกับคนรุ่นต่างๆ ความต่างระหว่างรุ่น จุดแข็งและจุดอ่อนของคนแต่ละรุ่น การวางแผนพัฒนาอาชีพ และการวางแผนชีวิต ทักษะการวางแผนเพื่อพัฒนาอาชีพ การดำรงตนให้เป็นแบบอย่างที่ดี การแก้ไขปัญหาชีวิตโดยยึดหลักเหตุผลและคุณธรรม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01387101",
+        "course_name": "ศิลปะการอยู่ร่วมกับผู้อื่น (The Art of Living with Others)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ศิลปะการอยู่ร่วมกับผู้อื่นด้วยดี ธรรมเนียมไทยและธรรมเนียมสากล เกี่ยวกับมรรยาทในสังคม การรู้จักตัวเองเพื่อปรับปรุงตัวเอง การฝึกการพัฒนาจิตใจ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01387103",
+        "course_name": "ปรัชญาเศรษฐกิจพอเพียงกับพุทธศาสนา (Philosophy of Sufficiency Economics and Buddhism)",
+        "department": "คณะมนุษยศาสตร์",
+        "description": "ลักษณะทั่วไปของพุทธศาสนากับปรัชญาเศรษฐกิจพอเพียง เศรษฐกิจพอเพียงตามแนวพระราชดำริของพระบาทสมเด็จพระเจ้าอยู่หัว รัชกาลที่ 9 คำสอนในพุทธศาสนากับเศรษฐกิจพอเพียง ความสัมพันธ์ระหว่างคำสอนในพุทธศาสนากับปรัชญาเศรษฐกิจพอเพียงตามแนวพระราชดำริ การประยุกต์เศรษฐกิจพอเพียงกับชีวิตและสังคม เศรษฐกิจพอเพียงในกระแสโลกาภิวัตน์",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01402101",
+        "course_name": "การรู้เท่าทันผลิตภัณฑ์เสริมความงาม (Beauty Products Literacy)",
+        "department": "คณะวิทยาศาสตร์",
+        "description": "ความรู้ทั่วไปเกี่ยวกับความงาม เคมีภัณฑ์และความปลอดภัยในการใช้เครื่องสำอาง สารทางชีวเคมีและอนุพันธ์ที่เกี่ยวข้องกับความงาม สารด้านอนุมูลอิสระ สมุนไพรและสารออกฤทธิ์ที่ใช้ในเวชสำอาง อาหารเสริมเพื่อสุขภาพและความงาม เทคโนโลยีเพื่อความงาม การเลือกใช้เครื่องสำอางในชีวิตประจำวัน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01421211",
+        "course_name": "รังสี ชีวิต และสิ่งแวดล้อม (Radiation, Life and Environment)",
+        "department": "คณะวิทยาศาสตร์",
+        "description": "รังสีในชีวิตประจำวัน ผลทางชีววิทยาของรังสีชนิดต่างๆ ที่มนุษย์ได้รับในแต่ละวัน ผลกระทบของคลื่นโทรศัพท์มือถือ รังสีในสิ่งแวดล้อม การกำหนดปริมาณรังสีที่ยอมให้มนุษย์รับได้ พลังงานและมนุษย์ การใช้พลังงาน พลังงานทางเลือก พลังงานนิวเคลียร์สำหรับภูมิภาคอาเซียนและผลกระทบต่อสิ่งแวดล้อม บทเรียนจากอุบัติเหตุทางนิวเคลียร์และรังสี การใช้ประโยชน์จากพลังงานนิวเคลียร์ในทางสันติ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 2,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01453102",
+        "course_name": "กฎหมายในชีวิตประจำวัน (Law in Everyday Life)",
+        "department": "คณะสังคมศาสตร์",
+        "description": "กฎหมายที่ประชาชนควรรู้ สิทธิและหน้าที่ตามกฎหมายที่เกี่ยวข้องกับชีวิตประจำวัน กฎหมายแพ่งและพาณิชย์ กฎหมายธุรกิจ กฎหมายอาญา และกฎหมายมหาชน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01459101",
+        "course_name": "จิตวิทยาเพื่อชีวิตสมัยใหม่ (Psychology for Modern Life)",
+        "department": "คณะสังคมศาสตร์",
+        "description": "การรักษาสมดุลของวิถีชีวิตเพื่อสุขภาพที่ดี การเข้าใจและควบคุมอารมณ์ การฝึกสมอง การหากลยุทธ์ที่มีประสิทธิภาพเพื่อการเรียน การเสริมสร้างการเห็นคุณค่าในตนเอง การปรับตัวสู่สังคมสมัยใหม่ การรักษาความรักและความสุขในชีวิตสมัยใหม่ และการเป็นพลเมืองดีในโลกสมัยใหม่",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01459102",
+        "course_name": "จิตวิทยากับความหลากหลายของมนุษย์ (Psychology and Human Diversity)",
+        "department": "คณะสังคมศาสตร์",
+        "description": "การประยุกต์แนวคิดและทฤษฎีทางจิตวิทยาเพื่อความเข้าใจความหลากหลายของมนุษย์ในด้านชาติพันธุ์ วัฒนธรรมและทัศนคติ เพื่อความผาสุกในชีวิต",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999011",
+        "course_name": "อาหารเพื่อมนุษยชาติ (Food for Mankind)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "ความสัมพันธ์ของการผลิตอาหารกับความต้องการอาหารของประชากร ชนิดและแหล่งอาหาร ระบบการผลิตอาหารและการสูญเสียระหว่างการผลิต พฤติกรรมการบริโภคและความสำคัญของการบริโภคต่อการเจริญเติบโตของร่างกาย หลักการแปรรูปและเก็บรักษาอาหาร บทบาทขององค์กรต่างๆ ที่เกี่ยวกับการจัดการเรื่องอาหารของมนุษยชาติ",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999012",
+        "course_name": "สุขภาพเพื่อชีวิต (Health for Life)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "กลไกการกำเนิดและพัฒนาการของมนุษย์ บทบาททางเพศ การดูแลส่งเสริมสุขภาพกายและสุขภาพจิต การป้องกันภาวะเสี่ยงของบุคคลวัยต่างๆ สุขภาพผู้บริโภค สิ่งแวดล้อมกับสุขภาพ ปัจจัยทางครอบครัวที่ส่งผลต่อสุขภาพความก้าวหน้าทางวิทยาศาสตร์สุขภาพ มีการศึกษานอกสถานที่",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999033",
+        "course_name": "ศิลปะการดำเนินชีวิต (Arts of Living)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "การคิดอย่างมีเหตุผล มีจริยธรรม ความคิดสร้างสรรค์ ความเข้าใจชีวิต ครอบครัวกับศิลปะการดำเนินชีวิต การพัฒนาบุคลิกภาพและมารยาทสังคม ศิลปะการทำงาน และศิลปะการสื่อสาร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999036",
+        "course_name": "ความสุขในพลวัตของชีวิต (Happiness amongst Life Dynamics)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "แนวคิดของความสุขพลวัตในชีวิต การเข้าถึงความสุขในพลวัตหลายมิติ ตนเอง ครอบครัว เศรษฐกิจ เทคโนโลยีและการสื่อสาร สังคมและวัฒนธรรม และสิ่งแวดล้อม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999048",
+        "course_name": "นวัตกรรมเพื่อสิ่งแวดล้อมและสุขภาวะ (Innovation for Environment and Health)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "สถานการณ์และผลกระทบทางสิ่งแวดล้อมและสุขภาวะ แนวคิด การประดิษฐ์และนวัตกรรมเพื่อสิ่งแวดล้อมและสุขภาวะ นวัตกรรมเพื่อสร้างเสริมสุขภาวะของสมาชิกในชุมชนและองค์กรเกี่ยวกับด้านอาหารปลอดภัย ที่อยู่อาศัย การใช้ทรัพยากรอย่างมีประสิทธิภาพ ระบบอุตสาหกรรมและเกษตรกรรมเพื่อสิ่งแวดล้อมและสุขภาวะ นวัตกรรมสำหรับการตลาดสีเขียว นวัตกรรมในกิจการเพื่อสังคมและการจัดการเงินด้วยหลักเศรษฐกิจพอเพียง นวัตกรรมเพื่อการพัฒนาอย่างยั่งยืน",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999051",
+        "course_name": "การพัฒนาสมรรถนะหลักผ่านสุขภาพหนึ่งเดียว (Develop of Core Competency through One Health)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "แนวคิดสุขภาพหนึ่งเดียว สถานการณ์ของสุขภาพหนึ่งเดียวในประเทศไทย เครื่องมือและเทคนิคในการสื่อสาร สารสนเทศและฐานข้อมูลของสุขภาพหนึ่งเดียว การวิเคราะห์ปัญหาแบบองค์รวม การพัฒนาสมรรถนะหลัก ทักษะด้านสื่อสาร ทักษะด้านการประสานงาน ทักษะการทำงานเป็นทีม การแก้ปัญหาผ่านแนวคิดสุขภาพหนึ่งเดียว",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "01999213",
+        "course_name": "สิ่งแวดล้อม เทคโนโลยี และชีวิต (Environment, Technology and Life)",
+        "department": "ฝ่ายวิชาบูรณาการ หมวดวิชาศึกษาทั่วไป",
+        "description": "ความรู้เบื้องต้นเกี่ยวกับสิ่งแวดล้อม วิทยาศาสตร์ เทคโนโลยีและคุณภาพชีวิต การอนุรักษ์สิ่งแวดล้อมโดยการศึกษา แนวคิดปรัชญาเศรษฐกิจพอเพียง จริยธรรม กฎหมายและเศรษฐศาสตร์ กรณีศึกษาและมีการศึกษานอกสถานที่",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02032303",
+        "course_name": "การเกษตรกับคุณภาพชีวิตที่ดี (Agriculture and Quality of Life)",
+        "department": "คณะเกษตร กำแพงแสน วิทยาเขตกำแพงแสน",
+        "description": "ความสำคัญของภาคการเกษตรกับการดำรงชีวิตของมนุษย์ การผลิตทางการเกษตรอย่างยั่งยืน สุขภาวะทางกายและใจ การเลือกบริโภคผลผลิตทางการเกษตรอย่างปลอดภัย สมุนไพรกับการดูแลสุขภาพ การสร้างโอกาส และเพิ่มรายได้จากการเกษตร",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02724012",
+        "course_name": "การพัฒนาบุคลิกภาพ (Personal Development)",
+        "department": "คณะศิลปศาสตร์และวิทยาศาสตร์ วิทยาเขตกำแพงแสน",
+        "description": "หลักการพัฒนาบุคลิกภาพ ศิลปะการแต่งกาย การปรากฏตัวและการแสดงอิริยาบถให้เหมาะสม การทรงท่าที่ถูกสุขลักษณะหลักและศิลปะการสร้างมนุษยสัมพันธ์และการพูดในที่สาธารณะ การใช้อวัจนภาษา มารยาทสังคมและการสมาคม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02727101",
+        "course_name": "พืชเพื่อชีวิตที่ดีกว่า (Plant for Better Life)",
+        "department": "คณะศิลปศาสตร์และวิทยาศาสตร์ วิทยาเขตกำแพงแสน",
+        "description": "ชีววิทยาเบื้องต้นของพืช วิทยาศาสตร์และโภชนาการในพืชอาหาร พืชอาหารเพื่อการเสริมสร้างสุขภาพ พืชเพื่อการบำบัดและเสริมสร้างคุณภาพชีวิต การจัดการพืชด้วยหลักปรัชญาเศรษฐกิจพอเพียง",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02999044",
+        "course_name": "เศรษฐกิจพอเพียงเพื่อการดำรงชีวิต (Sufficiency Economy for Living)",
+        "department": "โครงการบูรณาการ วิทยาเขตกำแพงแสน",
+        "description": "แนวคิด หลักปรัชญาเศรษฐกิจพอเพียง การประยุกต์ปรัชญาเศรษฐกิจพอเพียงในการดำเนินชีวิตในระดับบุคคล ครอบครัว องค์กรและสังคม ความเชื่อ วัฒนธรรม ขนบธรรมเนียมประเพณีของชุมชน แนวคิด หลักศาสนาในการดำเนินชีวิตของชุมชน อัตลักษณ์ของชุมชนในแต่ละท้องถิ่น ภูมิปัญญาท้องถิ่นกับการประกอบอาชีพ การใช้ทรัพยากรอย่างยั่งยืน กรณีศึกษาและการศึกษานอกสถานที่",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "02999045",
+        "course_name": "การเพิ่มคุณค่าชีวิตด้วยวิถีชุมชนชนบท (Enhancement of Living Value Through Rural Community Path)",
+        "department": "โครงการบูรณาการ วิทยาเขตกำแพงแสน",
+        "description": "การสร้างความรู้ใหม่ผ่านกระบวนการเรียนรู้วิถีชีวิตจากผู้นำและชุมชนชนบท การวิเคราะห์ตนเอง เพื่อการวางแผนและสร้างเป้าหมายชีวิต นำเสนอและสรุปบทเรียนในการพัฒนาคุณค่าชีวิตด้วยวิถีชุมชนชนบท",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "04401112",
+        "course_name": "บุคลิกภาพและมารยาททางสังคมสำหรับการบริการชุมชน (Personality and Social Etiquette for Community Service)",
+        "department": "คณะสาธารณสุขศาสตร์ วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร",
+        "description": "ลักษณะเฉพาะของบุคคล การปรับปรุงตนเอง มารยาทสังคม การแต่งกายให้เหมาะสม การติดต่อสื่อสารในการทำงาน บริบทของสังคมและชุมชน การบริการชุมชนที่เหมาะสม",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 1,
+        "semester_suggested": null
+    },
+    {
+        "course_code": "04101201",
+        "course_name": "วิถีชีวิตเศรษฐกิจพอเพียง (Lifestyle of Sufficiency Economy)",
+        "department": "คณะทรัพยากรธรรมชาติและอุตสาหกรรมเกษตร วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร",
+        "description": "หลักคิด บทบาทและความสำคัญของเศรษฐกิจแบบพอเพียง หลักการดำเนินชีวิตตามแนวเศรษฐกิจพอเพียง การประยุกต์ และการบูรณาการเศรษฐกิจพอเพียง",
+        "category": "หมวดวิชาศึกษาทั่วไป",
+        "group": "กลุ่มสาระอยู่ดีมีสุข (Wellness)",
+        "prerequisite_courses": [
+            {
+                "pre_course_code": "00000000",
+                "pre_course_name": "ไม่มีวิชาที่ต้องเรียนก่อน",
+                "required": false
+            }
+        ],
+        "credit": 3,
+        "semester_suggested": null
+    }
+]
