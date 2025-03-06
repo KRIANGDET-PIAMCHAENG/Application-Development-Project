@@ -1,5 +1,4 @@
-{
-    "nisits": [
+[
       {
         "name": "John Doe",
         "faculty": "Engineering",
@@ -33,5 +32,3 @@
         "picture_url":"https://i.pinimg.com/originals/fe/d9/97/fed9971d943669c993db0be515a18a61.jpg"
       }
     ]
-  }
-  
