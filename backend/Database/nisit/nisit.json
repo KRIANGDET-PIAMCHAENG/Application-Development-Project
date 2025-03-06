@@ -1,0 +1,37 @@
+{
+    "nisits": [
+      {
+        "name": "John Doe",
+        "faculty": "Engineering",
+        "major": "Computer Science",
+        "year": 3,
+        "gender": "Male",
+        "nationality": "Thai",
+        "religion": "Buddhism",
+        "birth_date": "2002-05-15",
+        "contract_number": "081-234-5678",
+        "advisor": "Dr. Smith Johnson",
+        "username": "johndoe123",
+        "password": "securepassword123",
+        "email": "johndoe@example.com",
+        "picture_url":"https://i.pinimg.com/originals/fe/d9/97/fed9971d943669c993db0be515a18a61.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "faculty": "Science",
+        "major": "Biotechnology",
+        "year": 2,
+        "gender": "Female",
+        "nationality": "Thai",
+        "religion": "Christianity",
+        "birth_date": "2003-08-20",
+        "contract_number": "082-345-6789",
+        "advisor": "Dr. Emily White",
+        "username": "janesmith456",
+        "password": "mypassword456",
+        "email": "janesmith@example.com",
+        "picture_url":"https://i.pinimg.com/originals/fe/d9/97/fed9971d943669c993db0be515a18a61.jpg"
+      }
+    ]
+  }
+  
