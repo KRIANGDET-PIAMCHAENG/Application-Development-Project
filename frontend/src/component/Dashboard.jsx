@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 export default function Dashboard() {
   // ✅ โหลดค่า Dark Mode และ Sidebar Mode จาก `localStorage`
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true"; // ✅ โหลดค่า darkMode
+    return localStorage.getItem("darkMode") === "true"; // ✅ อ่านค่าจาก localStorage
   });
 
   const [isSlidebarOpen, setIsSlidebarOpen] = useState(() => {
