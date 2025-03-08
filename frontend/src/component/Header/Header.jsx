@@ -12,10 +12,10 @@ export const Header = ({ darkMode, toggleDarkMode, toggleSlidebar }) => {
                     <div className="flex items-center">
                         {/* Sidebar Toggle Button */}
                         <button 
-                            className="p-2 rounded-lg sm:hidden hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                            className="p-2 rounded-lg hover:bg-green-900 dark:hover:bg-gray-700 transition"
                             onClick={toggleSlidebar}
                         >
-                            <HiOutlineMenuAlt2 className="text-gray-700 dark:text-gray-300 text-2xl" />
+                            <HiOutlineMenuAlt2 className="text-white dark:text-gray-300 text-2xl" />
                         </button>
 
                         {/* Logo */}
