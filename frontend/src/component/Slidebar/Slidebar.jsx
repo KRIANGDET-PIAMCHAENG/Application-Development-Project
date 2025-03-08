@@ -26,7 +26,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                     className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle)} 
                     aria-label="Go to Schedule"
                 >
-                    <AiOutlineSchedule className="text-2xl" />
+                    <AiOutlineSchedule className="text-2xl ml-1" />
                     <span 
                         className={clsx(
                             "absolute left-12 opacity-0 translate-x-2 transition-all duration-300",
@@ -42,7 +42,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                     className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle)} 
                     aria-label="Go to Subject"
                 >
-                    <TiHomeOutline className="text-2xl" />
+                    <TiHomeOutline className="text-2xl ml-1" />
                     <span 
                         className={clsx(
                             "absolute left-12 opacity-0 translate-x-2 transition-all duration-300",
@@ -61,7 +61,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                     className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle)} 
                     aria-label="Go to Profile"
                 >
-                    <ImProfile className="text-2xl" />
+                    <ImProfile className="text-2xl ml-1" />
                     <span 
                         className={clsx(
                             "absolute left-12 opacity-0 translate-x-2 transition-all duration-300",
@@ -77,7 +77,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                     className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle)} 
                     aria-label="Go to Logout"
                 >
-                    <RiLoginBoxLine className="text-2xl" />
+                    <RiLoginBoxLine className="text-2xl ml-1" />
                     <span 
                         className={clsx(
                             "absolute left-12 opacity-0 translate-x-2 transition-all duration-300",

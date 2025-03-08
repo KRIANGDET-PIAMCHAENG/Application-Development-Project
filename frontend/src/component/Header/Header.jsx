@@ -7,11 +7,11 @@ export const Header = ({ darkMode, toggleDarkMode, toggleSlidebar }) => {
         <nav className="fixed top-0 z-50 w-full bg-green-700 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 shadow-md">
             <div className="px-4 py-3 lg:px-6 lg:pl-4">
                 <div className="flex items-center justify-between">
-                    
+
                     {/* Sidebar Toggle + Logo */}
                     <div className="flex items-center">
                         {/* Sidebar Toggle Button */}
-                        <button 
+                        <button
                             className="p-2 rounded-lg hover:bg-green-900 dark:hover:bg-gray-700 transition"
                             onClick={toggleSlidebar}
                         >
@@ -28,7 +28,7 @@ export const Header = ({ darkMode, toggleDarkMode, toggleSlidebar }) => {
                     </div>
 
                     {/* Dark Mode Toggle Button */}
-                    <button 
+                    <button
                         className="w-12 h-12 flex items-center justify-center rounded-full 
                         bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:scale-110 transition"
                         onClick={toggleDarkMode}
