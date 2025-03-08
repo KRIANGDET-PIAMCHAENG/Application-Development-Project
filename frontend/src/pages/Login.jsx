@@ -39,6 +39,12 @@ export default function Login() {
         }
     };
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            handleLogin();
+        }
+    };
+
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition duration-300">
             {/*  Header */}
@@ -65,6 +71,7 @@ export default function Login() {
                             placeholder="example@ku.th"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
+                            onKeyDown={handleKeyDown}
                             className="flex-1 bg-transparent focus:outline-none text-gray-900 dark:text-white"
                         />
                     </div>
@@ -77,6 +84,7 @@ export default function Login() {
                             placeholder="********"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+                            onKeyDown={handleKeyDown}
                             className="flex-1 bg-transparent focus:outline-none text-gray-900 dark:text-white"
                         />
                     </div>
