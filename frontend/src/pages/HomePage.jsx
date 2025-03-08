@@ -5,7 +5,7 @@ export default function HomePage() {
       <div className="">
         <Dashboard/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <h1 className="ml-96">🏠 Welcome to Home</h1>;
+        <h1 className="ml-96">🗓️ Schedule</h1>;
       </div>
     )
   }

@@ -5,7 +5,7 @@ export default function ProfilePage() {
       <div>
         <Dashboard/>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <h1 className="ml-96">👤 Profile Page</h1>;
+        <h1 className="ml-96">🏠 Subject</h1>;
       </div>
     )
   }
