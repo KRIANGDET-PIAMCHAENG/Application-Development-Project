@@ -10,7 +10,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                 <NavLink 
                     to="/home"
                     className={({ isActive }) => 
-                        `block px-4 py-3 rounded-lg ${isActive ? "bg-green-900 text-white dark:bg-gray-700" : "hover:text-white font-bold dark:hover:bg-gray-900"} text-gray-300 dark:text-white font-bold`
+                        `block px-4 py-3 rounded-lg ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
                     🗓️ Schedule
@@ -19,7 +19,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                 <NavLink 
                     to="/profile"
                     className={({ isActive }) => 
-                        `block px-4 py-3 rounded-lg ${isActive ? "bg-green-900 text-white dark:bg-gray-700" : "hover:text-white font-bold dark:hover:bg-gray-900"} text-gray-300 dark:text-white font-bold`
+                        `block px-4 py-3 rounded-lg ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
                     🏠 Subject
@@ -28,7 +28,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                 <NavLink 
                     to="/schedule"
                     className={({ isActive }) => 
-                        `block px-4 py-3 rounded-lg mt-auto ${isActive ? "bg-green-900 dark:bg-gray-700" : "hover:bg-green-900 dark:hover:bg-gray-900"} text-gray-300 dark:text-white font-bold`
+                        `block px-4 py-3 rounded-lg mt-auto ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
                     👤 Profile
@@ -38,7 +38,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
             <NavLink 
                 to="/login"
                 className={({ isActive }) => 
-                    `block px-4 py-3 rounded-lg mt-auto ${isActive ? "bg-green-900 dark:bg-gray-700" : "hover:bg-green-900 dark:hover:bg-gray-900"} text-gray-300 dark:text-white font-bold`
+                    `block px-4 py-3 rounded-lg mt-auto ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                 }
             >
                 ↩️ Log-Out
