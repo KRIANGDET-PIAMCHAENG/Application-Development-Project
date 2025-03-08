@@ -1,128 +1,110 @@
+/* ========== Light Mode (ค่าเริ่มต้น) ========== */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-container {
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    height: 100vh;           
-}
-
-
-/* โหมด Light & Dark */
-.light {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Light Mode พื้นหลังสีขาว */
     color: #000;
 }
 
-.dark {
-    background-color: #292935;
-    color: #ffffff;
+/* ========== Dark Mode (เปลี่ยนสีพื้นหลังให้เป็นสีเข้ม) ========== */
+.dark, .dark html, .dark body {
+    background-color: #16161e !important; /* บังคับให้เปลี่ยนสี */
+    color: white;
 }
 
-/* Header */
-.header {
+/* ========== ปรับ Header และ Footer ให้รองรับ Dark Mode ========== */
+.header, .footer {
     width: 100%;
-    padding: 20px;
+    padding: 15px 20px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
-    background-color: rgba(27, 27, 34, 1);
-    color: #45975D;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    left: 0;
 }
 
-.light .header {
-    background-color: #45975D;
+.header {
+    top: 0;
+    background-color: #45975D; /* Light Mode สีเขียว */
     color: white;
 }
 
-/* ปุ่ม Toggle Dark Mode */
-.toggle-mode {
-    position: absolute;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+.footer {
+    bottom: 0;
+    background-color: #45975D; /* Light Mode สีเขียว */
     color: white;
-    padding: 10px;
-    transition: 0.3s;
 }
 
-.light .toggle-mode {
-    background-color: #45975D;
-    border-radius: 6px;
+/* Header และ Footer ใน Dark Mode */
+.dark .header, .dark .footer {
+    background-color: #0f0f17; /* สีเข้มขึ้น */
+    color: #50fa7b; /* สีเขียวอ่อน */
 }
 
+/* ========== ปรับ Login Box ========== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* ลดขนาดเพื่อไม่ให้ทับ Footer */
+}
 
-/* กล่อง Login */
+/* กล่อง Login ใน Light Mode */
 .login-box {
-    width: 400px;
-    background-color: #292935;
+    width: 90%;
+    max-width: 400px;
     padding: 30px;
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.light .login-box {
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+/* กล่อง Login ใน Dark Mode */
+.dark .login-box {
+    background-color: #282a36;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-    color: #45975D;
-    font-size: 28px;
-}
-
-/* Input กล่องกรอก */
+/* ========== ปรับ Input Box ========== */
 .input-group {
     display: flex;
     align-items: center;
-    background: white;
+    width: 100%;
     padding: 10px;
     border-radius: 6px;
     margin: 10px 0;
+    background: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.input-group input {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    flex: 1;
-    padding: 8px;
-    background: transparent;
-}
-
+/* Input ใน Dark Mode */
 .dark .input-group {
-    background: white;
-    color: black;
+    background: #44475a;
+    color: white;
 }
 
-.icon {
-    color: gray;
-    margin-right: 10px;
+.dark .input-group input {
+    background: transparent;
+    color: white;
 }
 
-/* ปุ่ม Login */
+/* ปรับ Icon ใน Dark Mode */
+.dark .icon {
+    color: white;
+}
+
+/* ========== ปุ่ม Login ========== */
 .login-btn {
     width: 100%;
     padding: 12px;
@@ -136,29 +118,12 @@ h2 {
     transition: 0.3s ease-in-out;
 }
 
-.login-btn:hover {
-    background-color: #32824b;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+/* ปุ่ม Login ใน Dark Mode */
+.dark .login-btn {
+    background-color: #6272a4;
 }
 
-/* ข้อความ Error */
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(27, 27, 34, 1);
-    color: white;
-    position: relative;
-    margin-top: auto;
-}
-
-.light .footer {
-    background-color: #45975D;
+.dark .login-btn:hover {
+    background-color: #4e5d8a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
