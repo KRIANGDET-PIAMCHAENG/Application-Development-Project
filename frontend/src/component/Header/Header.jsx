@@ -18,7 +18,7 @@ export const Header = ({darkMode,toggleDarkMode,toggleSlidebar}) => {
                             <MdSpaceDashboard className="h-8 me-3 text-xl text-green-600" />
                             <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap
                             dark:text-white">
-                                Kuschedule
+                                KU-SCHEDULE
                             </span>
                         </a>
                     </div>
