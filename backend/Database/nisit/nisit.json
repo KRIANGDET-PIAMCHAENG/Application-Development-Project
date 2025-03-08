@@ -12,7 +12,7 @@
         "advisor": "Dr. Smith Johnson",
         "username": "johndoe123",
         "password": "securepassword123",
-        "email": "johndoe@example.com",
+        "email": "johndoe@ku.th",
         "picture_url":"https://i.pinimg.com/originals/fe/d9/97/fed9971d943669c993db0be515a18a61.jpg"
       },
       {
@@ -28,7 +28,7 @@
         "advisor": "Dr. Emily White",
         "username": "janesmith456",
         "password": "mypassword456",
-        "email": "janesmith@example.com",
+        "email": "janesmith@ku.th",
         "picture_url":"https://i.pinimg.com/originals/fe/d9/97/fed9971d943669c993db0be515a18a61.jpg"
       }
     ]
