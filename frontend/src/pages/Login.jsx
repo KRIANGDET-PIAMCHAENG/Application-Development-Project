@@ -1,70 +1,63 @@
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import '../style/Login.css';
+import { FaUser, FaLock, FaSun, FaMoon } from 'react-icons/fa';
 
 export default function Login() {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(''); 
-    
-    const handleFocus = (e) => {
-        if (e.target.placeholder === 'Username') {
-            e.target.placeholder = 'example@ku.th';
-        } else if (e.target.placeholder === 'Password') {
-            e.target.placeholder = '******';
-        }
-    };
-    
-    const handleBlur = (e) => {
-        if (e.target.name === 'username') {
-            e.target.placeholder = 'Username';
-        } else if (e.target.name === 'password') {
-            e.target.placeholder = 'Password'; 
-        }
-    };
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => setDarkMode(!darkMode);
 
     const handleLogin = () => {
-        if (!username.endsWith('@ku.th')) {
-            setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
-            return;
-        }
-
+        if (!username) return setError("กรุณากรอกอีเมล");
+        if (!username.endsWith('@ku.th')) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
+        if (!password) return setError("กรุณากรอกรหัสผ่าน");
         if (username === 'admin@ku.th' && password === '1234') {
-            setError(''); 
-            navigate("/home"); 
+            setError('');
+            navigate("/home");
         } else {
-            setError("กรุณากรอกรหัสผ่านให้ถูกต้อง"); 
+            setError("กรุณากรอกรหัสผ่านให้ถูกต้อง");
         }
     };
 
     return (
-        <div className="background">
-            <div className="title">KU-SCHEDULE</div>
-            <div className='form'>
-                <h2>Login</h2>
-                <input 
-                    type="text" 
-                    placeholder='Username' 
-                    value={username}
-                    name="username"
-                    onChange={(e) => setUsername(e.target.value)}
-                    onFocus={handleFocus}  
-                    onBlur={handleBlur}    
-                />
-                <input 
-                    type="password" 
-                    placeholder='Password' 
-                    value={password}
-                    name="password"
-                    onChange={(e) => setPassword(e.target.value)}
-                    onFocus={handleFocus}  
-                    onBlur={handleBlur}    
-                />
-                <button onClick={handleLogin}>Submit</button>
-                {error && <p className="error">{error}</p>} 
+        <div className={`container ${darkMode ? 'dark' : 'light'}`}>
+            <header className="header center">
+                <h1 className="title">KU-SCHEDULE</h1>
+                <button className="toggle-mode" onClick={toggleDarkMode}>
+                    {darkMode ? <FaSun /> : <FaMoon />}
+                </button>
+            </header>
+            <div className='login-container'>
+                <div className='login-box center'>
+                    <h2>LOG-IN</h2>
+                    <div className="input-group">
+                        <FaUser className="icon" />
+                        <input 
+                            type="text" 
+                            placeholder='example@ku.th' 
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                    </div>
+                    <div className="input-group">
+                        <FaLock className="icon" />
+                        <input 
+                            type="password" 
+                            placeholder='********' 
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+                    <button className="login-btn" onClick={handleLogin}>Summit</button>
+                    {error && <p className="error">{error}</p>} 
+                </div>
             </div>
-            <div className="footer">© 2024 KU-SCHEDULE</div>
+            <footer className="footer">© 2024 KU-SCHEDULE</footer>
         </div>
     );
 }
