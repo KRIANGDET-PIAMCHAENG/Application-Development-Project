@@ -34,17 +34,20 @@ export default function Login() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition duration-300">
             {/* Header */}
-            <header className="w-full py-4 px-6 bg-green-600 dark:bg-gray-800 text-white flex justify-between items-center">
-                <h1 className="text-2xl font-bold">KU-SCHEDULE</h1>
-                <button onClick={toggleDarkMode} className="text-white text-2xl p-2 rounded-md bg-green-700 dark:bg-gray-700">
+            <header className="w-full py-4 px-6 bg-green-600 dark:bg-gray-800 text-white flex justify-between items-center text-center">
+                <h1 className="text-2xl font-bold w-full text-center dark:text-green-600">KU-SCHEDULE</h1>
+                <button 
+                    onClick={toggleDarkMode} 
+                    className="text-white text-2xl p-2 rounded-md bg-green-700 dark:bg-gray-700"
+                >
                     {darkMode ? <FaSun /> : <FaMoon />}
                 </button>
             </header>
 
             {/* Login Box */}
-            <div className="flex flex-col items-center justify-center w-full px-6">
-                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-md w-full">
-                    <h2 className="text-2xl font-bold text-center text-green-600 dark:text-green-400">LOG-IN</h2>
+            <div className="flex flex-col items-center justify-center w-full px-6 flex-1">
+                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-md w-full text-center">
+                    <h2 className="text-2xl font-bold text-green-600 dark:text-green-600">LOG-IN</h2>
 
                     {/* Email Input */}
                     <div className="flex items-center bg-gray-100 dark:bg-gray-700 p-3 rounded-md mt-4 shadow-md">
@@ -75,7 +78,7 @@ export default function Login() {
                         onClick={handleLogin}
                         className="w-full mt-6 py-3 bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 text-white font-bold rounded-md transition duration-300"
                     >
-                        Summit
+                        Login
                     </button>
 
                     {/* Error Message */}
@@ -84,7 +87,7 @@ export default function Login() {
             </div>
 
             {/* Footer */}
-            <footer className="w-full py-4 text-center bg-green-600 dark:bg-gray-800 text-white mt-auto">
+            <footer className="w-full py-4 text-center bg-green-600 dark:bg-gray-800 text-white">
                 © 2024 KU-SCHEDULE
             </footer>
         </div>
