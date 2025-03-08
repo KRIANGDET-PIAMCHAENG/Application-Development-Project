@@ -12,10 +12,10 @@ export default function ProfilePage() {
         <div className="bg-white shadow-lg rounded-lg flex overflow-hidden w-[1100px] h-auto">
           {/* Left Section: Profile Info */}
           <div className="w-1/3 bg-green-600 text-white flex flex-col items-center justify-center py-14 px-10">
-            {/* Profile Image (ใช้รูปจากเครื่อง) */}
+            {/* Profile Image */}
             <div className="w-72 h-72 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src={profilePic} // 🔹 ใช้รูปที่นำเข้า
+                src={profilePic} 
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
