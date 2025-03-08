@@ -1,4 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { ImProfile } from "react-icons/im";
+import { TiHomeOutline } from "react-icons/ti";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { RiLoginBoxLine } from "react-icons/ri";
 
 export const Slidebar = ({ isSlidebarOpen }) => {
     return (
@@ -13,7 +17,9 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                         `block px-4 py-3 rounded-lg ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
-                    🗓️ Schedule
+                    <div className="flex items-center">
+                        <AiOutlineSchedule className="mr-2 text-2xl" /> Schedule
+                    </div>
                 </NavLink>
 
                 <NavLink 
@@ -22,7 +28,9 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                         `block px-4 py-3 rounded-lg ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
-                    🏠 Subject
+                     <div className="flex items-center">
+                        <TiHomeOutline className="mr-2 text-2xl" /> Subject
+                    </div>
                 </NavLink>
 
                 <NavLink 
@@ -31,7 +39,10 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                         `block px-4 py-3 rounded-lg mt-auto ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                     }
                 >
-                    👤 Profile
+                    <div className="flex items-center">
+                        <ImProfile className="mr-2 text-2xl" /> Profile
+                    </div>
+
                 </NavLink>
             </div>
 
@@ -40,8 +51,10 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                 className={({ isActive }) => 
                     `block px-4 py-3 rounded-lg mt-auto ${isActive ? "text-white bg-green-900 dark:bg-gray-700" : "text-gray-300 hover:text-white"} font-bold`
                 }
-            >
-                ↩️ Log-Out
+            >   
+                <div className="flex items-center">
+                        <RiLoginBoxLine className="mr-2 text-2xl" /> Logout
+                </div>
             </NavLink>
 
         </aside>
