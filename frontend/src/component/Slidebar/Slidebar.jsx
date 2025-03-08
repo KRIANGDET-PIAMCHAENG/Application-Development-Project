@@ -14,12 +14,12 @@ export const Slidebar = ({ isSlidebarOpen }) => {
             className={clsx(
                 "fixed top-0 left-0 z-40 h-screen pt-20 bg-green-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 transition-all duration-500 ease-in-out flex flex-col justify-between",
                 {
-                    "w-64 min-w-[256px]": isSlidebarOpen, // ✅ ป้องกัน Sidebar เด้ง
+                    "w-64 min-w-[256px]": isSlidebarOpen, //  ป้องกัน Sidebar เด้ง
                     "w-16 min-w-[64px]": !isSlidebarOpen,
                 }
             )}
         >
-            {/* ✅ ส่วนเมนูด้านบน */}
+            {/*  ส่วนเมนูด้านบน */}
             <div className="flex flex-col flex-grow">
                 <NavLink 
                     to="/home" 
@@ -54,7 +54,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                 </NavLink>
             </div>
 
-            {/* ✅ ส่วน Profile และ Logout ด้านล่าง */}
+            {/*  ส่วน Profile และ Logout ด้านล่าง */}
             <div className="flex flex-col border-t border-gray-600 mt-auto">
                 <NavLink 
                     to="/schedule" 

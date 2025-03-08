@@ -8,12 +8,12 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    // ✅ โหลดค่า Dark Mode จาก localStorage
+    //  โหลดค่า Dark Mode จาก localStorage
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
     });
 
-    // ✅ บันทึกค่า Dark Mode ลง localStorage เมื่อมีการเปลี่ยนแปลง
+    //  บันทึกค่า Dark Mode ลง localStorage เมื่อมีการเปลี่ยนแปลง
     useEffect(() => {
         localStorage.setItem("darkMode", darkMode);
         if (darkMode) {
@@ -33,7 +33,7 @@ export default function Login() {
         if (username === "admin@ku.th" && password === "1234") {
             setError("");
             localStorage.setItem("darkMode", darkMode);
-            navigate("/home"); // ✅ ไปที่หน้าหลักหลัง Login
+            navigate("/home"); //  ไปที่หน้าหลักหลัง Login
         } else {
             setError("กรุณากรอกรหัสผ่านให้ถูกต้อง");
         }
@@ -41,7 +41,7 @@ export default function Login() {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition duration-300">
-            {/* ✅ Header */}
+            {/*  Header */}
             <header className="w-full py-4 px-6 bg-green-700 dark:bg-gray-800 text-white flex justify-between items-center">
                 <h1 className="text-2xl font-bold w-full text-center dark:text-green-700">KU-SCHEDULE</h1>
                 <button 
@@ -52,7 +52,7 @@ export default function Login() {
                 </button>
             </header>
 
-            {/* ✅ Login Box */}
+            {/*  Login Box */}
             <div className="flex flex-col items-center justify-center w-full px-6 flex-1">
                 <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-md w-full text-center">
                     <h2 className="text-2xl font-bold text-green-700 dark:text-green-700">LOG-IN</h2>
@@ -94,7 +94,7 @@ export default function Login() {
                 </div>
             </div>
 
-            {/* ✅ Footer */}
+            {/*  Footer */}
             <footer className="w-full py-4 text-center bg-green-700 dark:bg-gray-800 text-white">
                 © 2024 KU-SCHEDULE
             </footer>
