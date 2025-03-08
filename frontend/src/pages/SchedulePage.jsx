@@ -34,13 +34,13 @@ export default function ProfilePage() {
               <p><strong>ชื่อ:</strong> ณัฐพล พิลาไชย</p>
               <p><strong>คณะ:</strong> วิศวกรรมศาสตร์</p>
               <p><strong>สาขา:</strong> วิศวกรรมคอมพิวเตอร์</p>
-              <p><strong>ชั้นปี:</strong> /</p>
+              <p><strong>ชั้นปี:</strong> 2</p>
               <p><strong>เพศ:</strong> ชาย</p>
               <p><strong>สัญชาติ:</strong> ไทย</p>
               <p><strong>ศาสนา:</strong> พุทธ</p>
-              <p><strong>วันเกิด:</strong> 18 เมษายน 2547</p>
+              <p><strong>วันเกิด:</strong> 18 เมษายน 2548</p>
               <p><strong>เบอร์ติดต่อ:</strong> 09x-xxx-xxxx</p>
-              <p><strong>อาจารย์ที่ปรึกษา:</strong> อาจารย์ ไพรัช</p>
+              <p><strong>อาจารย์ที่ปรึกษา:</strong> อาจารย์ กรวิทย์ ออกผล</p>
             </div>
           </div>
         </div>
