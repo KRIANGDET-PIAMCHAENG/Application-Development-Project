@@ -4,7 +4,6 @@ import { Slidebar } from "./Slidebar/Slidebar";
 import { Outlet } from "react-router-dom";
 
 export default function Dashboard() {
-  // โหลดค่า Dark Mode และ Sidebar Mode จาก `localStorage`
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("darkMode") === "true";
   });
@@ -13,7 +12,6 @@ export default function Dashboard() {
     return localStorage.getItem("isSlidebarOpen") === "true";
   });
 
-  // บันทึกค่าลง LocalStorage เมื่อเปลี่ยนโหมด
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode);
     if (darkMode) {
@@ -39,7 +37,6 @@ export default function Dashboard() {
       />
       <Slidebar isSlidebarOpen={isSlidebarOpen} toggleSlidebar={toggleSlidebar} />
 
-      {/* ส่งค่าให้ทุกหน้าใช้ */}
       <div className="p-4 bg-gray-100 dark:bg-gray-900 min-h-screen">
         <Outlet context={{ darkMode, isSlidebarOpen, toggleSlidebar }} />
       </div>

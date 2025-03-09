@@ -27,7 +27,7 @@ export default function SearchPage() {
           KU-SCHEDULE
         </h1>
         <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto">
-          {/* ค้นหา + Select */}
+          
           <div className="flex justify-end space-x-4 mb-4">
             <div className="relative w-1/2">
               <input
@@ -61,7 +61,6 @@ export default function SearchPage() {
             </select>
           </div>
 
-          {/* ตาราง */}
           <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
             <thead>
               <tr className="border-b border-gray-700 text-gray-700 dark:text-white">

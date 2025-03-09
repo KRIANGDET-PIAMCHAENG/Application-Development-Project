@@ -40,10 +40,7 @@ export default function ProfilePage() {
   if (!userData) {
     return (
       <div className="flex flex-col items-center justify-center h-screen">
-        {/* Loading Spinner */}
         <div className="w-16 h-16 border-4 border-gray-300 border-t-green-600 dark:border-t-green-400 rounded-full animate-spin"></div>
-  
-        {/* Loading Text */}
         <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 font-semibold">
           Loading Profile...
         </p>
@@ -57,9 +54,9 @@ export default function ProfilePage() {
       <Dashboard />
       <div className="flex-1 flex justify-center items-center p-8">
         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg flex overflow-hidden w-[1100px] h-auto">
-          {/* Left Section: Profile Info */}
+          
           <div className="w-1/3 bg-green-600 dark:bg-green-900 text-white flex flex-col items-center justify-center py-14 px-10">
-            {/* Profile Image */}
+            
             <div className="w-72 h-72 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
               <img
                 src={userData.picture_url}
@@ -73,7 +70,6 @@ export default function ProfilePage() {
             </p>
           </div>
 
-          {/* Right Section: Detail Info */}
           <div className="w-2/3 p-12 font-bold">
             <h3 className="text-2xl dark:text-gray-100 font-bold mb-6">Detail</h3>
             <div className="text-gray-700 dark:text-gray-100 space-y-4 text-lg">
