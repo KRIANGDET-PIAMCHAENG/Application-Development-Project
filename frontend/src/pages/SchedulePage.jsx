@@ -3,7 +3,7 @@ import Dashboard from "../component/Dashboard";
 
 export default function ProfilePage() {
   const [userData, setUserData] = useState(null);
-  
+
   useEffect(() => {
     const fetchProfile = async () => {
       const token = localStorage.getItem("token");
@@ -56,26 +56,47 @@ export default function ProfilePage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-xl font-semibold mt-4">Hello, I'm {userData.name}</h2>
+            <h2 className="text-xl font-semibold mt-4 text-center font-bold">Hello, I'm {userData.name}</h2>
             <p className="text-center text-md mt-2 px-4">
               I am a student in the {userData.major} program, Faculty of {userData.faculty}.
             </p>
           </div>
 
           {/* Right Section: Detail Info */}
-          <div className="w-2/3 p-12">
+          <div className="w-2/3 p-12 font-bold">
             <h3 className="text-2xl dark:text-gray-100 font-bold mb-6">Detail</h3>
             <div className="text-gray-700 dark:text-gray-100 space-y-4 text-lg">
-              <p><strong>ชื่อ:</strong> {userData.name}</p>
-              <p><strong>คณะ:</strong> {userData.faculty}</p>
-              <p><strong>สาขา:</strong> {userData.major}</p>
-              <p><strong>ชั้นปี:</strong> {userData.year}</p>
-              <p><strong>เพศ:</strong> {userData.gender}</p>
-              <p><strong>สัญชาติ:</strong> {userData.nationality}</p>
-              <p><strong>ศาสนา:</strong> {userData.religion}</p>
-              <p><strong>วันเกิด:</strong> {userData.birth_date}</p>
-              <p><strong>เบอร์ติดต่อ:</strong> {userData.contract_number}</p>
-              <p><strong>อาจารย์ที่ปรึกษา:</strong> {userData.advisor}</p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Name:</strong> {userData.name}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Faculty:</strong> {userData.faculty}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Major:</strong> {userData.major}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Year:</strong> {userData.year}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Gender:</strong> {userData.gender}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Nationality:</strong> {userData.nationality}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Religion:</strong> {userData.religion}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Birth Date:</strong> {userData.birth_date}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Contact Number:</strong> {userData.contract_number}
+              </p>
+              <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Advisor:</strong> {userData.advisor}
+              </p>
+
             </div>
           </div>
         </div>
