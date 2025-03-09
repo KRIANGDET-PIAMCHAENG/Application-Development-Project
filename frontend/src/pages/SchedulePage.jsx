@@ -38,8 +38,19 @@ export default function ProfilePage() {
   }, []);
 
   if (!userData) {
-    return <div className="text-center mt-20 text-2xl">Loading...</div>;
+    return (
+      <div className="flex flex-col items-center justify-center h-screen">
+        {/* Loading Spinner */}
+        <div className="w-16 h-16 border-4 border-gray-300 border-t-green-600 dark:border-t-green-400 rounded-full animate-spin"></div>
+  
+        {/* Loading Text */}
+        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 font-semibold">
+          Loading Profile...
+        </p>
+      </div>
+    );
   }
+  
 
   return (
     <div className="flex bg-gray-100 min-h-screen dark:bg-gray-900">
