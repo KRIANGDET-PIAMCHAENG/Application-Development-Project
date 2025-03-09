@@ -20,7 +20,7 @@ export default function Login() {
 
     useEffect(() => {
         if (localStorage.getItem("token")) {
-            getProtectedData(); // ✅ เรียกข้อมูลทันทีหลังจาก login
+            getProtectedData(); //  เรียกข้อมูลทันทีหลังจาก login
         }
     }, []);
 
@@ -38,7 +38,7 @@ export default function Login() {
             localStorage.setItem("token", response.data.token);
             localStorage.setItem("darkMode", darkMode);
             navigate("/home");
-            getProtectedData();  // ✅ ดึงข้อมูลที่ protected หลัง Login
+            getProtectedData();  //  ดึงข้อมูลที่ protected หลัง Login
         } catch (err) {
             setError(err.response?.data?.error || "เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์");
             console.error(err);
@@ -58,7 +58,7 @@ export default function Login() {
                 headers: { Authorization: `Bearer ${token}` }
             });
 
-            console.log(response.data.message);  // ✅ ข้อมูลตอบกลับจาก Backend
+            console.log(response.data.message);  //  ข้อมูลตอบกลับจาก Backend
         } catch (err) {
             setError(err.response?.data?.error || "การเข้าถึงข้อมูลล้มเหลว");
             console.error(err);
