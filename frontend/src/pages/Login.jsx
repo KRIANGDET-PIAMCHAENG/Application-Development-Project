@@ -5,16 +5,16 @@ import axios from 'axios';
 
 export default function Login() {
     const navigate = useNavigate();
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState(""); // ใช้ email แทน username
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    //  โหลดค่า Dark Mode จาก localStorage
+    // โหลดค่า Dark Mode จาก localStorage
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
     });
 
-    //  บันทึกค่า Dark Mode ลง localStorage เมื่อมีการเปลี่ยนแปลง
+    // บันทึกค่า Dark Mode ลง localStorage เมื่อมีการเปลี่ยนแปลง
     useEffect(() => {
         localStorage.setItem("darkMode", darkMode);
         if (darkMode) {
@@ -26,20 +26,7 @@ export default function Login() {
 
     const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-    // const handleLogin = () => {
-    //     if (!username) return setError("กรุณากรอกอีเมล");
-    //     if (!username.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
-    //     if (!password) return setError("กรุณากรอกรหัสผ่าน");
-
-    //     if (username === "admin@ku.th" && password === "1234") {
-    //         setError("");
-    //         localStorage.setItem("darkMode", darkMode);
-    //         navigate("/home"); //  ไปที่หน้าหลักหลัง Login
-    //     } else {
-    //         setError("กรุณากรอกรหัสผ่านให้ถูกต้อง");
-    //     }
-    // };
-
+    // ฟังก์ชันล็อกอิน
     const handleLogin = async () => {
         setError(""); // เคลียร์ error ก่อนส่งข้อมูล
 
@@ -58,7 +45,7 @@ export default function Login() {
                 navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
             }
         } catch (err) {
-            setError(err.response?.data?.error || "อีเมลหรือรหัสผ่านไม่ถูกต้อง");
+            setError(err?.response?.data?.error || "อีเมลหรือรหัสผ่านไม่ถูกต้อง");
         }
     };
 
@@ -92,8 +79,8 @@ export default function Login() {
                         <input
                             type="text"
                             placeholder="example@ku.th"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            value={email} // ใช้ email แทน username
+                            onChange={(e) => setEmail(e.target.value)}
                             onKeyDown={handleKeyDown}
                             className="flex-1 bg-transparent focus:outline-none text-gray-900 dark:text-white"
                         />

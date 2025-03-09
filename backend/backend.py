@@ -3,12 +3,13 @@ from flask_cors import CORS
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
+import bcrypt
 
 # โหลดค่าจากไฟล์ .env
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://localhost:3000"])  # ให้ React app สามารถเข้าถึงได้
 
 # ดึง URI จาก .env
 MONGO_URI = os.getenv("MONGO_URI")
@@ -33,11 +34,13 @@ def login():
 
     user = users_collection.find_one({"email": email})  # ใช้ email ใน MongoDB
 
-    if user and user["password"] == password:
+    if not user:
+        return jsonify({"error": "อีเมลไม่ถูกต้อง"}), 401
+
+    if bcrypt.checkpw(password.encode('utf-8'), user["password"].encode('utf-8')):
         return jsonify({"message": "เข้าสู่ระบบสำเร็จ"}), 200
     else:
-        return jsonify({"error": "อีเมลหรือรหัสผ่านไม่ถูกต้อง"}), 401
-    
+        return jsonify({"error": "รหัสผ่านไม่ถูกต้อง"}), 401
+
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
-
