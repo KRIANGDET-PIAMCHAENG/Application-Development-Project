@@ -5,67 +5,63 @@ import axios from 'axios';
 
 export default function Login() {
     const navigate = useNavigate();
-    const [email, setEmail] = useState(""); // ใช้ email แทน username
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    // โหลดค่า Dark Mode จาก localStorage
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
     });
 
-    // บันทึกค่า Dark Mode ลง localStorage เมื่อมีการเปลี่ยนแปลง
     useEffect(() => {
         localStorage.setItem("darkMode", darkMode);
-        if (darkMode) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
+        document.documentElement.classList.toggle("dark", darkMode);
     }, [darkMode]);
+
+    useEffect(() => {
+        if (localStorage.getItem("token")) {
+            getProtectedData(); // ✅ เรียกข้อมูลทันทีหลังจาก login
+        }
+    }, []);
 
     const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-    // ฟังก์ชันล็อกอิน
     const handleLogin = async () => {
-        setError(""); // เคลียร์ error ก่อนส่งข้อมูล
-    
+        setError("");
+
         if (!email) return setError("กรุณากรอกอีเมล");
         if (!email.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
         if (!password) return setError("กรุณากรอกรหัสผ่าน");
-    
+
         try {
             const response = await axios.post("http://localhost:5001/login", { email, password });
-            console.log(response); // ตรวจสอบว่าได้ response จาก API หรือไม่
-            if (response.status === 200) {
-                localStorage.setItem("token", response.data.token); // บันทึก token ใน localStorage
-                localStorage.setItem("darkMode", darkMode);
-                navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
-            }
+            localStorage.setItem("token", response.data.token);
+            localStorage.setItem("darkMode", darkMode);
+            navigate("/home");
+            getProtectedData();  // ✅ ดึงข้อมูลที่ protected หลัง Login
         } catch (err) {
-            console.log(err); // ดูข้อผิดพลาดที่เกิดขึ้นในคอนโซล
-            setError(err?.response?.data?.error || "อีเมลหรือรหัสผ่านไม่ถูกต้อง");
+            setError(err.response?.data?.error || "เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์");
+            console.error(err);
         }
     };
 
-    // ฟังก์ชันสำหรับเข้าถึงข้อมูลที่ถูกป้องกัน
     const getProtectedData = async () => {
         const token = localStorage.getItem("token");
-    
+
         if (!token) {
-            console.log("No token found");
+            setError("ไม่พบ Token โปรดเข้าสู่ระบบ");
             return;
         }
-    
+
         try {
             const response = await axios.get("http://localhost:5001/protected", {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
+                headers: { Authorization: `Bearer ${token}` }
             });
-            console.log(response.data); // แสดงข้อมูลที่ได้รับจากเซิร์ฟเวอร์
+
+            console.log(response.data.message);  // ✅ ข้อมูลตอบกลับจาก Backend
         } catch (err) {
-            console.log(err.response.data); // จัดการกับข้อผิดพลาดที่เกิดขึ้น
+            setError(err.response?.data?.error || "การเข้าถึงข้อมูลล้มเหลว");
+            console.error(err);
         }
     };
 
@@ -77,7 +73,6 @@ export default function Login() {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition duration-300">
-            {/*  Header */}
             <header className="w-full py-4 px-6 bg-green-700 dark:bg-gray-800 text-white flex justify-between items-center">
                 <h1 className="text-2xl font-bold w-full text-center dark:text-green-700">KU-SCHEDULE</h1>
                 <button
@@ -88,25 +83,22 @@ export default function Login() {
                 </button>
             </header>
 
-            {/*  Login Box */}
             <div className="flex flex-col items-center justify-center w-full px-6 flex-1">
                 <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-md w-full text-center">
                     <h2 className="text-2xl font-bold text-green-700 dark:text-green-700">LOG-IN</h2>
 
-                    {/* Email Input */}
                     <div className="flex items-center bg-gray-100 dark:bg-gray-700 p-3 rounded-md mt-4 shadow-md">
                         <FaUser className="text-gray-500 dark:text-gray-300 mr-2" />
                         <input
                             type="text"
                             placeholder="example@ku.th"
-                            value={email} // ใช้ email แทน username
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             onKeyDown={handleKeyDown}
                             className="flex-1 bg-transparent focus:outline-none text-gray-900 dark:text-white"
                         />
                     </div>
 
-                    {/* Password Input */}
                     <div className="flex items-center bg-gray-100 dark:bg-gray-700 p-3 rounded-md mt-4 shadow-md">
                         <FaLock className="text-gray-500 dark:text-gray-300 mr-2" />
                         <input
@@ -119,7 +111,6 @@ export default function Login() {
                         />
                     </div>
 
-                    {/* Login Button */}
                     <button
                         onClick={handleLogin}
                         className="w-full mt-6 py-3 bg-green-700 hover:bg-green-800 dark:bg-green-500 dark:hover:bg-green-700 text-white font-bold rounded-md transition duration-300"
@@ -127,12 +118,10 @@ export default function Login() {
                         Login
                     </button>
 
-                    {/* Error Message */}
                     {error && <p className="text-red-500 text-sm mt-3 text-center">{error}</p>}
                 </div>
             </div>
 
-            {/*  Footer */}
             <footer className="w-full py-4 text-center bg-green-700 dark:bg-gray-800 text-white">
                 © 2024 KU-SCHEDULE
             </footer>
