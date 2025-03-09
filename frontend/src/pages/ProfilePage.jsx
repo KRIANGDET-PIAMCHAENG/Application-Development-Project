@@ -26,16 +26,16 @@ export default function SearchPage() {
         <h1 className="text-green-500 text-2xl flex justify-center font-bold mb-6">
           KU-SCHEDULE
         </h1>
-        <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white ">
-          <div className="flex space-x-4 mb-4 ">
+        <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white whitespace-normal ml-8">
+          {/* ค้นหา + Select */}
+          <div className="flex justify-end space-x-5 mb-2">
             <div className="relative w-1/2">
               <input
                 type="text"
                 placeholder="ค้นหารหัสวิชา"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full p-2 pl-10 rounded bg-gray-200 text-black focus:outline-none "
-                
+                className="w-full p-2 pl-10 rounded bg-gray-200 text-black focus:outline-none"
               />
               <FaSearch className="absolute left-3 top-3 text-black" />
             </div>
@@ -60,7 +60,9 @@ export default function SearchPage() {
               <option value="2">เทอม 2</option>
             </select>
           </div>
-          <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75 ">
+
+          {/* ตาราง */}
+          <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
             <thead>
               <tr className="border-b border-gray-700 text-gray-700 dark:text-white">
                 <th className="p-3 text-center">รหัสวิชา</th>
@@ -72,8 +74,8 @@ export default function SearchPage() {
             <tbody>
               {filteredSubjects.length > 0 ? (
                 filteredSubjects.map((subject) => (
-                  <tr key={subject.code} className="dark:bg-gray-700  bg-gray-200 text-gray-700 dark:text-white">
-                    <td className="p-3  text-center">{subject.code}</td>
+                  <tr key={subject.code} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
+                    <td className="p-3 text-center">{subject.code}</td>
                     <td className="p-3 text-center">{subject.name}</td>
                     <td className="p-3 text-center">{subject.credits}</td>
                     <td className="p-3 text-center">{subject.fee}</td>
@@ -87,6 +89,7 @@ export default function SearchPage() {
             </tbody>
           </table>
         </div>
+
       </div>
     </div>
   );
