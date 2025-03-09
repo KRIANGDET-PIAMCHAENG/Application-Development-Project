@@ -67,7 +67,7 @@ export default function ProfilePage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-xl font-semibold mt-4 text-center font-bold">Hello, I'm {userData.name}</h2>
+            <h2 className="text-xl mt-4 text-center font-bold">Hello, I'm {userData.name}</h2>
             <p className="text-center text-md mt-2 px-4">
               I am a student in the {userData.major} program, Faculty of {userData.faculty}.
             </p>
