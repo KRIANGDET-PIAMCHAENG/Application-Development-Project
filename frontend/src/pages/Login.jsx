@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaUser, FaLock, FaSun, FaMoon } from "react-icons/fa";
+import axios from 'axios';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function Login() {
 
     const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-    const handleLogin = () => {
+    const handleLogin = async () => {
         if (!username) return setError("กรุณากรอกอีเมล");
         if (!username.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
         if (!password) return setError("กรุณากรอกรหัสผ่าน");
@@ -37,6 +38,21 @@ export default function Login() {
         } else {
             setError("กรุณากรอกรหัสผ่านให้ถูกต้อง");
         }
+
+        // try {
+        //     const response = await axios.post('http://localhost:5000/login', {
+        //         username,
+        //         password
+        //     });
+
+        //     if (response.status === 200) {
+        //         setError("");
+        //         localStorage.setItem("darkMode", darkMode);
+        //         navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
+        //     }
+        // } catch (err) {
+        //     setError(err.response?.data?.error || "กรุณากรอกรหัสผ่านให้ถูกต้อง");
+        // }
     };
 
     const handleKeyDown = (event) => {
