@@ -66,6 +66,7 @@ export default function ProfilePage() {
           <div className="w-2/3 p-12 font-bold">
             <h3 className="text-2xl dark:text-gray-100 font-bold mb-6">Detail</h3>
             <div className="text-gray-700 dark:text-gray-100 space-y-4 text-lg">
+              
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
                 <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Name:</strong> {userData.name}
               </p>

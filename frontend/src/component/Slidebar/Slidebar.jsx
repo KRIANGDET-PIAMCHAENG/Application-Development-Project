@@ -87,6 +87,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                         Logout
                     </span>
                 </NavLink>
+                
             </div>
         </aside>
     );

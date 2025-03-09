@@ -17,13 +17,10 @@ users_collection = db["nisit_data"]
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-
 @app.route('/')
 def home():
     return "Backend is running!"
 
-
-@app.route('/login', methods=['POST'])
 @app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -44,8 +41,6 @@ def login():
 
     return jsonify({"message": "เข้าสู่ระบบสำเร็จ", "token": token}), 200
 
-
-
 @app.route('/protected', methods=['GET'])
 def protected():
     token = request.headers.get('Authorization', '').replace("Bearer ", "")
@@ -61,7 +56,6 @@ def protected():
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
 
-    
 @app.route('/profile', methods=['GET'])
 def get_profile():
     token = request.headers.get("Authorization")
@@ -84,7 +78,6 @@ def get_profile():
         return jsonify({"error": "Token has expired"}), 401
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
