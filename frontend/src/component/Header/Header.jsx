@@ -15,7 +15,7 @@ export const Header = ({ darkMode, toggleDarkMode, toggleSlidebar }) => {
                             className="p-2 rounded-lg hover:bg-green-900 dark:hover:bg-gray-700 transition"
                             onClick={toggleSlidebar}
                         >
-                            <HiOutlineMenuAlt2 className="text-white dark:text-gray-300 text-2xl" />
+                            <HiOutlineMenuAlt2 className="text-white text-2xl" />
                         </button>
 
                         {/* Logo */}
