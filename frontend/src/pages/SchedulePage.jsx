@@ -79,34 +79,34 @@ export default function ProfilePage() {
             <div className="text-gray-700 dark:text-gray-100 space-y-4 text-lg">
               
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Name:</strong> {userData.name}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Name :</strong> {userData.name}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Faculty:</strong> {userData.faculty}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Faculty :</strong> {userData.faculty}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Major:</strong> {userData.major}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Major :</strong> {userData.major}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Year:</strong> {userData.year}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Year :</strong> {userData.year}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Gender:</strong> {userData.gender}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Gender :</strong> {userData.gender}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Nationality:</strong> {userData.nationality}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Nationality :</strong> {userData.nationality}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Religion:</strong> {userData.religion}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Religion :</strong> {userData.religion}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Birth Date:</strong> {userData.birth_date}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Birth Date :</strong> {userData.birth_date}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Contact Number:</strong> {userData.contract_number}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Contact :</strong> {userData.contract_number}
               </p>
               <p className="text-gray-700 dark:text-gray-100 transition-colors duration-300">
-                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Advisor:</strong> {userData.advisor}
+                <strong className="text-gray-700 dark:text-gray-100 transition-colors duration-300">Advisor :</strong> {userData.advisor}
               </p>
 
             </div>
