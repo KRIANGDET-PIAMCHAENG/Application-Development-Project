@@ -24,6 +24,7 @@ def home():
 
 
 @app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
     email, password = data.get("email"), data.get("password")
@@ -37,10 +38,12 @@ def login():
 
     token = jwt.encode({
         "user_id": str(user["_id"]),
+        "email": user["email"],  # Add email to the token payload
         "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
     }, SECRET_KEY, algorithm="HS256")
 
     return jsonify({"message": "เข้าสู่ระบบสำเร็จ", "token": token}), 200
+
 
 
 @app.route('/protected', methods=['GET'])
@@ -52,11 +55,12 @@ def protected():
 
     try:
         decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
-        return jsonify({"message": f"Welcome user {decoded['user_id']}"}), 200
+        return jsonify({"message": f"Welcome user {decoded['user_id']}, email: {decoded['email']}"}), 200
     except jwt.ExpiredSignatureError:
         return jsonify({"error": "Token has expired"}), 401
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
+
     
 @app.route('/profile', methods=['GET'])
 def get_profile():
