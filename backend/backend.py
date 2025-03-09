@@ -57,6 +57,29 @@ def protected():
         return jsonify({"error": "Token has expired"}), 401
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
+    
+@app.route('/profile', methods=['GET'])
+def get_profile():
+    token = request.headers.get("Authorization")
+
+    if not token:
+        return jsonify({"error": "Token is missing"}), 403
+
+    try:
+        token = token.replace("Bearer ", "")
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded["email"]
+
+        user = users_collection.find_one({"email": email}, {"_id": 0, "password": 0})
+
+        if user:
+            return jsonify(user), 200
+        else:
+            return jsonify({"error": "User not found"}), 404
+    except jwt.ExpiredSignatureError:
+        return jsonify({"error": "Token has expired"}), 401
+    except jwt.InvalidTokenError:
+        return jsonify({"error": "Invalid token"}), 401
 
 
 if __name__ == '__main__':
