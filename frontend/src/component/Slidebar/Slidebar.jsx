@@ -74,7 +74,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
 
                 <NavLink 
                     to="/" 
-                    className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle,"hover:bg-red-600" )} 
+                    className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle, )} 
                     aria-label="Go to Logout"
                 >
                     <RiLoginBoxLine className="text-2xl ml-1" />
