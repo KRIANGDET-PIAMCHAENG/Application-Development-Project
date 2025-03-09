@@ -29,23 +29,43 @@ export default function Login() {
     // ฟังก์ชันล็อกอิน
     const handleLogin = async () => {
         setError(""); // เคลียร์ error ก่อนส่งข้อมูล
-
+    
         if (!email) return setError("กรุณากรอกอีเมล");
         if (!email.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
         if (!password) return setError("กรุณากรอกรหัสผ่าน");
-
+    
         try {
-            const response = await axios.post("http://localhost:5001/login", {
-                email,
-                password
-            });
-
+            const response = await axios.post("http://localhost:5001/login", { email, password });
+            console.log(response); // ตรวจสอบว่าได้ response จาก API หรือไม่
             if (response.status === 200) {
+                localStorage.setItem("token", response.data.token); // บันทึก token ใน localStorage
                 localStorage.setItem("darkMode", darkMode);
                 navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
             }
         } catch (err) {
+            console.log(err); // ดูข้อผิดพลาดที่เกิดขึ้นในคอนโซล
             setError(err?.response?.data?.error || "อีเมลหรือรหัสผ่านไม่ถูกต้อง");
+        }
+    };
+
+    // ฟังก์ชันสำหรับเข้าถึงข้อมูลที่ถูกป้องกัน
+    const getProtectedData = async () => {
+        const token = localStorage.getItem("token");
+    
+        if (!token) {
+            console.log("No token found");
+            return;
+        }
+    
+        try {
+            const response = await axios.get("http://localhost:5001/protected", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            console.log(response.data); // แสดงข้อมูลที่ได้รับจากเซิร์ฟเวอร์
+        } catch (err) {
+            console.log(err.response.data); // จัดการกับข้อผิดพลาดที่เกิดขึ้น
         }
     };
 
