@@ -26,7 +26,7 @@ export default function Login() {
 
     const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-    const handleLogin = async () => {
+    const handleLogin = () => {
         if (!username) return setError("กรุณากรอกอีเมล");
         if (!username.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
         if (!password) return setError("กรุณากรอกรหัสผ่าน");
@@ -38,22 +38,28 @@ export default function Login() {
         } else {
             setError("กรุณากรอกรหัสผ่านให้ถูกต้อง");
         }
-
-        // try {
-        //     const response = await axios.post('http://localhost:5000/login', {
-        //         username,
-        //         password
-        //     });
-
-        //     if (response.status === 200) {
-        //         setError("");
-        //         localStorage.setItem("darkMode", darkMode);
-        //         navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
-        //     }
-        // } catch (err) {
-        //     setError(err.response?.data?.error || "กรุณากรอกรหัสผ่านให้ถูกต้อง");
-        // }
     };
+
+    // const handleLogin = async () => {
+    //     if (!username) return setError("กรุณากรอกอีเมล");
+    //     if (!username.endsWith("@ku.th")) return setError("กรุณากรอกอีเมลที่ลงท้ายด้วย @ku.th");
+    //     if (!password) return setError("กรุณากรอกรหัสผ่าน");
+
+    //     try {
+    //         const response = await axios.post('http://localhost:5000/login', {
+    //             username,
+    //             password
+    //         });
+
+    //         if (response.status === 200) {
+    //             setError("");
+    //             localStorage.setItem("darkMode", darkMode);
+    //             navigate("/home"); // ไปที่หน้าหลักหลังจากเข้าสู่ระบบสำเร็จ
+    //         }
+    //     } catch (err) {
+    //         setError(err.response?.data?.error || "กรุณากรอกรหัสผ่านให้ถูกต้อง");
+    //     }
+    // };
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
