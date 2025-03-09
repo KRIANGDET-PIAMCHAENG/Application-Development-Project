@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { ImProfile } from "react-icons/im";
-import { TiHomeOutline } from "react-icons/ti";
+import { LuNotebookText } from "react-icons/lu";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { RiLoginBoxLine } from "react-icons/ri";
 import clsx from "clsx";
@@ -42,7 +42,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                     className={({ isActive }) => clsx(linkStyle, isActive && activeLinkStyle)} 
                     aria-label="Go to Subject"
                 >
-                    <TiHomeOutline className="text-2xl ml-1" />
+                    <LuNotebookText className="text-2xl ml-1" />
                     <span 
                         className={clsx(
                             "absolute left-12 opacity-0 translate-x-2 transition-all duration-300",

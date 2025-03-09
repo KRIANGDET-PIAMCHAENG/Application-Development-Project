@@ -15,7 +15,7 @@ export default function ProfilePage() {
             {/* Profile Image */}
             <div className="w-72 h-72 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src={profilePic} 
+                src={profilePic}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

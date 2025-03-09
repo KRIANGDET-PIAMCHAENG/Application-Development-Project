@@ -50,8 +50,8 @@ export default function Login() {
             {/*  Header */}
             <header className="w-full py-4 px-6 bg-green-700 dark:bg-gray-800 text-white flex justify-between items-center">
                 <h1 className="text-2xl font-bold w-full text-center dark:text-green-700">KU-SCHEDULE</h1>
-                <button 
-                    onClick={toggleDarkMode} 
+                <button
+                    onClick={toggleDarkMode}
                     className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:scale-110 transition"
                 >
                     {darkMode ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
