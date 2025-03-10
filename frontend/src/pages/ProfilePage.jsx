@@ -26,7 +26,7 @@ export default function SearchPage() {
       const data = await response.json();
       setSubjects(data);
     } catch (error) {
-      console.error("❌ Error fetching courses:", error);
+      console.error("Error fetching courses:", error);
     }
   };
 
