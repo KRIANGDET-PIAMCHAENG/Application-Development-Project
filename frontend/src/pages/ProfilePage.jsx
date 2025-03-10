@@ -7,9 +7,8 @@ export default function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
   const [group, setGroup] = useState("");
-  const [selectedCourse, setSelectedCourse] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5); // เปลี่ยนจำนวนรายการต่อหน้า
+  const [itemsPerPage, setItemsPerPage] = useState(7);
 
   useEffect(() => {
     fetchCourses();
@@ -55,7 +54,7 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${currentPage === i ? "bg-green-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
+            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
           >
             {i}
           </button>
@@ -113,10 +112,9 @@ export default function SearchPage() {
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
       <Dashboard />
       <div className="flex-1 p-7">
-        <h1 className="text-green-500 text-2xl flex justify-center font-bold mb-6">KU-SCHEDULE</h1>
-        <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto">
+        <div className="flex flex-col justify-between dark:bg-gray-800 p-7  rounded-lg shadow-md bg-white max-w-7xl mx-auto translate-y-20">
           <div className="flex justify-between items-center mb-4">
-            {/* ช่องค้นหา (ชิดซ้าย) */}
+            {/* ช่องค้นหา (ซ้าย) */}
             <div className="relative w-2/4">
               <input
                 type="text"
@@ -128,57 +126,62 @@ export default function SearchPage() {
               <FaSearch className="absolute left-3 top-3 text-black" />
             </div>
 
-            {/* กลุ่ม Dropdown (ชิดขวา) */}
+            {/* Dropdown (ขวา) */}
             <div className="flex space-x-4">
-              {/* Dropdown เลือกหมวดวิชา */}
-              <select
-                className="p-2 rounded bg-gray-200 text-gray-500"
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
-              >
+              <select className="p-2 rounded bg-gray-200 text-gray-500" value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="">เลือกหมวดวิชา</option>
                 <option value="หมวดวิชาเฉพาะ">หมวดวิชาเฉพาะ</option>
                 <option value="หมวดวิชานอกหลักสูตร">หมวดวิชานอกหลักสูตร</option>
                 <option value="หมวดวิชาศึกษาทั่วไป">หมวดวิชาศึกษาทั่วไป</option>
               </select>
 
-              {/* Dropdown เลือกกลุ่มวิชา */}
-              <select
-                className="p-2 rounded bg-gray-200 text-gray-500"
-                value={group}
-                onChange={(e) => setGroup(e.target.value)}
-              >
+              <select className="p-2 rounded bg-gray-200 text-gray-500" value={group} onChange={(e) => setGroup(e.target.value)}>
                 <option value="">เลือกกลุ่มวิชา</option>
                 <option value="สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)">ฮาร์ดแวร์</option>
                 <option value="สายการพัฒนาซอฟต์แวร์ (Software Development)">ซอฟต์แวร์</option>
                 <option value="สายเครือข่ายคอมพิวเตอร์ (Computer Networks)">เครือข่าย</option>
+                <option value="สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)">สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์</option>
+                <option value="สายสื่อประสม (Multimedia)">สายสื่อประสม</option>
               </select>
             </div>
           </div>
 
+          {/* ตารางแสดงรายวิชา */}
 
-          <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
-            <thead>
-              <tr className="border-b border-gray-700 text-gray-700 dark:text-white">
-                <th className="p-3 text-center">รหัสวิชา</th>
-                <th className="p-3 text-center">ชื่อวิชา</th>
-                <th className="p-3 text-center">หน่วยกิต</th>
-                <th className="p-3 text-center">รายละเอียด</th>
-              </tr>
-            </thead>
-            <tbody>
-              {currentSubjects.map((subject, index) => (
-                <tr key={`${subject.course_code}-${index}`} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
-                  <td className="p-3 text-center">{subject.course_code}</td>
-                  <td className="p-3 text-center">{subject.course_name}</td>
-                  <td className="p-3 text-center">{subject.credit}</td>
-                  <td className="p-3 text-center">
-                    <button className="bg-blue-500 text-white p-2 rounded">ดูรายละเอียด</button>
-                  </td>
+          <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow">
+            <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
+              <thead className="border-b border-gray-700 text-gray-700 dark:text-white">
+                <tr>
+                  <th className="p-3 text-center">รหัสวิชา</th>
+                  <th className="p-3 text-center">ชื่อวิชา</th>
+                  <th className="p-3 text-center">หน่วยกิต</th>
+                  <th className="p-3 text-center">รายละเอียด</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody>
+                {currentSubjects.length > 0
+                  ? currentSubjects.map((subject, index) => (
+                    <tr key={`${subject.course_code}-${index}`} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
+                      <td className="p-3 text-center">{subject.course_code}</td>
+                      <td className="p-3 text-center">{subject.course_name}</td>
+                      <td className="p-3 text-center">{subject.credit}</td>
+                      <td className="p-3 text-center">
+                        <button className="bg-blue-500 text-white p-2 rounded">ดูรายละเอียด</button>
+                      </td>
+                    </tr>
+                  ))
+                  : Array.from({ length: 10 }).map((_, index) => (
+                    <tr key={index} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
 
           {/* Pagination */}
           <div className="flex justify-center space-x-2 mt-4 p-2 dark:bg-gray-700 bg-gray-200 rounded-lg">
