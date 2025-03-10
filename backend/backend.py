@@ -6,24 +6,37 @@ from dotenv import load_dotenv
 import jwt
 import datetime
 
+# โหลด environment variables
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # เปิดใช้งาน CORS สำหรับทุก endpoint
 
 client = MongoClient(os.getenv("MONGO_URI"))
+
 db = client["nisit"]
 users_collection = db["nisit_data"]
 
 course_db = client["Course"]
-courses_collection = course_db["kusrc_computer_engineering_courses_2022"]
+courses_collection = course_db.list_collection_names()  # ดึงรายชื่อ Collections ใน Database Course
+
+# รวมข้อมูลจากทุก Collection เป็น merged_course
+merged_course = []
+for course_name in courses_collection:
+    collection = course_db[course_name]  # ดึง Collection 
+    documents = collection.find({}, {"_id": 0})  # ดึงข้อมูล
+    for doc in documents:
+        doc["source_collection"] = course_name  
+        merged_course.append(doc)  
+
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 @app.route('/')
 def home():
-    return "Backend is running!"
+    return jsonify({"message": "Backend is running!"}), 200
 
+#  Endpoint สำหรับ Login และสร้าง Token
 @app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -44,6 +57,7 @@ def login():
 
     return jsonify({"message": "เข้าสู่ระบบสำเร็จ", "token": token}), 200
 
+#  Endpoint ที่ต้องใช้ Token
 @app.route('/protected', methods=['GET'])
 def protected():
     token = request.headers.get('Authorization', '').replace("Bearer ", "")
@@ -59,6 +73,7 @@ def protected():
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
 
+#  ดึงข้อมูล Profile โดยใช้ Token
 @app.route('/profile', methods=['GET'])
 def get_profile():
     token = request.headers.get("Authorization")
@@ -81,18 +96,30 @@ def get_profile():
         return jsonify({"error": "Token has expired"}), 401
     except jwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
-    
+
+#  ดึงข้อมูล Courses จากทุก Collection
 @app.route('/courses', methods=['GET'])
 def get_courses():
     category = request.args.get('category')
+    course_code = request.args.get('course_code')
+    group = request.args.get('group')
 
-    query = {}
+    filtered_courses = merged_course
+
     if category:
-        query["category"] = category  
+        filtered_courses = [course for course in filtered_courses if course.get("category") == category]
 
-    courses = courses_collection.find(query, {"_id": 0, "course_code": 1, "course_name": 1, "credit": 1, "description": 1, "category": 1}).sort("course_code")
+    if course_code:
+        filtered_courses = [course for course in filtered_courses if course.get("course_code") == course_code]
 
-    return jsonify(list(courses)), 200
+    if group:
+        filtered_courses = [course for course in filtered_courses if course.get("group") == group]  # ✅ เพิ่ม group
 
+<<<<<<< HEAD
+=======
+    print(" ส่งข้อมูลกลับไปยัง Frontend:", filtered_courses)  #  Debug
+    return jsonify(filtered_courses), 200
+
+>>>>>>> cca7207650efb0d004a66c503f85c5a0bd863f97
 if __name__ == '__main__':
     app.run(debug=True, port=5001)

@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-glow {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  @layer utilities {
+    .scrollbar-custom::-webkit-scrollbar {
+      width: 7px;  
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar-thumb {
+      background-color: #ffffff88; 
+      border-radius: 8px;
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar-track {
+      background-color: #f1f1f100; 
+      border-radius: 10px;
+    }
+  }
