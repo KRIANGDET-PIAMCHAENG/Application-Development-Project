@@ -14,8 +14,19 @@ CORS(app)
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["nisit"]
 users_collection = db["nisit_data"]
+
 course_db = client["Course"]
-courses_collection = course_db["kusrc_computer_engineering_courses_2022"]
+courses_collection = course_db.list_collection_names()
+
+merged_course = []
+
+for course_name in course_collection:
+    collection = course_db[course_name]
+    documents = list(collection.find())
+    for doc in documents:
+        doc["course_name"] = course_name
+        doc.pop("_id",None)
+    merged_course.extend(documents)
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
