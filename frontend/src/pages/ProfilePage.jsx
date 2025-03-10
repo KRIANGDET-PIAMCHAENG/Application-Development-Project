@@ -114,7 +114,7 @@ export default function SearchPage() {
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
       <Dashboard />
       <div className="flex-1 p-7">
-        <div className="flex flex-col justify-between dark:bg-gray-800 p-7  rounded-lg shadow-md bg-white max-w-7xl mx-auto translate-y-20">
+        <div className="flex flex-col justify-between dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto translate-y-20">
           <div className="flex justify-between items-center mb-4">
             {/* ช่องค้นหา (ซ้าย) */}
             <div className="relative w-2/4">
@@ -135,8 +135,7 @@ export default function SearchPage() {
                 onChange={(e) => {
                   setCategory(e.target.value);
                   setCurrentPage(1);
-                }
-                }
+                }}
               >
                 <option value="">เลือกหมวดวิชา</option>
                 <option value="หมวดวิชาเฉพาะ">หมวดวิชาเฉพาะ</option>
@@ -147,10 +146,9 @@ export default function SearchPage() {
               <select className="p-2 rounded bg-gray-200 text-gray-500"
                 value={group}
                 onChange={(e) => {
-                  setCategory(e.target.value);
+                  setGroup(e.target.value);  // แก้ไขเป็น setGroup แทน setCategory
                   setCurrentPage(1);
-                }
-                }
+                }}
               >
                 <option value="">เลือกกลุ่มวิชา</option>
                 <option value="สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)">ฮาร์ดแวร์</option>
@@ -163,7 +161,6 @@ export default function SearchPage() {
           </div>
 
           {/* ตารางแสดงรายวิชา */}
-
           <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow ">
             <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
               <thead className="border-b border-gray-700 text-gray-700 dark:text-white">
@@ -213,39 +210,39 @@ export default function SearchPage() {
       </div>
 
       <AnimatePresence>
-            {selectedCourse !== null && (
-              <motion.div
-                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setSelectedCourse(null)} 
-              >
-                <motion.div
-                  className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg w-1/3"
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.8, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  onClick={(e) => e.stopPropagation()}  
+        {selectedCourse !== null && (
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedCourse(null)}
+          >
+            <motion.div
+              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg w-1/3"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="dark:text-white text-xl font-bold">
+                {selectedCourse.course_name}
+              </h2>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                {selectedCourse.description || "ไม่มีคำอธิบาย"}
+              </p>
+              <div className="flex justify-end mt-4">
+                <button
+                  className="bg-green-800 text-white px-4 py-2 rounded"
                 >
-                  <h2 className="dark:text-white text-xl font-bold">
-                    {selectedCourse.course_name}
-                  </h2>
-                  <p className="text-gray-700 dark:text-gray-300 mt-2">
-                    {selectedCourse.description || "ไม่มีคำอธิบาย"}
-                  </p>
-                  <div className="flex justify-end mt-4">
-                    <button
-                      className="bg-green-800 text-white px-4 py-2 rounded"                    
-                    >
-                      Add
-                    </button>
-                  </div>
-                </motion.div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                  Add
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
