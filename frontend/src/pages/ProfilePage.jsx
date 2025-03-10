@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import Dashboard from "../component/Dashboard";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function SearchPage() {
   const [subjects, setSubjects] = useState([]);
@@ -98,6 +99,7 @@ export default function SearchPage() {
                 เทคโนโลยีและวิธีการทางซอฟต์แวร์
               </option>
               <option value="สายเครือข่ายคอมพิวเตอร์ (Computer Networks)">เครือข่ายคอมพิวเตอร์</option>
+              <option value="สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)">สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์</option>
             </select>
           </div>
 
@@ -137,6 +139,37 @@ export default function SearchPage() {
           </table>
         </div>
       </div>
+      {/* Pop-up Modal สำหรับแสดงรายละเอียดวิชา */}
+      <AnimatePresence>
+        {selectedCourse && (
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg w-1/3"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <h2 className="dark:text-white text-xl font-bold">{selectedCourse.course_name}</h2>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">{selectedCourse.description}</p>
+              <div className="flex justify-end mt-4">
+                <button
+                  className="bg-red-500 text-white px-4 py-2 rounded"
+                  onClick={() => setSelectedCourse(null)}
+                >
+                  ปิด
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   );
 }
