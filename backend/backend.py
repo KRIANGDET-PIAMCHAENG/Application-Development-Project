@@ -14,7 +14,8 @@ CORS(app)
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["nisit"]
 users_collection = db["nisit_data"]
-courses_collection = db["kusrc_computer_engineering_courses_2022"]
+course_db = client["Course"]
+courses_collection = course_db["kusrc_computer_engineering_courses_2022"]
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
