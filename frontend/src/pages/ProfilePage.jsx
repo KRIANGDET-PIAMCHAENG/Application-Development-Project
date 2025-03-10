@@ -35,10 +35,7 @@ export default function SearchPage() {
   return (
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
       <Dashboard />
-      <div className="flex-1 p-7">
-        <h1 className="text-green-500 text-2xl flex justify-center font-bold mb-6">
-          KU-SCHEDULE
-        </h1>
+      <div className="flex-1 p-7 translate-y-20">
         <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto">
           
           {/* ค้นหาและเลือกหมวดหมู่ */}
@@ -103,7 +100,7 @@ export default function SearchPage() {
 
       {/* Pop-up Modal สำหรับแสดงรายละเอียดวิชา */}
       {selectedCourse && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-20">
           <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
             <h2 className="text-xl font-bold">{selectedCourse.course_name}</h2>
             <p className="text-gray-700 mt-2">{selectedCourse.description}</p>

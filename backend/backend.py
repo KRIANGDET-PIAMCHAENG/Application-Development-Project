@@ -14,6 +14,7 @@ CORS(app)
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["nisit"]
 users_collection = db["nisit_data"]
+
 course_db = client["Course"]
 courses_collection = course_db["kusrc_computer_engineering_courses_2022"]
 
@@ -92,7 +93,6 @@ def get_courses():
     courses = courses_collection.find(query, {"_id": 0, "course_code": 1, "course_name": 1, "credit": 1, "description": 1, "category": 1}).sort("course_code")
 
     return jsonify(list(courses)), 200
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
