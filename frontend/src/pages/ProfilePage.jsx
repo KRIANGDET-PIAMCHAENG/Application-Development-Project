@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import Dashboard from "../component/Dashboard";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function SearchPage() {
   const [subjects, setSubjects] = useState([]);
@@ -9,6 +10,7 @@ export default function SearchPage() {
   const [group, setGroup] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(7);
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   useEffect(() => {
     fetchCourses();
@@ -128,14 +130,28 @@ export default function SearchPage() {
 
             {/* Dropdown (ขวา) */}
             <div className="flex space-x-4">
-              <select className="p-2 rounded bg-gray-200 text-gray-500" value={category} onChange={(e) => setCategory(e.target.value)}>
+              <select className="p-2 rounded bg-gray-200 text-gray-500"
+                value={category}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                  setCurrentPage(1);
+                }
+                }
+              >
                 <option value="">เลือกหมวดวิชา</option>
                 <option value="หมวดวิชาเฉพาะ">หมวดวิชาเฉพาะ</option>
                 <option value="หมวดวิชานอกหลักสูตร">หมวดวิชานอกหลักสูตร</option>
                 <option value="หมวดวิชาศึกษาทั่วไป">หมวดวิชาศึกษาทั่วไป</option>
               </select>
 
-              <select className="p-2 rounded bg-gray-200 text-gray-500" value={group} onChange={(e) => setGroup(e.target.value)}>
+              <select className="p-2 rounded bg-gray-200 text-gray-500"
+                value={group}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                  setCurrentPage(1);
+                }
+                }
+              >
                 <option value="">เลือกกลุ่มวิชา</option>
                 <option value="สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)">ฮาร์ดแวร์</option>
                 <option value="สายการพัฒนาซอฟต์แวร์ (Software Development)">ซอฟต์แวร์</option>
@@ -148,7 +164,7 @@ export default function SearchPage() {
 
           {/* ตารางแสดงรายวิชา */}
 
-          <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow">
+          <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow ">
             <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
               <thead className="border-b border-gray-700 text-gray-700 dark:text-white">
                 <tr>
@@ -167,7 +183,11 @@ export default function SearchPage() {
                       <td className="p-3 text-center">{subject.course_name}</td>
                       <td className="p-3 text-center">{subject.credit}</td>
                       <td className="p-3 text-center">
-                        <button className="bg-blue-500 text-white p-2 rounded">ดูรายละเอียด</button>
+                        <button className="bg-blue-500 text-white p-2 rounded"
+                          onClick={() => setSelectedCourse(subject)}
+                        >
+                          ดูรายละเอียด
+                        </button>
                       </td>
                     </tr>
                   ))
@@ -191,6 +211,41 @@ export default function SearchPage() {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+            {selectedCourse !== null && (
+              <motion.div
+                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setSelectedCourse(null)} 
+              >
+                <motion.div
+                  className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg w-1/3"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.8, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  onClick={(e) => e.stopPropagation()}  
+                >
+                  <h2 className="dark:text-white text-xl font-bold">
+                    {selectedCourse.course_name}
+                  </h2>
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">
+                    {selectedCourse.description || "ไม่มีคำอธิบาย"}
+                  </p>
+                  <div className="flex justify-end mt-4">
+                    <button
+                      className="bg-green-800 text-white px-4 py-2 rounded"                    
+                    >
+                      Add
+                    </button>
+                  </div>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
     </div>
   );
 }
