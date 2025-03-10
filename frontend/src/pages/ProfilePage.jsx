@@ -6,31 +6,44 @@ export default function SearchPage() {
   const [subjects, setSubjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
+  const [group, setGroup] = useState("");
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   useEffect(() => {
     fetchCourses();
-  }, [category]);
+  }, [category, group, searchTerm]); // ✅ ค้นหาข้อมูลแบบเรียลไทม์
 
   const fetchCourses = async () => {
     try {
       let url = "http://localhost:5001/courses";
-      if (category) {
-        url += `?category=${encodeURIComponent(category)}`;
-      }
+      const params = new URLSearchParams();
+
+      if (category) params.append("category", category);
+      if (searchTerm) params.append("course_code", searchTerm);
+      if (group) params.append("group", group);
+
+      if (params.toString()) url += `?${params.toString()}`;
+
+      console.log("🔍 Fetching:", url);  // ✅ Debug URL
       const response = await fetch(url);
       const data = await response.json();
+
+      console.log("📦 API Response:", data); // ✅ Debug API response
       setSubjects(data);
     } catch (error) {
-      console.error("Error fetching courses:", error);
+      console.error("❌ Error fetching courses:", error);
     }
   };
 
-  const filteredSubjects = subjects.filter(
-    (subject) =>
+  // ✅ กรองข้อมูลก่อนแสดงผล
+  const filteredSubjects = subjects.filter((subject) => {
+    const matchesGroup = !group || subject.group === group;
+    const matchesSearch =
       subject.course_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      subject.course_code?.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      subject.course_code?.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matchesGroup && matchesSearch;
+  });
 
   return (
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
@@ -40,10 +53,11 @@ export default function SearchPage() {
           KU-SCHEDULE
         </h1>
         <div className="dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto">
-          
+
           {/* ค้นหาและเลือกหมวดหมู่ */}
           <div className="flex justify-start space-x-4 mb-4">
-            <div className="relative w-1/2">
+            {/* ช่องค้นหา */}
+            <div className="relative w-1/3">
               <input
                 type="text"
                 placeholder="ค้นหารหัสวิชา"
@@ -53,6 +67,8 @@ export default function SearchPage() {
               />
               <FaSearch className="absolute left-3 top-3 text-black" />
             </div>
+
+            {/* Dropdown เลือกหมวดหมู่ */}
             <select
               className="p-2 rounded bg-gray-200 text-gray-500 w-1/4"
               value={category}
@@ -61,6 +77,27 @@ export default function SearchPage() {
               <option value="">เลือกหมวดวิชา</option>
               <option value="หมวดวิชาเฉพาะ">หมวดวิชาเฉพาะ</option>
               <option value="หมวดวิชานอกหลักสูตร">หมวดวิชานอกหลักสูตร</option>
+              <option value="หมวดวิชาศึกษาทั่วไป">หมวดวิชาศึกษาทั่วไป</option>
+            </select>
+
+            {/* Dropdown เลือกกลุ่มวิชา */}
+            <select
+              className="p-2 rounded bg-gray-200 text-gray-500 w-1/4"
+              value={group}
+              onChange={(e) => {
+                setGroup(e.target.value);
+                console.log("✅ Group Selected:", e.target.value); // ✅ Debug
+              }}
+            >
+              <option value="">เลือกกลุ่มวิชา</option>
+              <option value="วิชาแกน (Fundamental Courses)">วิชาแกน</option>
+              <option value="กลุ่มวิชาฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ (Computer Hardware and Architecture)">
+                ฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์
+              </option>
+              <option value="กลุ่มวิชาเทคโนโลยีและวิธีการทางซอฟต์แวร์ (Software Technology and Methods)">
+                เทคโนโลยีและวิธีการทางซอฟต์แวร์
+              </option>
+              <option value="สายเครือข่ายคอมพิวเตอร์ (Computer Networks)">เครือข่ายคอมพิวเตอร์</option>
             </select>
           </div>
 
@@ -76,8 +113,8 @@ export default function SearchPage() {
             </thead>
             <tbody>
               {filteredSubjects.length > 0 ? (
-                filteredSubjects.map((subject) => (
-                  <tr key={subject.course_code} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
+                filteredSubjects.map((subject, index) => (
+                  <tr key={`${subject.course_code}-${index}`} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
                     <td className="p-3 text-center">{subject.course_code}</td>
                     <td className="p-3 text-center">{subject.course_name}</td>
                     <td className="p-3 text-center">{subject.credit}</td>
@@ -100,24 +137,6 @@ export default function SearchPage() {
           </table>
         </div>
       </div>
-
-      {/* Pop-up Modal สำหรับแสดงรายละเอียดวิชา */}
-      {selectedCourse && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
-            <h2 className="text-xl font-bold">{selectedCourse.course_name}</h2>
-            <p className="text-gray-700 mt-2">{selectedCourse.description}</p>
-            <div className="flex justify-end mt-4">
-              <button
-                className="bg-red-500 text-white px-4 py-2 rounded"
-                onClick={() => setSelectedCourse(null)}
-              >
-                ปิด
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
