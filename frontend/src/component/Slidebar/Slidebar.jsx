@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export const Slidebar = ({ isSlidebarOpen }) => {
     const [isLogoutPopupOpen, setIsLogoutPopupOpen] = useState(false);
-    const navigate = useNavigate();  // ใช้สำหรับการนำทางไปยังหน้า login
+    const navigate = useNavigate();  
 
     const linkStyle = "relative flex items-center px-4 py-3 text-gray-300 font-bold transition-all duration-300 ease-in-out hover:text-glow hover:drop-shadow-[0_0_3px_#ffffff]";
     const activeLinkStyle = "text-white bg-green-900 dark:bg-gray-700";
@@ -20,15 +20,12 @@ export const Slidebar = ({ isSlidebarOpen }) => {
     };
 
     const handleConfirmLogout = () => {
-        // ลบข้อมูลการเข้าสู่ระบบ
         localStorage.removeItem("userToken"); // ลบ token หรือข้อมูลที่เก็บไว้
         sessionStorage.removeItem("userToken"); // ถ้าใช้ sessionStorage ก็ลบที่นี่ได้
 
-        // ปิด Popup
         setIsLogoutPopupOpen(false);
 
-        // รีไดเรกต์ไปยังหน้า login หรือหน้าอื่น
-        navigate("/login");  // เปลี่ยนเส้นทางไปหน้า login
+        navigate("/login");  
     };
 
     const handleCancelLogout = () => {
@@ -36,7 +33,6 @@ export const Slidebar = ({ isSlidebarOpen }) => {
     };
 
     const handleBackdropClick = (e) => {
-        // ปิด Popup เมื่อคลิกที่พื้นหลัง (นอกกรอบ)
         if (e.target === e.currentTarget) {
             setIsLogoutPopupOpen(false);
         }
@@ -148,7 +144,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        onClick={handleBackdropClick}  // คลิกที่พื้นหลังจะปิดโมดัล
+                        onClick={handleBackdropClick}  
                     >
                         <motion.div
                             className="bg-white p-6 rounded-md shadow-lg w-96"
@@ -156,7 +152,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.8, opacity: 0 }}
                             transition={{ duration: 0.3 }}
-                            onClick={(e) => e.stopPropagation()}  // หยุดการ bubble เมื่อคลิกในกรอบ
+                            onClick={(e) => e.stopPropagation()}  
                         >
                             <h2 className="text-xl text-center mb-4">Are you sure you want to log out?</h2>
                             <div className="flex justify-around">
