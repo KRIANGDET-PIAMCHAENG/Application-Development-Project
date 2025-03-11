@@ -28,7 +28,7 @@ export const Slidebar = ({ isSlidebarOpen }) => {
         setIsLogoutPopupOpen(false);
 
         // รีไดเรกต์ไปยังหน้า login หรือหน้าอื่น
-        navigate("/login");  // เปลี่ยนเส้นทางไปหน้า login
+        navigate("/");  // เปลี่ยนเส้นทางไปหน้า login
     };
 
     const handleCancelLogout = () => {

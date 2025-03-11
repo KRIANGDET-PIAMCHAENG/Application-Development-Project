@@ -234,9 +234,9 @@ export default function SearchPage() {
               </p>
               <div className="flex justify-end mt-4">
                 <button
-                  className="bg-green-800 text-white px-4 py-2 rounded"
+                  className="bg-red-700 text-white px-4 py-2 rounded"
                 >
-                  Add
+                  Close
                 </button>
               </div>
             </motion.div>
