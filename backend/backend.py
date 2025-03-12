@@ -3,7 +3,7 @@ from flask_cors import CORS
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
-import jwt
+import jwt as pyjwt  # ใช้ alias เพื่อหลีกเลี่ยงปัญหาชื่อซ้ำ
 import datetime
 
 # โหลด environment variables
@@ -18,17 +18,16 @@ db = client["nisit"]
 users_collection = db["nisit_data"]
 
 course_db = client["Course"]
-courses_collection = course_db.list_collection_names()  # ดึงรายชื่อ Collections ใน Database Course
+courses_collection = course_db.list_collection_names()
 
 # รวมข้อมูลจากทุก Collection เป็น merged_course
 merged_course = []
 for course_name in courses_collection:
-    collection = course_db[course_name]  # ดึง Collection 
-    documents = collection.find({}, {"_id": 0})  # ดึงข้อมูล
+    collection = course_db[course_name]
+    documents = collection.find({}, {"_id": 0})
     for doc in documents:
         doc["source_collection"] = course_name  
         merged_course.append(doc)  
-
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -49,7 +48,7 @@ def login():
     if not user or password != user["password"]:
         return jsonify({"error": "อีเมลหรือรหัสผ่านไม่ถูกต้อง"}), 401
 
-    token = jwt.encode({
+    token = pyjwt.encode({
         "user_id": str(user["_id"]),
         "email": user["email"],  
         "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
@@ -66,11 +65,11 @@ def protected():
         return jsonify({"error": "Token is missing"}), 403
 
     try:
-        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        decoded = pyjwt.decode(token, SECRET_KEY, algorithms=["HS256"])
         return jsonify({"message": f"Welcome user {decoded['user_id']}, email: {decoded['email']}"}), 200
-    except jwt.ExpiredSignatureError:
+    except pyjwt.ExpiredSignatureError:
         return jsonify({"error": "Token has expired"}), 401
-    except jwt.InvalidTokenError:
+    except pyjwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
 
 #  ดึงข้อมูล Profile โดยใช้ Token
@@ -83,7 +82,7 @@ def get_profile():
 
     try:
         token = token.replace("Bearer ", "")
-        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        decoded = pyjwt.decode(token, SECRET_KEY, algorithms=["HS256"])
         email = decoded["email"]
 
         user = users_collection.find_one({"email": email}, {"_id": 0, "password": 0})
@@ -92,9 +91,9 @@ def get_profile():
             return jsonify(user), 200
         else:
             return jsonify({"error": "User not found"}), 404
-    except jwt.ExpiredSignatureError:
+    except pyjwt.ExpiredSignatureError:
         return jsonify({"error": "Token has expired"}), 401
-    except jwt.InvalidTokenError:
+    except pyjwt.InvalidTokenError:
         return jsonify({"error": "Invalid token"}), 401
 
 #  ดึงข้อมูล Courses จากทุก Collection
@@ -113,9 +112,9 @@ def get_courses():
         filtered_courses = [course for course in filtered_courses if course.get("course_code") == course_code]
 
     if group:
-        filtered_courses = [course for course in filtered_courses if course.get("group") == group]  # ✅ เพิ่ม group
+        filtered_courses = [course for course in filtered_courses if course.get("group") == group]
 
-    print(" ส่งข้อมูลกลับไปยัง Frontend:", filtered_courses)  #  Debug
+    print(" ส่งข้อมูลกลับไปยัง Frontend:", filtered_courses)  # Debug
     return jsonify(filtered_courses), 200
 
 if __name__ == '__main__':

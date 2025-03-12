@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
-import { FaSearch } from "react-icons/fa";
+import React, { useState, useEffect, useContext } from "react";
+import { FaSearch, FaPlus } from "react-icons/fa";
 import Dashboard from "../component/Dashboard";
 import { motion, AnimatePresence } from "framer-motion";
+import { CiViewList } from "react-icons/ci";
+import { CourseContext } from "../context/CourseContext"; // นำเข้า CourseContext
 
 export default function SearchPage() {
+  const { addedCourses, setAddedCourses } = useContext(CourseContext); // ใช้ Context
   const [subjects, setSubjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
@@ -11,6 +14,7 @@ export default function SearchPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(7);
   const [selectedCourse, setSelectedCourse] = useState(null);
+  const [overlayVisible, setOverlayVisible] = useState(false);
 
   useEffect(() => {
     fetchCourses();
@@ -34,10 +38,11 @@ export default function SearchPage() {
 
   const filteredSubjects = subjects.filter((subject) => {
     const matchesGroup = !group || subject.group === group;
+    const matchesCategory = !category || subject.category === category;
     const matchesSearch =
       subject.course_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       subject.course_code?.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesGroup && matchesSearch;
+    return matchesGroup && matchesCategory && matchesSearch;
   });
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -45,7 +50,6 @@ export default function SearchPage() {
   const currentSubjects = filteredSubjects.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredSubjects.length / itemsPerPage);
 
-  // ฟังก์ชันสร้าง Pagination
   const renderPagination = () => {
     const maxButtons = 5;
     let pages = [];
@@ -56,7 +60,9 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
+            className={`px-3 py-1 rounded ${
+              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
           >
             {i}
           </button>
@@ -67,7 +73,9 @@ export default function SearchPage() {
         <button
           key={1}
           onClick={() => setCurrentPage(1)}
-          className={`px-3 py-1 rounded ${currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
+          className={`px-3 py-1 rounded ${
+            currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+          }`}
         >
           1
         </button>
@@ -85,7 +93,9 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
+            className={`px-3 py-1 rounded ${
+              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
           >
             {i}
           </button>
@@ -100,7 +110,9 @@ export default function SearchPage() {
         <button
           key={totalPages}
           onClick={() => setCurrentPage(totalPages)}
-          className={`px-3 py-1 rounded ${currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"}`}
+          className={`px-3 py-1 rounded ${
+            currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+          }`}
         >
           {totalPages}
         </button>
@@ -110,13 +122,31 @@ export default function SearchPage() {
     return pages;
   };
 
+  const handlePlusClick = (subject) => {
+    if (!addedCourses.some(course => course.course_code === subject.course_code)) {
+      setAddedCourses([...addedCourses, { ...subject, status: 'Added' }]);
+    } else {
+      alert(`วิชา ${subject.course_name} ได้ถูกเพิ่มไปแล้ว`);
+    }
+  };
+
+  const handleRemoveClick = (courseCode) => {
+    setAddedCourses(addedCourses.filter(course => course.course_code !== courseCode));
+  };
+
   return (
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
       <Dashboard />
+      <h1 className="absolute top-[20%] right-14 transform -translate-y-1/2 mr-4 text-lg font-bold text-gray-700 dark:text-white">
+        <CiViewList
+          className="cursor-pointer text-6xl"
+          onClick={() => setOverlayVisible(!overlayVisible)}
+        />
+      </h1>
+
       <div className="flex-1 p-7">
         <div className="flex flex-col justify-between dark:bg-gray-800 p-7 rounded-lg shadow-md bg-white max-w-7xl mx-auto translate-y-20">
           <div className="flex justify-between items-center mb-4">
-            {/* ช่องค้นหา (ซ้าย) */}
             <div className="relative w-2/4">
               <input
                 type="text"
@@ -127,10 +157,9 @@ export default function SearchPage() {
               />
               <FaSearch className="absolute left-3 top-3 text-black" />
             </div>
-
-            {/* Dropdown (ขวา) */}
             <div className="flex space-x-4">
-              <select className="p-2 rounded bg-gray-200 text-gray-500"
+              <select
+                className="p-2 rounded bg-gray-200 text-gray-500"
                 value={category}
                 onChange={(e) => {
                   setCategory(e.target.value);
@@ -143,10 +172,11 @@ export default function SearchPage() {
                 <option value="หมวดวิชาศึกษาทั่วไป">หมวดวิชาศึกษาทั่วไป</option>
               </select>
 
-              <select className="p-2 rounded bg-gray-200 text-gray-500"
+              <select
+                className="p-2 rounded bg-gray-200 text-gray-500"
                 value={group}
                 onChange={(e) => {
-                  setGroup(e.target.value);  // แก้ไขเป็น setGroup แทน setCategory
+                  setGroup(e.target.value);
                   setCurrentPage(1);
                 }}
               >
@@ -154,14 +184,15 @@ export default function SearchPage() {
                 <option value="สายคอมพิวเตอร์ฮาร์ดแวร์ (Computer Hardware)">ฮาร์ดแวร์</option>
                 <option value="สายการพัฒนาซอฟต์แวร์ (Software Development)">ซอฟต์แวร์</option>
                 <option value="สายเครือข่ายคอมพิวเตอร์ (Computer Networks)">เครือข่าย</option>
-                <option value="สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)">สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์</option>
+                <option value="สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์ (Data Science and Informatics)">
+                  สายวิทยาศาสตร์ข้อมูลและสารสนเทศศาสตร์
+                </option>
                 <option value="สายสื่อประสม (Multimedia)">สายสื่อประสม</option>
               </select>
             </div>
           </div>
 
-          {/* ตารางแสดงรายวิชา */}
-          <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow ">
+          <div className="overflow-y-auto min-h-[600px] max-h-[600px] flex-grow">
             <table className="w-full dark:text-white border-separate border-spacing-y-2 text-gray-700 font-medium transition-colors duration-75">
               <thead className="border-b border-gray-700 text-gray-700 dark:text-white">
                 <tr>
@@ -171,73 +202,154 @@ export default function SearchPage() {
                   <th className="p-3 text-center">รายละเอียด</th>
                 </tr>
               </thead>
-
               <tbody>
                 {currentSubjects.length > 0
                   ? currentSubjects.map((subject, index) => (
-                    <tr key={`${subject.course_code}-${index}`} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
-                      <td className="p-3 text-center">{subject.course_code}</td>
-                      <td className="p-3 text-center">{subject.course_name}</td>
-                      <td className="p-3 text-center">{subject.credit}</td>
-                      <td className="p-3 text-center">
-                        <button className="bg-blue-500 text-white p-2 rounded"
-                          onClick={() => setSelectedCourse(subject)}
-                        >
-                          ดูรายละเอียด
-                        </button>
-                      </td>
-                    </tr>
-                  ))
+                      <tr
+                        key={`${subject.course_code}-${index}`}
+                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
+                      >
+                        <td className="p-3 text-center">{subject.course_code}</td>
+                        <td className="p-3 text-center">{subject.course_name}</td>
+                        <td className="p-3 text-center">{subject.credit}</td>
+                        <td className="p-3 text-center flex justify-center items-center space-x-2">
+                          <button
+                            className="bg-blue-500 text-white p-2 rounded"
+                            onClick={() => setSelectedCourse(subject)}
+                          >
+                            ดูรายละเอียด
+                          </button>
+                          <button
+                            className={`bg-green-500 text-white p-2 rounded hover:bg-green-600 transition ${
+                              addedCourses.some(course => course.course_code === subject.course_code)
+                                ? "opacity-50 cursor-not-allowed"
+                                : ""
+                            }`}
+                            onClick={() => handlePlusClick(subject)}
+                            disabled={addedCourses.some(course => course.course_code === subject.course_code)}
+                          >
+                            <FaPlus />
+                          </button>
+                        </td>
+                      </tr>
+                    ))
                   : Array.from({ length: 10 }).map((_, index) => (
-                    <tr key={index} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
-                      <td className="p-3 text-center">-</td>
-                      <td className="p-3 text-center">-</td>
-                      <td className="p-3 text-center">-</td>
-                      <td className="p-3 text-center">-</td>
-                    </tr>
-                  ))}
+                      <tr
+                        key={index}
+                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
+                      >
+                        <td className="p-3 text-center">-</td>
+                        <td className="p-3 text-center">-</td>
+                        <td className="p-3 text-center">-</td>
+                        <td className="p-3 text-center">-</td>
+                      </tr>
+                    ))}
               </tbody>
             </table>
           </div>
 
-          {/* Pagination */}
           <div className="flex justify-center space-x-2 mt-4 p-2 dark:bg-gray-700 bg-gray-200 rounded-lg">
-            <button onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))} className="px-3 py-1 bg-gray-300 rounded">{"< Back"}</button>
+            <button
+              onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
+              className="px-3 py-1 bg-gray-300 rounded"
+            >
+              {"< Back"}
+            </button>
             {renderPagination()}
-            <button onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))} className="px-3 py-1 bg-gray-300 rounded">{"Next >"}</button>
+            <button
+              onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
+              className="px-3 py-1 bg-gray-300 rounded"
+            >
+              {"Next >"}
+            </button>
           </div>
         </div>
       </div>
 
+      {/* Overlay สำหรับแสดงรายละเอียดวิชา */}
       <AnimatePresence>
-        {selectedCourse !== null && (
+        {selectedCourse && (
           <motion.div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedCourse(null)}
           >
             <motion.div
-              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg w-1/3"
-              initial={{ scale: 0.8, opacity: 0 }}
+              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl w-3/4 sm:w-2/3 md:w-1/2 max-w-lg"
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
+              exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <h2 className="dark:text-white text-xl font-bold">
+              <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
                 {selectedCourse.course_name}
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">
-                {selectedCourse.description || "ไม่มีคำอธิบาย"}
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                {selectedCourse.description}
               </p>
-              <div className="flex justify-end mt-4">
+              <div className="flex justify-between mt-6">
                 <button
-                  className="bg-red-700 text-white px-4 py-2 rounded"
+                  className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors"
                   onClick={() => setSelectedCourse(null)}
                 >
-                  Close
+                  ปิด
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Overlay สำหรับแสดงรายการวิชาที่เพิ่มแล้ว */}
+      <AnimatePresence>
+        {overlayVisible && (
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setOverlayVisible(false)}
+          >
+            <motion.div
+              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl w-3/4 sm:w-2/3 md:w-1/2 max-w-lg"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">วิชาที่เพิ่มแล้ว</h2>
+              <ul className="space-y-4">
+                {addedCourses.map((course) => (
+                  <li
+                    key={course.course_code}
+                    className="flex justify-between items-center p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform hover:scale-105"
+                  >
+                    <span className="text-gray-800 dark:text-white">{course.course_name}</span>
+                    <button
+                      onClick={() => handleRemoveClick(course.course_code)}
+                      className="bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition-colors"
+                    >
+                      ลบ
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex justify-between mt-6">
+                <button
+                  className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors"
+                  onClick={() => setOverlayVisible(false)}
+                >
+                  ปิด
+                </button>
+                <button
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  onClick={() => { /* แฟลกฟังก์ชั่นการบันทึก */ }}
+                >
+                  บันทึก
                 </button>
               </div>
             </motion.div>
