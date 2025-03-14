@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { FaSearch, FaPlus } from "react-icons/fa";
 import Dashboard from "../component/Dashboard";
 import { motion, AnimatePresence } from "framer-motion";
 import { CiViewList } from "react-icons/ci";
-import { CourseContext } from "../context/CourseContext"; // นำเข้า CourseContext
 
 export default function SearchPage() {
-  const { addedCourses, setAddedCourses } = useContext(CourseContext); // ใช้ Context
   const [subjects, setSubjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
@@ -15,10 +13,18 @@ export default function SearchPage() {
   const [itemsPerPage, setItemsPerPage] = useState(7);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
+  const [addedCourses, setAddedCourses] = useState([]); // ใช้ state แทน Context
 
   useEffect(() => {
     fetchCourses();
   }, [category, group, searchTerm]);
+
+  useEffect(() => {
+    const savedCourses = localStorage.getItem("addedCourses");
+    if (savedCourses) {
+      setAddedCourses(JSON.parse(savedCourses));
+    }
+  }, []);
 
   const fetchCourses = async () => {
     try {
@@ -133,6 +139,16 @@ export default function SearchPage() {
   const handleRemoveClick = (courseCode) => {
     setAddedCourses(addedCourses.filter(course => course.course_code !== courseCode));
   };
+
+  const handleSave = () => {
+    localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
+    alert("บันทึกข้อมูลสำเร็จ");
+  };
+
+  const handleClose = () => {
+    localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
+    setOverlayVisible(false);
+  }
 
   return (
     <div className="flex bg-white min-h-screen dark:bg-gray-900">
@@ -341,13 +357,13 @@ export default function SearchPage() {
               <div className="flex justify-between mt-6">
                 <button
                   className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors"
-                  onClick={() => setOverlayVisible(false)}
+                  onClick={handleClose}
                 >
                   ปิด
                 </button>
                 <button
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  onClick={() => { /* แฟลกฟังก์ชั่นการบันทึก */ }}
+                  onClick={handleSave }
                 >
                   บันทึก
                 </button>
