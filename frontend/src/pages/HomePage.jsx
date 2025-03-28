@@ -30,9 +30,11 @@ export default function HomePage() {
   useEffect(() => {
 
     const flow = JSON.parse(localStorage.getItem("flow")) || { nodes: [], edges: [] };
-
     const updatedNodes = flow.nodes.map((node, index) => ({
       ...node,
+
+      position: node.position || getNodePosition(index),
+      positionAbsolute: node.position,
 
     }));
 
@@ -47,26 +49,19 @@ export default function HomePage() {
     [setEdges]
   );
 
-
-
-
-
-
-
   const onNodeDragStop = useCallback((event, node) => {
-    const { x, y } = node.position;
-    const minX = 0, maxX = 1000, minY = 0, maxY = 800;
-
-    const newX = Math.max(minX, Math.min(maxX, x));
-    const newY = Math.max(minY, Math.min(maxY, y));
-
-    if (newX !== x || newY !== y) {
-      setNodes((nds) =>
-        nds.map((n) => (n.id === node.id ? { ...n, position: { x: newX, y: newY } } : n))
+    setNodes((nds) => {
+      const updatedNodes = nds.map((n) =>
+        n.id === node.id ? { ...n, position: node.position } : n
       );
-    }
-
-  }, [setNodes]);
+  
+      // บันทึกตำแหน่งใหม่ลง localStorage
+      localStorage.setItem('flow', JSON.stringify({ nodes: updatedNodes, edges }));
+      return updatedNodes;
+    });
+  }, [edges, setNodes]);
+  
+  
 
   const handleEdgesChange = useCallback(
     (changes) => {
