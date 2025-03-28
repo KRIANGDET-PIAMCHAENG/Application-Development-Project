@@ -16,8 +16,13 @@ export default function SearchPage() {
   const [addedCourses, setAddedCourses] = useState([]); // ใช้ state แทน Context
 
   useEffect(() => {
-    fetchCourses();
-  }, [category, group, searchTerm]);
+    const delayDebounce = setTimeout(() => {
+      fetchCourses();
+    }, 500); // รอ 500ms หลังจากหยุดพิมพ์
+
+    return () => clearTimeout(delayDebounce);
+  }, [category, group]);
+
 
   useEffect(() => {
     const savedCourses = localStorage.getItem("addedCourses");
@@ -31,7 +36,6 @@ export default function SearchPage() {
       let url = "http://localhost:5001/courses";
       const params = new URLSearchParams();
       if (category) params.append("category", category);
-      if (searchTerm) params.append("course_code", searchTerm);
       if (group) params.append("group", group);
       if (params.toString()) url += `?${params.toString()}`;
       const response = await fetch(url);
@@ -66,9 +70,8 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${
-              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-            }`}
+            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+              }`}
           >
             {i}
           </button>
@@ -79,9 +82,8 @@ export default function SearchPage() {
         <button
           key={1}
           onClick={() => setCurrentPage(1)}
-          className={`px-3 py-1 rounded ${
-            currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-          }`}
+          className={`px-3 py-1 rounded ${currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
         >
           1
         </button>
@@ -99,9 +101,8 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${
-              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-            }`}
+            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+              }`}
           >
             {i}
           </button>
@@ -116,9 +117,8 @@ export default function SearchPage() {
         <button
           key={totalPages}
           onClick={() => setCurrentPage(totalPages)}
-          className={`px-3 py-1 rounded ${
-            currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-          }`}
+          className={`px-3 py-1 rounded ${currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
         >
           {totalPages}
         </button>
@@ -219,48 +219,36 @@ export default function SearchPage() {
                 </tr>
               </thead>
               <tbody>
-                {currentSubjects.length > 0
-                  ? currentSubjects.map((subject, index) => (
-                      <tr
-                        key={`${subject.course_code}-${index}`}
-                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
-                      >
-                        <td className="p-3 text-center">{subject.course_code}</td>
-                        <td className="p-3 text-center">{subject.course_name}</td>
-                        <td className="p-3 text-center">{subject.credit}</td>
-                        <td className="p-3 text-center flex justify-center items-center space-x-2">
-                          <button
-                            className="bg-blue-500 text-white p-2 rounded"
-                            onClick={() => setSelectedCourse(subject)}
-                          >
-                            ดูรายละเอียด
-                          </button>
-                          <button
-                            className={`bg-green-500 text-white p-2 rounded hover:bg-green-600 transition ${
-                              addedCourses.some(course => course.course_code === subject.course_code)
-                                ? "opacity-50 cursor-not-allowed"
-                                : ""
+                {currentSubjects.length > 0 ? (
+                  currentSubjects.map((subject, index) => (
+                    <tr key={`${subject.course_code}-${index}`} className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white">
+                      <td className="p-3 text-center">{subject.course_code}</td>
+                      <td className="p-3 text-center">{subject.course_name}</td>
+                      <td className="p-3 text-center">{subject.credit}</td>
+                      <td className="p-3 text-center flex justify-center items-center space-x-2">
+                        <button className="bg-blue-500 text-white p-2 rounded" onClick={() => setSelectedCourse(subject)}>
+                          ดูรายละเอียด
+                        </button>
+                        <button
+                          className={`bg-green-500 text-white p-2 rounded hover:bg-green-600 transition ${addedCourses.some(course => course.course_code === subject.course_code) ? "opacity-50 cursor-not-allowed" : ""
                             }`}
-                            onClick={() => handlePlusClick(subject)}
-                            disabled={addedCourses.some(course => course.course_code === subject.course_code)}
-                          >
-                            <FaPlus />
-                          </button>
-                        </td>
-                      </tr>
-                    ))
-                  : Array.from({ length: 10 }).map((_, index) => (
-                      <tr
-                        key={index}
-                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
-                      >
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                      </tr>
-                    ))}
+                          onClick={() => handlePlusClick(subject)}
+                          disabled={addedCourses.some(course => course.course_code === subject.course_code)}
+                        >
+                          <FaPlus />
+                        </button>
+                      </td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan="4" className="p-3 text-center text-gray-500 dark:text-gray-400">
+                      ไม่พบข้อมูลที่ตรงกับคำค้นหา
+                    </td>
+                  </tr>
+                )}
               </tbody>
+
             </table>
           </div>
 
@@ -363,7 +351,7 @@ export default function SearchPage() {
                 </button>
                 <button
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  onClick={handleSave }
+                  onClick={handleSave}
                 >
                   บันทึก
                 </button>
