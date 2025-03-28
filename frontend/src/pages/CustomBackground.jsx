@@ -2,65 +2,41 @@ import React from 'react';
 
 const CustomBackground = () => {
   return (
-    <div style={{
-      position: 'relative',
-      width: '100%',
-      height: '100%',
-      backgroundColor: '#1e2126',
-      color: 'white',
-      fontFamily: 'Arial, sans-serif',
-      display: 'flex',
-      flexDirection: 'column',
-    }}>
+    <div className="relative w-full h-full bg-gray-900 text-white font-sans flex flex-col">
       {/* Header */}
-      <div style={{
-        backgroundColor: '#1a1d22',
-        borderBottom: '2px solid #0080ff',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        position: 'relative',
-      }}>
-        
-        <div style={{
-          width: '28px',
-          height: '28px',
-          borderRadius: '50%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          cursor: 'pointer',
-        }}>
-          
+      <div className="bg-gray-800 border-b-2 border-blue-500 flex justify-between items-center relative">
+
+        <div className="w-7 h-7 rounded-full flex justify-center items-center cursor-pointer">
+
         </div>
       </div>
 
       {/* Main Content - Table Layout */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+      <div className="flex-1 flex flex-col">
         {/* Year Headers - 4 Years */}
-        <div style={{ display: 'flex', borderBottom: '1px solid #444' }}>
-          <div style={{ width: '25%', padding: '10px', textAlign: 'center', borderRight: '1px solid #444' }}>
+        <div className="flex border-b border-gray-600">
+          <div className="w-1/4 p-2.5 text-center border-r border-gray-600">
             ปีที่1
           </div>
-          <div style={{ width: '25%', padding: '10px', textAlign: 'center', borderRight: '1px solid #444' }}>
+          <div className="w-1/4 p-2.5 text-center border-r border-gray-600">
             ปีที่2
           </div>
-          <div style={{ width: '25%', padding: '10px', textAlign: 'center', borderRight: '1px solid #444' }}>
+          <div className="w-1/4 p-2.5 text-center border-r border-gray-600">
             ปีที่3
           </div>
-          <div style={{ width: '25%', padding: '10px', textAlign: 'center' }}>
+          <div className="w-1/4 p-2.5 text-center">
             ปีที่4
           </div>
         </div>
 
         {/* Term Headers - 8 columns (2 for each year) */}
-        <div style={{ display: 'flex', borderBottom: '1px solid #444' }}>
+        <div className="flex border-b border-gray-600">
           {[1, 2, 3, 4].map(year => (
             <React.Fragment key={`year-${year}`}>
-              <div style={{ width: '12.5%', padding: '8px', textAlign: 'center', borderRight: '1px solid #444' }}>
+              <div className="w-1/2 p-2 text-center border-r border-gray-600">
                 กลางภาค
               </div>
-              <div style={{ width: '12.5%', padding: '8px', textAlign: 'center', borderRight: year < 4 ? '1px solid #444' : 'none' }}>
+              <div className={`w-1/2 p-2 text-center ${year < 4 ? 'border-r border-gray-600' : ''}`}>
                 ปลายภาค
               </div>
             </React.Fragment>
@@ -68,24 +44,16 @@ const CustomBackground = () => {
         </div>
 
         {/* Course Slots - Empty columns for all 8 sections */}
-        <div style={{ display: 'flex', flex: 1 }}>
+        <div className="flex flex-1">
           {[1, 2, 3, 4].map(year => (
             <React.Fragment key={`content-${year}`}>
               {/* Midterm column */}
-              <div style={{ 
-                width: '12.5%', 
-                borderRight: '1px solid #444',
-                minHeight: '300px'
-              }}>
-             
+              <div className="w-1/2 border-r border-gray-600 min-h-[300px]">
+
               </div>
-              
-              <div style={{ 
-                width: '12.5%', 
-                borderRight: year < 4 ? '1px solid #444' : 'none',
-                minHeight: '300px'
-              }}>
-              
+
+              <div className={`w-1/2 ${year < 4 ? 'border-r border-gray-600' : ''} min-h-[300px]`}>
+
               </div>
             </React.Fragment>
           ))}

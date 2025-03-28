@@ -27,18 +27,18 @@ export default function HomePage() {
 
   // โหลดข้อมูล Flow จาก localStorage เมื่อ Component โหลด
   // เพิ่มฟังก์ชันจัดตำแหน่งใหม่เมื่อโหลดข้อมูล
-useEffect(() => {
-  
-  const flow = JSON.parse(localStorage.getItem("flow")) || { nodes: [], edges: [] };
-  
-  const updatedNodes = flow.nodes.map((node, index) => ({
-    ...node,
-    
-  }));
+  useEffect(() => {
 
-  setNodes(updatedNodes);
-  setEdges(flow.edges);
-}, []);
+    const flow = JSON.parse(localStorage.getItem("flow")) || { nodes: [], edges: [] };
+
+    const updatedNodes = flow.nodes.map((node, index) => ({
+      ...node,
+
+    }));
+
+    setNodes(updatedNodes);
+    setEdges(flow.edges);
+  }, []);
 
   const onConnect = useCallback(
     (connection) => {
@@ -47,11 +47,11 @@ useEffect(() => {
     [setEdges]
   );
 
-  
 
-  
 
-  
+
+
+
 
   const onNodeDragStop = useCallback((event, node) => {
     const { x, y } = node.position;
@@ -65,7 +65,7 @@ useEffect(() => {
         nds.map((n) => (n.id === node.id ? { ...n, position: { x: newX, y: newY } } : n))
       );
     }
-    
+
   }, [setNodes]);
 
   const handleEdgesChange = useCallback(
@@ -93,16 +93,16 @@ useEffect(() => {
     // ตรวจสอบความสอดคล้องระหว่าง Node กับ addedCourses
     const existingCourseCodes = nodes.map(node => node.id);
     const addedCourses = JSON.parse(localStorage.getItem('addedCourses') || '[]');
-    
+
     // กรองเฉพาะวิชาที่มี Node อยู่
-    const filteredAddedCourses = addedCourses.filter(course => 
+    const filteredAddedCourses = addedCourses.filter(course =>
       existingCourseCodes.includes(course.course_code)
     );
-    
+
     // อัพเดท localStorage
     localStorage.setItem('addedCourses', JSON.stringify(filteredAddedCourses));
-    localStorage.setItem('flow',JSON.stringify({nodes,edges}))
-  
+    localStorage.setItem('flow', JSON.stringify({ nodes, edges }))
+
     // บันทึกข้อมูล Flow ไปยังเซิร์ฟเวอร์
     const token = localStorage.getItem('token');
     try {
@@ -122,12 +122,12 @@ useEffect(() => {
   };
 
   return (
-    <div className="flex bg-gray-100 dark:bg-gray-900 min-h-screen mt-0">
+    <div className="flex bg-gray-100 dark:bg-gray-900  mt-0">
       <Dashboard />
       <div className="flex flex-col flex-1 mt-10 ml-8 w-full">
         <button
           onClick={handleSaveFlow}
-          className="absolute top-0 right-0 z-50 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-green-700 transition-all"
+          className="absolute bottom-10 mr-10 right-0 z-50 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-green-700 transition-all"
         >
           💾 บันทึก Flow
         </button>
@@ -135,14 +135,15 @@ useEffect(() => {
           <p className="text-center text-gray-500">Loading flow data...</p>
         ) : (
           <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          nodeTypes={{ customNode: CustomNode }}
+            nodes={nodes}
+            edges={edges}
+            nodeTypes={{ customNode: CustomNode }}
+            fitView
+            fitViewOptions={{ padding: 0 }}
             onNodesChange={onNodesChange}
             onEdgesChange={handleEdgesChange}
             onConnect={onConnect}
             edgeTypes={edgeTypes}
-            fitView
             panOnDrag={false}
             panOnScroll={false}
             zoomOnScroll={false}
@@ -150,7 +151,7 @@ useEffect(() => {
             zoomOnDoubleClick={false}
             onNodeDragStop={onNodeDragStop}
             translateExtent={[
-              [-20, -20],
+              [0, -20],
               [1000, 800],
             ]}
           >
