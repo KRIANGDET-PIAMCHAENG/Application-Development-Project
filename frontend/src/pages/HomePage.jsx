@@ -10,6 +10,29 @@ import CustomEdge from '../component/CustomEdge';
 import '@xyflow/react/dist/style.css';
 import Dashboard from '../component/Dashboard';
 import CustomBackground from './CustomBackground';
+import { toPng } from 'html-to-image';
+import jsPDF from 'jspdf';
+
+const handleDownloadPDF = () => {
+  const flowWrapper = document.querySelector('.react-flow'); // หรือใช้ useRef ก็ได้
+
+  if (!flowWrapper) return;
+
+  toPng(flowWrapper, { cacheBust: true })
+    .then((dataUrl) => {
+      const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'px',
+        format: [flowWrapper.offsetWidth, flowWrapper.offsetHeight],
+      });
+
+      pdf.addImage(dataUrl, 'PNG', 0, 0, flowWrapper.offsetWidth, flowWrapper.offsetHeight);
+      pdf.save('flow-diagram.pdf');
+    })
+    .catch((err) => {
+      console.error('Error generating PDF:', err);
+    });
+};
 
 const getNodePosition = (index) => ({
   x: (index % 4) * 250,  // กระจาย node ไปตามแนวนอน
@@ -54,14 +77,14 @@ export default function HomePage() {
       const updatedNodes = nds.map((n) =>
         n.id === node.id ? { ...n, position: node.position } : n
       );
-  
+
       // บันทึกตำแหน่งใหม่ลง localStorage
       localStorage.setItem('flow', JSON.stringify({ nodes: updatedNodes, edges }));
       return updatedNodes;
     });
   }, [edges, setNodes]);
-  
-  
+
+
 
   const handleEdgesChange = useCallback(
     (changes) => {
@@ -121,6 +144,13 @@ export default function HomePage() {
       <Dashboard />
       <div className="flex flex-col flex-1 mt-10 ml-8 w-full">
         <button
+          onClick={handleDownloadPDF}
+          className="absolute bottom-24 mr-10 right-0 z-50 bg-red-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-red-700 transition-all"
+        >
+          🧾 ดาวน์โหลด PDF
+        </button>
+
+        <button
           onClick={handleSaveFlow}
           className="absolute bottom-10 mr-10 right-0 z-50 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-green-700 transition-all"
         >
@@ -133,7 +163,7 @@ export default function HomePage() {
             nodes={nodes}
             edges={edges}
             nodeTypes={{ customNode: CustomNode }}
-            
+
             onNodesChange={onNodesChange}
             onEdgesChange={handleEdgesChange}
             onConnect={onConnect}
