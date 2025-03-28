@@ -1,4 +1,5 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import CustomNode from './CustomNode';
 import {
   ReactFlow,
   addEdge,
@@ -22,89 +23,141 @@ const edgeTypes = {
 export default function HomePage() {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const [loading, setLoading] = useState(false); // ไม่ต้องโหลดจาก API อีก
 
-  // ดึงข้อมูลจาก localStorage และอัปเดต nodes เมื่อโหลดหน้าเว็บหรือเมื่อ localStorage เปลี่ยนแปลง
+  // โหลดข้อมูล Flow จาก localStorage เมื่อ Component โหลด
+  // เพิ่มฟังก์ชันจัดตำแหน่งใหม่เมื่อโหลดข้อมูล
   useEffect(() => {
-    const addedCourses = JSON.parse(localStorage.getItem("addedCourses") || "[]");
-    const initialNodes = addedCourses.map((course, index) => ({
-      id: `course_${index + 1}`,
-      position: getNodePosition(index),
-      data: { label: course.course_code },
-      style: { 
-        width: "70px", // Set a fixed width
-        height: "20px", // Set a fixed height
-        padding: "auto", // Reduce padding
-        fontSize: "auto", // Smaller font size
-        fontWeight: "bold", 
-        textAlign: "center",
-        backgroundColor: "white",
-        border: "1px solid black",
-        display: "flex", // Use flexbox
-        alignItems: "center", // Vertically center content
-        justifyContent: "center", // Horizontally center content
-      }
+
+    const flow = JSON.parse(localStorage.getItem("flow")) || { nodes: [], edges: [] };
+
+    const updatedNodes = flow.nodes.map((node, index) => ({
+      ...node,
+
     }));
-    
-    setNodes(initialNodes);
-  }, [setNodes]);
+
+    setNodes(updatedNodes);
+    setEdges(flow.edges);
+  }, []);
 
   const onConnect = useCallback(
     (connection) => {
-      const edge = { ...connection, type: 'custom-edge' };
-      setEdges((eds) => addEdge(edge, eds));
+      setEdges((eds) => addEdge({ ...connection, type: 'custom-edge' }, eds));
     },
     [setEdges]
   );
 
+
+
+
+
+
+
   const onNodeDragStop = useCallback((event, node) => {
     const { x, y } = node.position;
+    const minX = 0, maxX = 1000, minY = 0, maxY = 800;
 
-    // กำหนดขอบเขต (Boundary)
-    const minX = 0;
-    const maxX = 1000; // กำหนดค่าตามความกว้างของพื้นที่
-    const minY = 0;
-    const maxY = 800; // กำหนดค่าตามความสูงของพื้นที่
-
-    // ปรับตำแหน่ง Node ให้อยู่ในขอบเขต
     const newX = Math.max(minX, Math.min(maxX, x));
     const newY = Math.max(minY, Math.min(maxY, y));
 
     if (newX !== x || newY !== y) {
       setNodes((nds) =>
-        nds.map((n) =>
-          n.id === node.id
-            ? { ...n, position: { x: newX, y: newY } }
-            : n
-        )
+        nds.map((n) => (n.id === node.id ? { ...n, position: { x: newX, y: newY } } : n))
       );
     }
+
   }, [setNodes]);
 
+  const handleEdgesChange = useCallback(
+    (changes) => {
+      const previousEdges = [...edges];
+
+      // เรียกใช้ onEdgesChange เดิม
+      onEdgesChange(changes);
+
+      // ตรวจสอบว่า edge ถูกลบหรือไม่
+      changes.forEach((change) => {
+        if (change.type === 'remove') {
+          const deletedEdge = previousEdges.find((edge) => edge.id === change.id);
+          if (deletedEdge) {
+            console.log('Edge deleted:', deletedEdge);
+            // คุณสามารถทำอะไรก็ได้ที่นี่เมื่อ edge ถูกลบ
+          }
+        }
+      });
+    },
+    [edges, onEdgesChange]
+  );
+
+  const handleSaveFlow = async () => {
+    // ตรวจสอบความสอดคล้องระหว่าง Node กับ addedCourses
+    const existingCourseCodes = nodes.map(node => node.id);
+    const addedCourses = JSON.parse(localStorage.getItem('addedCourses') || '[]');
+
+    // กรองเฉพาะวิชาที่มี Node อยู่
+    const filteredAddedCourses = addedCourses.filter(course =>
+      existingCourseCodes.includes(course.course_code)
+    );
+
+    // อัพเดท localStorage
+    localStorage.setItem('addedCourses', JSON.stringify(filteredAddedCourses));
+    localStorage.setItem('flow', JSON.stringify({ nodes, edges }))
+
+    // บันทึกข้อมูล Flow ไปยังเซิร์ฟเวอร์
+    const token = localStorage.getItem('token');
+    try {
+      const response = await fetch('http://localhost:5001/update_flow', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ flow: { nodes, edges } }),
+      });
+      alert(response.ok ? 'บันทึกสำเร็จ 🎉' : 'เกิดข้อผิดพลาดในการบันทึก');
+    } catch (error) {
+      console.error('Error saving flow:', error);
+      alert('การเชื่อมต่อมีปัญหา');
+    }
+  };
+
   return (
-    <div className="flex bg-gray-100 dark:bg-gray-900 min-h-screen">
+    <div className="flex bg-gray-100 dark:bg-gray-900  mt-0">
       <Dashboard />
-      <div className="flex flex-col flex-1 mt-16 ml-8 w-full">
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          onConnect={onConnect}
-          edgeTypes={edgeTypes}
-          fitView
-          panOnDrag={false} // ปิดการเลื่อนเมื่อลากเมาส์
-          panOnScroll={false} // ปิดการเลื่อนเมื่อใช้ Scroll เมาส์
-          zoomOnScroll={false} // ปิดการซูมเมื่อใช้ Scroll เมาส์
-          zoomOnPinch={false} // ปิดการซูมเมื่อใช้ Pinch (บน Touch Devices)
-          zoomOnDoubleClick={false} // ปิดการซูมเมื่อดับเบิลคลิก
-          onNodeDragStop={onNodeDragStop} // ตรวจสอบตำแหน่ง Node เมื่อหยุดลาก
-          translateExtent={[
-            [-20, -20], // ขอบเขตซ้ายบน
-            [1000, 800], // ขอบเขตขวาล่าง
-          ]} // กำหนดขอบเขตของพื้นที่
+      <div className="flex flex-col flex-1 mt-10 ml-8 w-full">
+        <button
+          onClick={handleSaveFlow}
+          className="absolute bottom-10 mr-10 right-0 z-50 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-green-700 transition-all"
         >
-          <CustomBackground />
-        </ReactFlow>
+          💾 บันทึก Flow
+        </button>
+        {loading ? (
+          <p className="text-center text-gray-500">Loading flow data...</p>
+        ) : (
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            nodeTypes={{ customNode: CustomNode }}
+            fitView
+            fitViewOptions={{ padding: 0 }}
+            onNodesChange={onNodesChange}
+            onEdgesChange={handleEdgesChange}
+            onConnect={onConnect}
+            edgeTypes={edgeTypes}
+            panOnDrag={false}
+            panOnScroll={false}
+            zoomOnScroll={false}
+            zoomOnPinch={false}
+            zoomOnDoubleClick={false}
+            onNodeDragStop={onNodeDragStop}
+            translateExtent={[
+              [0, -20],
+              [1000, 800],
+            ]}
+          >
+            <CustomBackground />
+          </ReactFlow>
+        )}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function SearchPage() {
   const [itemsPerPage, setItemsPerPage] = useState(7);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
-  const [addedCourses, setAddedCourses] = useState([]); // ใช้ state แทน Context
+  const [addedCourses, setAddedCourses] = useState([]);
 
   useEffect(() => {
     const delayDebounce = setTimeout(() => {
@@ -24,10 +24,20 @@ export default function SearchPage() {
   }, [category, group]);
 
 
+  // ในส่วน useEffect ที่โหลดข้อมูล
   useEffect(() => {
     const savedCourses = localStorage.getItem("addedCourses");
-    if (savedCourses) {
-      setAddedCourses(JSON.parse(savedCourses));
+    const flowData = JSON.parse(localStorage.getItem("flow") || '{}');
+
+    if (savedCourses && flowData.nodes) {
+      // ตรวจสอบความสอดคล้องระหว่าง addedCourses กับ Node
+      const existingCourseCodes = flowData.nodes.map(node => node.id);
+      const filteredCourses = JSON.parse(savedCourses).filter(course =>
+        existingCourseCodes.includes(course.course_code)
+      );
+
+      setAddedCourses(filteredCourses);
+      localStorage.setItem('addedCourses', JSON.stringify(filteredCourses));
     }
   }, []);
 
@@ -128,21 +138,63 @@ export default function SearchPage() {
     return pages;
   };
 
-  const handlePlusClick = (subject) => {
-    if (!addedCourses.some(course => course.course_code === subject.course_code)) {
-      setAddedCourses([...addedCourses, { ...subject, status: 'Added' }]);
-    } else {
-      alert(`วิชา ${subject.course_name} ได้ถูกเพิ่มไปแล้ว`);
+  const getNodePosition = (index) => ({
+    x: (index % 8) * 125 + 30,
+    y: Math.floor(index / 8) * 100 + 50,
+  });
+
+  const handlePlusClick = async (subject) => {
+    if (addedCourses.some(c => c.course_code === subject.course_code)) return;
+
+    // อัพเดท Added Courses
+    const newAdded = [...addedCourses, subject];
+    setAddedCourses(newAdded);
+
+    // อัพเดท Flow
+    const flow = JSON.parse(localStorage.getItem('flow')) || { nodes: [], edges: [] };
+    if (!flow.nodes.find(n => n.id === subject.course_code)) {
+      flow.nodes.push({
+        id: subject.course_code,
+        type: 'customNode',
+        data: {
+          label: subject.course_name,
+          courseCode: subject.course_code,
+          credit: subject.credit
+        },
+        position: getNodePosition(flow.nodes.length),
+        style: { width: '100px', height: '50px' },
+      });
+      localStorage.setItem('flow', JSON.stringify(flow));
+      localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
     }
   };
 
+  // ในฟังก์ชัน handleRemoveClick
   const handleRemoveClick = (courseCode) => {
-    setAddedCourses(addedCourses.filter(course => course.course_code !== courseCode));
+    // 1. ลบออกจาก state
+    const updatedCourses = addedCourses.filter(course => course.course_code !== courseCode);
+    setAddedCourses(updatedCourses);
+
+    // 2. ลบออกจาก localStorage
+    localStorage.setItem('addedCourses', JSON.stringify(updatedCourses));
+
+    // 3. ลบออกจาก flow (ถ้ามี)
+    const flow = JSON.parse(localStorage.getItem('flow') || { nodes: [], edges: [] });
+    if (flow.nodes.some(node => node.id === courseCode)) {
+      const updatedFlow = {
+        nodes: flow.nodes.filter(node => node.id !== courseCode),
+        edges: flow.edges.filter(edge =>
+          edge.source !== courseCode && edge.target !== courseCode
+        )
+      };
+      localStorage.setItem('flow', JSON.stringify(updatedFlow));
+    }
   };
 
   const handleSave = () => {
     localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
     alert("บันทึกข้อมูลสำเร็จ");
+    console.log(addedCourses)
   };
 
   const handleClose = () => {
