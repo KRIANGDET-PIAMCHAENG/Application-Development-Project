@@ -4,10 +4,12 @@ import Login from "./pages/Login";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import SchedulePage from "./pages/SchedulePage"
+import { CourseProvider } from "./context/CourseContext"; // นำเข้า CourseProvider
 
 function App() {
   return (
-    <BrowserRouter>
+    <CourseProvider>
+          <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
@@ -16,6 +18,8 @@ function App() {
         <Route path="/schedule" element={<SchedulePage />} />
       </Routes>
     </BrowserRouter>
+    </CourseProvider>
+
   );
 }
 
