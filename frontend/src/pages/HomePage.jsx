@@ -133,8 +133,7 @@ export default function HomePage() {
             nodes={nodes}
             edges={edges}
             nodeTypes={{ customNode: CustomNode }}
-            fitView
-            fitViewOptions={{ padding: 0 }}
+            
             onNodesChange={onNodesChange}
             onEdgesChange={handleEdgesChange}
             onConnect={onConnect}

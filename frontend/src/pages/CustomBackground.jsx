@@ -1,8 +1,9 @@
 import React from 'react';
+import Dashboard from "../component/Dashboard";
 
 const CustomBackground = () => {
   return (
-    <div className="relative w-full h-full bg-gray-900 text-white font-sans flex flex-col">
+    <div className="relative w-full h-full dark:bg-gray-900 bg-white  font-sans flex flex-col ">
       {/* Header */}
       <div className="bg-gray-800 border-b-2 border-blue-500 flex justify-between items-center relative">
 
@@ -14,7 +15,7 @@ const CustomBackground = () => {
       {/* Main Content - Table Layout */}
       <div className="flex-1 flex flex-col">
         {/* Year Headers - 4 Years */}
-        <div className="flex border-b border-gray-600">
+        <div className="flex border-b border-gray-600 dark:text-white">
           <div className="w-1/4 p-2.5 text-center border-r border-gray-600">
             ปีที่1
           </div>
@@ -30,7 +31,7 @@ const CustomBackground = () => {
         </div>
 
         {/* Term Headers - 8 columns (2 for each year) */}
-        <div className="flex border-b border-gray-600">
+        <div className="flex border-b border-gray-600 dark:text-white">
           {[1, 2, 3, 4].map(year => (
             <React.Fragment key={`year-${year}`}>
               <div className="w-1/2 p-2 text-center border-r border-gray-600">
