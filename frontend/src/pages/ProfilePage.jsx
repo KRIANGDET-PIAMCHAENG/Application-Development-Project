@@ -13,16 +13,26 @@ export default function SearchPage() {
   const [itemsPerPage, setItemsPerPage] = useState(7);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
-  const [addedCourses, setAddedCourses] = useState([]); // ใช้ state แทน Context
+  const [addedCourses, setAddedCourses] = useState([]);
 
   useEffect(() => {
     fetchCourses();
   }, [category, group, searchTerm]);
 
+  // ในส่วน useEffect ที่โหลดข้อมูล
   useEffect(() => {
     const savedCourses = localStorage.getItem("addedCourses");
-    if (savedCourses) {
-      setAddedCourses(JSON.parse(savedCourses));
+    const flowData = JSON.parse(localStorage.getItem("flow") || '{}');
+
+    if (savedCourses && flowData.nodes) {
+      // ตรวจสอบความสอดคล้องระหว่าง addedCourses กับ Node
+      const existingCourseCodes = flowData.nodes.map(node => node.id);
+      const filteredCourses = JSON.parse(savedCourses).filter(course =>
+        existingCourseCodes.includes(course.course_code)
+      );
+
+      setAddedCourses(filteredCourses);
+      localStorage.setItem('addedCourses', JSON.stringify(filteredCourses));
     }
   }, []);
 
@@ -66,9 +76,8 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${
-              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-            }`}
+            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+              }`}
           >
             {i}
           </button>
@@ -79,9 +88,8 @@ export default function SearchPage() {
         <button
           key={1}
           onClick={() => setCurrentPage(1)}
-          className={`px-3 py-1 rounded ${
-            currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-          }`}
+          className={`px-3 py-1 rounded ${currentPage === 1 ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
         >
           1
         </button>
@@ -99,9 +107,8 @@ export default function SearchPage() {
           <button
             key={i}
             onClick={() => setCurrentPage(i)}
-            className={`px-3 py-1 rounded ${
-              currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-            }`}
+            className={`px-3 py-1 rounded ${currentPage === i ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+              }`}
           >
             {i}
           </button>
@@ -116,9 +123,8 @@ export default function SearchPage() {
         <button
           key={totalPages}
           onClick={() => setCurrentPage(totalPages)}
-          className={`px-3 py-1 rounded ${
-            currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
-          }`}
+          className={`px-3 py-1 rounded ${currentPage === totalPages ? "bg-blue-500 text-white" : "bg-gray-300 dark:bg-gray-600"
+            }`}
         >
           {totalPages}
         </button>
@@ -128,21 +134,63 @@ export default function SearchPage() {
     return pages;
   };
 
-  const handlePlusClick = (subject) => {
-    if (!addedCourses.some(course => course.course_code === subject.course_code)) {
-      setAddedCourses([...addedCourses, { ...subject, status: 'Added' }]);
-    } else {
-      alert(`วิชา ${subject.course_name} ได้ถูกเพิ่มไปแล้ว`);
+  const getNodePosition = (index) => ({
+    x: (index % 8) * 125 + 30,
+    y: Math.floor(index / 8) * 100 + 50,
+  });
+
+  const handlePlusClick = async (subject) => {
+    if (addedCourses.some(c => c.course_code === subject.course_code)) return;
+
+    // อัพเดท Added Courses
+    const newAdded = [...addedCourses, subject];
+    setAddedCourses(newAdded);
+
+    // อัพเดท Flow
+    const flow = JSON.parse(localStorage.getItem('flow')) || { nodes: [], edges: [] };
+    if (!flow.nodes.find(n => n.id === subject.course_code)) {
+      flow.nodes.push({
+        id: subject.course_code,
+        type: 'customNode',
+        data: {
+          label: subject.course_name,
+          courseCode: subject.course_code,
+          credit: subject.credit
+        },
+        position: getNodePosition(flow.nodes.length),
+        style: { width: '100px', height: '50px' },
+      });
+      localStorage.setItem('flow', JSON.stringify(flow));
+      localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
     }
   };
 
+  // ในฟังก์ชัน handleRemoveClick
   const handleRemoveClick = (courseCode) => {
-    setAddedCourses(addedCourses.filter(course => course.course_code !== courseCode));
+    // 1. ลบออกจาก state
+    const updatedCourses = addedCourses.filter(course => course.course_code !== courseCode);
+    setAddedCourses(updatedCourses);
+
+    // 2. ลบออกจาก localStorage
+    localStorage.setItem('addedCourses', JSON.stringify(updatedCourses));
+
+    // 3. ลบออกจาก flow (ถ้ามี)
+    const flow = JSON.parse(localStorage.getItem('flow') || { nodes: [], edges: [] });
+    if (flow.nodes.some(node => node.id === courseCode)) {
+      const updatedFlow = {
+        nodes: flow.nodes.filter(node => node.id !== courseCode),
+        edges: flow.edges.filter(edge =>
+          edge.source !== courseCode && edge.target !== courseCode
+        )
+      };
+      localStorage.setItem('flow', JSON.stringify(updatedFlow));
+    }
   };
 
   const handleSave = () => {
     localStorage.setItem("addedCourses", JSON.stringify(addedCourses));
     alert("บันทึกข้อมูลสำเร็จ");
+    console.log(addedCourses)
   };
 
   const handleClose = () => {
@@ -221,45 +269,44 @@ export default function SearchPage() {
               <tbody>
                 {currentSubjects.length > 0
                   ? currentSubjects.map((subject, index) => (
-                      <tr
-                        key={`${subject.course_code}-${index}`}
-                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
-                      >
-                        <td className="p-3 text-center">{subject.course_code}</td>
-                        <td className="p-3 text-center">{subject.course_name}</td>
-                        <td className="p-3 text-center">{subject.credit}</td>
-                        <td className="p-3 text-center flex justify-center items-center space-x-2">
-                          <button
-                            className="bg-blue-500 text-white p-2 rounded"
-                            onClick={() => setSelectedCourse(subject)}
-                          >
-                            ดูรายละเอียด
-                          </button>
-                          <button
-                            className={`bg-green-500 text-white p-2 rounded hover:bg-green-600 transition ${
-                              addedCourses.some(course => course.course_code === subject.course_code)
-                                ? "opacity-50 cursor-not-allowed"
-                                : ""
+                    <tr
+                      key={`${subject.course_code}-${index}`}
+                      className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
+                    >
+                      <td className="p-3 text-center">{subject.course_code}</td>
+                      <td className="p-3 text-center">{subject.course_name}</td>
+                      <td className="p-3 text-center">{subject.credit}</td>
+                      <td className="p-3 text-center flex justify-center items-center space-x-2">
+                        <button
+                          className="bg-blue-500 text-white p-2 rounded"
+                          onClick={() => setSelectedCourse(subject)}
+                        >
+                          ดูรายละเอียด
+                        </button>
+                        <button
+                          className={`bg-green-500 text-white p-2 rounded hover:bg-green-600 transition ${addedCourses.some(course => course.course_code === subject.course_code)
+                            ? "opacity-50 cursor-not-allowed"
+                            : ""
                             }`}
-                            onClick={() => handlePlusClick(subject)}
-                            disabled={addedCourses.some(course => course.course_code === subject.course_code)}
-                          >
-                            <FaPlus />
-                          </button>
-                        </td>
-                      </tr>
-                    ))
+                          onClick={() => handlePlusClick(subject)}
+                          disabled={addedCourses.some(course => course.course_code === subject.course_code)}
+                        >
+                          <FaPlus />
+                        </button>
+                      </td>
+                    </tr>
+                  ))
                   : Array.from({ length: 10 }).map((_, index) => (
-                      <tr
-                        key={index}
-                        className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
-                      >
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                        <td className="p-3 text-center">-</td>
-                      </tr>
-                    ))}
+                    <tr
+                      key={index}
+                      className="dark:bg-gray-700 bg-gray-200 text-gray-700 dark:text-white"
+                    >
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                      <td className="p-3 text-center">-</td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </div>
@@ -363,7 +410,7 @@ export default function SearchPage() {
                 </button>
                 <button
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  onClick={handleSave }
+                  onClick={handleSave}
                 >
                   บันทึก
                 </button>

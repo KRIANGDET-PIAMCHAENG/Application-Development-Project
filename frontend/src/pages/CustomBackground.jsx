@@ -75,16 +75,15 @@ const CustomBackground = () => {
               <div style={{ 
                 width: '12.5%', 
                 borderRight: '1px solid #444',
-                minHeight: '300px' // ให้มีความสูงขั้นต่ำ
+                minHeight: '300px'
               }}>
              
               </div>
               
-      
               <div style={{ 
                 width: '12.5%', 
                 borderRight: year < 4 ? '1px solid #444' : 'none',
-                minHeight: '300px' // ให้มีความสูงขั้นต่ำ 
+                minHeight: '300px'
               }}>
               
               </div>

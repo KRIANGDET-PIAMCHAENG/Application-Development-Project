@@ -18,12 +18,6 @@ export default function Login() {
         document.documentElement.classList.toggle("dark", darkMode);
     }, [darkMode]);
 
-    useEffect(() => {
-        if (localStorage.getItem("token")) {
-            getProtectedData(); 
-        }
-    }, []);
-
     const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
     const handleLogin = async () => {
@@ -36,31 +30,10 @@ export default function Login() {
         try {
             const response = await axios.post("http://localhost:5001/login", { email, password });
             localStorage.setItem("token", response.data.token);
-            localStorage.setItem("darkMode", darkMode);
+            localStorage.setItem("flow", JSON.stringify(response.data.flow));
             navigate("/home");
-            getProtectedData();  
         } catch (err) {
             setError(err.response?.data?.error || "เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์");
-            console.error(err);
-        }
-    };
-
-    const getProtectedData = async () => {
-        const token = localStorage.getItem("token");
-
-        if (!token) {
-            setError("ไม่พบ Token โปรดเข้าสู่ระบบ");
-            return;
-        }
-
-        try {
-            const response = await axios.get("http://localhost:5001/protected", {
-                headers: { Authorization: `Bearer ${token}` }
-            });
-
-            console.log(response.data.message);  
-        } catch (err) {
-            setError(err.response?.data?.error || "การเข้าถึงข้อมูลล้มเหลว");
             console.error(err);
         }
     };
