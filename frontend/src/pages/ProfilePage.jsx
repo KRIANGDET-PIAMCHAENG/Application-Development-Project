@@ -360,58 +360,73 @@ export default function SearchPage() {
       </AnimatePresence>
 
       {/* Overlay สำหรับแสดงรายการวิชาที่เพิ่มแล้ว */}
-      <AnimatePresence>
-        {overlayVisible && (
-          <motion.div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setOverlayVisible(false)}
-          >
-            <motion.div
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl w-3/4 sm:w-2/3 md:w-1/2 max-w-lg"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">วิชาที่เพิ่มแล้ว</h2>
-              <ul className="space-y-4">
-                {addedCourses.map((course) => (
-                  <li
-                    key={course.course_code}
-                    className="flex justify-between items-center p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform hover:scale-105"
+      {/* Overlay สำหรับแสดงรายการวิชาที่เพิ่มแล้ว */}
+<AnimatePresence>
+  {overlayVisible && (
+    <motion.div
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setOverlayVisible(false)}
+    >
+      <motion.div
+        className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl w-3/4 sm:w-2/3 md:w-1/2 max-w-lg max-h-[80vh]" // เพิ่ม max-h-[80vh] เพื่อจำกัดความสูง
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">วิชาที่เพิ่มแล้ว</h2>
+        
+        {/* เปลี่ยน div เป็น div ที่มี overflow-auto */}
+        <div className="overflow-y-auto max-h-[60vh]"> {/* กำหนดความสูงสูงสุดและให้ scroll ได้ */}
+          <ul className="space-y-4 pr-2"> {/* เพิ่ม padding ขวาเพื่อไม่ให้เนื้อหาโดน scrollbar บัง */}
+            {addedCourses.length > 0 ? (
+              addedCourses.map((course) => (
+                <li
+                  key={course.course_code}
+                  className="flex justify-between items-center p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform hover:scale-105"
+                >
+                  <div className="flex-1 min-w-0">
+                    <p className="font-medium text-gray-800 dark:text-white truncate">{course.course_name}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">{course.course_code} ({course.credit} หน่วยกิต)</p>
+                  </div>
+                  <button
+                    onClick={() => handleRemoveClick(course.course_code)}
+                    className="ml-4 bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition-colors"
                   >
-                    <span className="text-gray-800 dark:text-white">{course.course_name}</span>
-                    <button
-                      onClick={() => handleRemoveClick(course.course_code)}
-                      className="bg-red-600 text-white p-2 rounded-lg hover:bg-red-700 transition-colors"
-                    >
-                      ลบ
-                    </button>
-                  </li>
-                ))}
-              </ul>
-              <div className="flex justify-between mt-6">
-                <button
-                  className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors"
-                  onClick={handleClose}
-                >
-                  ปิด
-                </button>
-                <button
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  onClick={handleSave}
-                >
-                  บันทึก
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                    ลบ
+                  </button>
+                </li>
+              ))
+            ) : (
+              <li className="text-center py-4 text-gray-500 dark:text-gray-400">
+                ยังไม่มีวิชาที่เลือก
+              </li>
+            )}
+          </ul>
+        </div>
+
+        <div className="flex justify-between mt-6">
+          <button
+            className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors"
+            onClick={handleClose}
+          >
+            ปิด
+          </button>
+          <button
+            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            onClick={handleSave}
+          >
+            บันทึก
+          </button>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
     </div>
   );
 }
